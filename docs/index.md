@@ -2,4 +2,4 @@
 
 [API](categories.md)
 
-[Сценарии](scripts/index.md)
+[РЎС†РµРЅР°СЂРёРё](scripts/index.md)
