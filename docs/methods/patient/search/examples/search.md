@@ -5,7 +5,7 @@
 
 ### Examples
 
-**URL** `http://tempurl.com/patient/search HTTP/1.1`
+**URL** POST `http://tempurl.com/patient/search HTTP/1.1`
 
 **Request**
 ```json

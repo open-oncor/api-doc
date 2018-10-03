@@ -1,8 +1,6 @@
 [Работа с пациентами](../index.md)
 =====================================
 
-<a name="add"/>
-
 ### ![POST](../../../img/post.png) /patient/add
 * **Request:** [Patient](../../../types.md#Patient) **patient** <first_name, last_name, middle_name, birth_day>
 * **Response ```200```:** [[Patient](../../../types.md#Patient)]

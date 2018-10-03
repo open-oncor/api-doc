@@ -2,47 +2,41 @@
 `Поиск, получение, добавление, обновление пациентов`
 
 * [/patient/get](methods/patient/index.md#get)
-* [/patient/add](methods/patient/add/index.md#add)
-* [/patient/search](methods/patient/search/index.md)
+* [/patient/add](methods/patient/add/index.md) ![done](img/done.png)
+* [/patient/search](methods/patient/search/index.md) ![done](img/done.png)
 * [/patient/forceAdd](methods/patient/index.md#forceAdd)
 * [/patient/update](methods/patient/index.md#update)
+* [/patient/record/add](methods/patient/index.md#add)
+* [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png)
+* [/patient/RcAppointment/add](methods/patient/index.md#RcAppointmentAdd)
+* [/patient/getList](methods/patient/index.md#getList)
+* [/patient/RcReferralRc/getList](methods/patient/index.md#RcRefferralRcGetList)
 
 ---
 
-### [Работа со справочниками](methods/directory/directory.md)
+### [Работа со справочниками](methods/directory/index.md)
 
 `Получение записей справочников`
 
-* [/directory/get/Gender](methods/directory/directory.md#Gender)
-* [/directory/get/BloodType](methods/directory/directory.md#BloodType)
-* [/directory/get/DiagnosticsType](methods/directory/directory.md#DiagnosticsType)
-* [/directory/get/AddressType](methods/directory/directory.md#AddressType)
-* [/directory/get/MedOrgType](methods/directory/directory.md#MedOrgType)
-* [/directory/get/DzStage](methods/directory/directory.md#DzStage)
-* [/directory/get/TnmT](methods/directory/directory.md#TnmT)
-* [/directory/get/TnmN](methods/directory/directory.md#TnmN)
-* [/directory/get/TnmM](methods/directory/directory.md#TnmM)
-* [/directory/get/TnmG](methods/directory/directory.md#TnmG)
-* [/directory/get/DrDzHD](methods/directory/directory.md#DrDzHD)
-* [/directory/get/DrNK0465](methods/directory/directory.md#DrNK0465)
-* [/directory/get/DrNK0439](methods/directory/directory.md#DrNK0439)
-* [/directory/get/TherapyCond](methods/directory/directory.md#TherapyCond)
-* [/directory/get/LocMetType](methods/directory/directory.md#LocMetType)
-* [/directory/get/Srv59oper](methods/directory/directory.md#Srv59oper)
-* [/medOrg/getList](methods/directory/directory.md#MedOrg)
-* [/medTerr/getList](methods/directory/directory.md#MedTerr)
-* [/user/getList](methods/directory/directory.md#User)
-
----
-
-### [Работа с записями пациентов](methods/patientRecord/patientRecord.md)
-
-`Добавление, получение записей пациента`
-
-* [/patient/record/add](methods/patientRecord/patientRecord.md#add)
-* [/patient/RcAppointment/add](methods/patientRecord/patientRecord.md#RcAppointmentAdd)
-* [/patient/getList](methods/patientRecord/patientRecord.md#getList)
-* [/patient/RcReferralRc/getList](methods/patientRecord/patientRecord.md#RcRefferralRcGetList)
+* [/directory/get/DrPrsG](methods/directory/get/DrPrsG/index.md) ![done](img/done.png)
+* [/directory/get/BloodType](methods/directory/get/BloodType/index.md) ![done](img/done.png)
+* [/directory/get/DiagnosticsType](methods/directory/get/DiagnosticsType/index.md)
+* [/directory/get/AddressType](methods/directory/get/AddressType/index.md)  ![done](img/done.png)
+* [/directory/get/MedOrgType](methods/directory/get/MedOrgType/index.md)
+* [/directory/get/DzStage](methods/directory/get/DzStage/index.md)
+* [/directory/get/TnmT](methods/directory/get/TnmT/index.md)
+* [/directory/get/TnmN](methods/directory/get/TnmN/index.md)
+* [/directory/get/TnmM](methods/directory/get/TnmM/index.md)
+* [/directory/get/TnmG](methods/directory/get/TnmG/index.md)
+* [/directory/get/DrDzHD](methods/directory/get/DrDzHD/index.md)
+* [/directory/get/DrNK0465](methods/directory/get/DrNK0465/index.md) ![done](img/done.png)
+* [/directory/get/DrNK0439](methods/directory/get/DrNK0439/index.md) ![done](img/done.png)
+* [/directory/get/TherapyCond](methods/directory/get/TherapyCond/index.md) ![done](img/done.png)
+* [/directory/get/LocMetType](methods/directory/get/LocMetType/index.md) ![done](img/done.png)
+* [/directory/get/Srv59oper](methods/directory/get/Srv59oper/index.md) ![done](img/done.png)
+* [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png)
+* [/medTerr/getList](methods/directory/medTerr/getList/index.md)
+* [/user/getList](methods/directory/user/getList/index.md) ![done](img/done.png)
 
 ---
 
@@ -50,9 +44,9 @@
 
 `Получение, создание вложений`
 
-* [/attachment/get](methods/attachment/get/index.md#get)
+* [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png)
 * [/attachment/file](methods/attachment/index.md#file)
-* [/attachment/create](methods/attachment/create/index.md#create)
+* [/attachment/create](methods/attachment/create/index.md) ![done](img/done.png)
 * [/attachment/query](methods/attachment/index.md#query)
 
 ---
@@ -63,8 +57,8 @@
 
 * [/ehr/getList](methods/ehr/index.md#getList)
 * [/ehr/getActive](methods/ehr/index.md#getActive)
-* [/ehr/add](methods/ehr/add/index.md#add)
-* [/ehr/record/add](methods/ehr/record/add/index.md#add)
+* [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png)
+* [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png)
 
 ---
 
@@ -77,12 +71,12 @@
 
 ---
 
-### [Работа с записями](methods/rc/rc.md)
+### [Работа с записями](methods/rc/index.md)
 
 `Получение записей`
 
-* [/rc/get](methods/rc/rc.md#get)
-* [/rc/getList](methods/rc/rc.md#getList)
+* [/rc/get](methods/rc/get/index.md) ![done](img/done.png)
+* [/rc/getList](methods/rc/getList/index.md)
 
 ---
 
@@ -90,7 +84,7 @@
 
 `Поиск записей`
 
-* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md)
-* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md)
-* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md)
-* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md)
+* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md) ![done](img/done.png)
+* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md) ![done](img/done.png)
+* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md) ![done](img/done.png)
+* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png)

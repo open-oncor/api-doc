@@ -5,7 +5,7 @@
 
 ### Examples
 
-**URI** `http://tempurl.com/attachment/create HTTP/1.1`
+**URI** POST `http://tempurl.com/attachment/create HTTP/1.1`
 
 **Request**
 ```json
