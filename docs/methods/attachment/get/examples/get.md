@@ -1,28 +1,29 @@
-[Работа с вложениями](../../attachment.md)
+[Работа с вложениями](../../index.md)
 =====================================================
 
-### ![GET](../../../../img/get.png) /attachment/get`?id={id}`
+### ![GET](../../../../img/get.png) [/attachment/get`?id={id}`](../index.md)
 
 ### Examples
 
-#### URI `http://.../attachment/get?id=1:55`
+**URI** `http://tempurl.com/attachment/get?id=1586:412 HTTP/1.1`
 
-#### Response
-  ```json
-  {
-    "result": [
-      {
-        "meta": {
-          "id": "",
-          "digest": "",
-          "name": "",
-          "type": "",
-          "size": "",
-          "created": ""
-        },
-        "data": ""
-      }
+**Response**
+```json
+{
+    "result":[
+        {
+            "meta":{
+                "id":"#1586:412",
+                "digest":"6e4a3290ff2ab22fed4e747c95678bbf534b41d0",
+                "name":"проверка.txt",
+                "type":"text/plain",
+                "size":27,
+                "created":"2018-10-02 18:53:06"
+            },
+            "data":"0KLQtdC60YHRgtC+0LLRi9C5INGE0LDQudC7"
+        }
     ]
-  }
-  ```
+}
+```
+
 

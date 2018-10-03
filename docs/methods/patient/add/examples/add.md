@@ -1,56 +1,26 @@
-[Работа с пациентами](../../patient.md)
-=====================================================
+[Работа с пациентами](../../index.md)
+=====================================
 
-### ![POST](../../../../img/post.png) /patient/add
+### ![POST](../../../../img/post.png) [/patient/add](../index.md)
 
 ### Examples
 
-**URI** `http://.../patient/add`
+**URI** `http://tempurl.com/patient/add HTTP/1.1`
 
 **Request**
 
 ```json
 {
-  "patient": {
-    "first_name": "Андрей",
-    "middle_name": "Вадимович",
-    "last_name": "Макаревич",
-    "birth_day": "1953-12-11",
-    "gender": {
-      "id": "1",
-      "caption": "М"
-    },
-    "code": "",
-    "blood_type": {
-      "id": "I_N",
-      "caption": "0(I)Rh-"
-    },
-    "social_status": {
-      "id": "6"
-    },
-    "company_name": "певец песен ртом",
-    "insurance": {
-      "insurance_number": "666666"
-    },
-    "address": {
-      "town": "Мытищи",
-      "street": "Победы",
-      "house": "190",
-      "flat": "4",
-      "postal_code": "",
-      "fias": "",
-      "kladr": "",
-      "okato": "",
-      "med_terr_unq": "",
-      "type": {
-        "id": "HP",
-        "caption": "Адрес регистрации"
-      },
-      "living_area_type": {
-        "id": "0"
-      }
+    "patient":{
+        "first_name":"Иван",
+        "middle_name":"Иванович",
+        "last_name":"Иванов",
+        "birth_day":"1901-01-01",
+        "gender":{
+            "id":"1"
+        },
+        "phones":"+7 911"
     }
-  }
 }
 ```
 
@@ -58,50 +28,25 @@
 
 ```json
 {
-  "result": [
-    {
-      "id": "#110:78959",
-      "first_name": "Андрей",
-      "middle_name": "Вадимович",
-      "last_name": "Макаревич",
-      "birth_day": "1953-12-11",
-      "gender": {
-        "id": "2",
-        "caption": "Ж"
-      },
-      "code": "",
-      "blood_type": {
-        "id": "I_N",
-        "caption": "0(I)Rh-"
-      },
-      "company_name": "певец песен ртом",
-      "snils": "",
-      "insurance": {
-        "insurance_number": "6666666"
-      },
-      "address": {
-        "address": "",
-        "federal_code": "",
-        "region_code": "",
-        "town": "Мытищи",
-        "street": "Победы",
-        "house": "12",
-        "flat": "3",
-        "postal_code": "",
-        "fias": "",
-        "kladr": "",
-        "okato": "",
-        "med_terr_unq": "",
-        "type": {
-          "id": "HP",
-          "caption": "Адрес регистрации"
-        },
-        "living_area_type": {
-          "id": "1"
+    "result":[
+        {
+            "id":"#65:33650",
+            "first_name":"Иван",
+            "middle_name":"Иванович",
+            "last_name":"Иванов",
+            "birth_day":"1901-01-01",
+            "gender":{
+                "orid":"#721:0",
+                "id":"1",
+                "caption":"М"
+            },
+            "code":"ИИИ010101М",
+            "ehr_count":0,
+            "company_name":"",
+            "snils":"",
+            "phones":"+7 911"
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 
@@ -109,10 +54,22 @@
 
 ```json
 {
-  "error": {
-    "name": "com.siams.med.api.PatientAlreadyExistsException",
-    "message": "Too many patients: 1",
-    "uuid": "b145acc8-3fd1-4cb0-bdba-f7532e047cb5"
-  }
+    "error":{
+        "name":"com.siams.med.api.PatientAlreadyExistsException",
+        "message":"Too many patients: 1",
+        "uuid":"bdc58e0b-a442-4fa6-a5e6-fdbebc9d8ebb"
+    }
+}
+```
+
+**Response `422`**
+
+```json
+{
+    "error":{
+        "name":"com.siams.med.api.InvalidArgumentsException",
+        "message":"Invalid patient name",
+        "uuid":"16bfee9a-2616-4a58-85c2-9ba4ac782cf4"
+    }
 }
 ```

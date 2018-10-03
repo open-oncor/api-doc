@@ -1,9 +1,7 @@
 Работа с вложениями
 ===================
 
-<a name="get"></a>
-
-### ![GET](../../img/get.png) /attachment/get`?id={id}`
+### ![GET](../../img/get.png) [/attachment/get`?id={id}`](get/index.md)
 * **URL parameter:** [id](../../types.md#attachmentmeta)
 * **Response:** [[Attachment](../../types.md#attachment)]
 
@@ -12,8 +10,6 @@
 [Examples](get/examples/get.md)
 
 ---
-
-<a name="file"></a>
 
 ### ![GET](../../img/get.png) /attachment/file`?id={id}`
 * **URL parameter:** [id](../../types.md#attachmentmeta)
@@ -25,13 +21,15 @@
 
 <a name="create"></a>
 
-### ![POST](../../img/post.png) /attachment/create
-* **Request:** [Attachment](../../types.md#attachment)
+### ![POST](../../img/post.png) [/attachment/create](create/index.md)
+* **Request:** [Attachment](../../types.md#attachment) **attachment**
 * **Response:** [[Attachment](../../types.md#attachment)]
 
 Создаёт новое вложение. В запросе передаётся [Attachment](../../types.md#attachment). 
 
 В ответе передаётся [Attachment](../../types.md#attachment).
+
+[Examples](create/examples/create.md)
 
 ---
 

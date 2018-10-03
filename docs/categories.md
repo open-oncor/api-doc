@@ -1,14 +1,13 @@
-### [Работа с пациентами](methods/patient/patient.md)
+### [Работа с пациентами](methods/patient/index.md)
 `Поиск, получение, добавление, обновление пациентов`
 
-* [/patient/get](methods/patient/patient.md#get)
-* [/patient/add](methods/patient/patient.md#add)
-* [/patient/search](methods/patient/patient.md#search)
-* [/patient/forceAdd](methods/patient/patient.md#forceAdd)
-* [/patient/update](methods/patient/patient.md#update)
+* [/patient/get](methods/patient/index.md#get)
+* [/patient/add](methods/patient/add/index.md#add)
+* [/patient/search](methods/patient/search/index.md)
+* [/patient/forceAdd](methods/patient/index.md#forceAdd)
+* [/patient/update](methods/patient/index.md#update)
 
 ---
-
 
 ### [Работа со справочниками](methods/directory/directory.md)
 
@@ -47,26 +46,25 @@
 
 ---
 
-### [Работа с вложениями](methods/attachment/attachment.md)
+### [Работа с вложениями](methods/attachment/index.md)
 
 `Получение, создание вложений`
 
-* [/attachment/get](methods/attachment/attachment.md#get)
-* [/attachment/file](methods/attachment/attachment.md#file)
-* [/attachment/create](methods/attachment/attachment.md#create)
-* [/attachment/query](methods/attachment/attachment.md#query)
+* [/attachment/get](methods/attachment/get/index.md#get)
+* [/attachment/file](methods/attachment/index.md#file)
+* [/attachment/create](methods/attachment/create/index.md#create)
+* [/attachment/query](methods/attachment/index.md#query)
 
 ---
 
-### [Работа с ЭМЗ](methods/ehr/ehr.md)
+### [Работа с ЭМЗ](methods/ehr/index.md)
 
 `Получение, добавление ЭМЗ`
 
-* [/ehr/getList](methods/ehr/ehr.md#getList)
-* [/ehr/getActive](methods/ehr/ehr.md#getActive)
-* [/ehr/add](methods/ehr/ehr.md#add)
-</p>
-</details>
+* [/ehr/getList](methods/ehr/index.md#getList)
+* [/ehr/getActive](methods/ehr/index.md#getActive)
+* [/ehr/add](methods/ehr/add/index.md#add)
+* [/ehr/record/add](methods/ehr/record/add/index.md#add)
 
 ---
 
@@ -88,11 +86,11 @@
 
 ---
 
-### [Работа с поиском](methods/search/search.md)
+### [Работа с поиском](methods/search/index.md)
 
 `Поиск записей`
 
-* [/search/start/RcReferralQuery](methods/search/search.md#RcReferralQuery)
-* [/search/start/RcAppointmentQuery](methods/search/search.md#RcAppointmentQuery)
-* [/search/start/RcDocQuery](methods/search/search.md#RcDocQuery)
-* [/search/start/RecordsPage](methods/search/search.md#RecordsPage)
+* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md)
+* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md)
+* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md)
+* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md)

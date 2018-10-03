@@ -13,32 +13,45 @@
 
 ---
 
-<a name="add"/>
-
-### ![POST](../../img/post.png) /patient/add
-* **Request:** [Patient](../../types.md#Patient)
+### ![POST](../../img/post.png) [/patient/add](add/index.md)
+* **Request:** [Patient](../../types.md#Patient) **patient** <first_name, last_name, middle_name, birth_day>
 * **Response ```200```:** [[Patient](../../types.md#Patient)]
 * **Response ```422```:** [ErrorResult](../../types.md#errorresult)
 
 Добавляет пациента с проверкой дублей. В случае наличия пациента с такими данными возвращается ошибка.
 
-В запросе передаётся объект - [Patient](../../types.md#Patient). 
-В случае успешного добавления, в ответе будет массив с единственным объектом - [Patient](../../types.md#Patient) с заполненым полем [id](../../types.md#Patient).
+В запросе передаётся объект:
 
-[Examples](add/examples/add.md)
+[Patient](../../types.md#Patient)
+* required first_name
+* required last_name
+* required middle_name
+* required birth_day
+
+В случае успешного добавления, в ответе будет массив с единственным объектом - 
+[Patient](../../types.md#Patient) с заполненым полем [id](../../types.md#Patient).
+
+**[Examples](add/examples/add.md)**
 
 ---
 
-<a name="search"/>
-
-### ![POST](../../img/post.png) /patient/search
-* **Request:** [PatientQuery](../../types.md#PatientQuery)
+### ![POST](../../img/post.png) [/patient/search](search/index.md)
+* **Request:** [PatientQuery](../../types.md#PatientQuery) **patient_query** <first_name, last_name, middle_name, birth_day>
 * **Response:** [[Patient](../../types.md#Patient)]
 
 Возвращает список пациентов в соответствии с запросом.
 
-В запросе передаётся объект - [PatientQuery](../../types.md#PatientQuery). 
+В запросе передаётся объект:
+
+[PatientQuery](../../types.md#PatientQuery)
+* required first_name
+* required last_name
+* required middle_name
+* required birth_day
+
 В ответе - массив объектов [Patient](../../types.md#Patient), пустой, если не найдено ни одного пациента.
+
+**[Examples](search/examples/search.md)**
 
 ---
 
