@@ -1,5 +1,5 @@
 ### [Работа с пациентами](methods/patient/index.md)
-`Поиск, получение, добавление, обновление пациентов`
+`Модуль работы с пациентом обеспечивает прием, хранение, изменение и выдачу по поисковым запросам данных о лицах (пациентах), обращавшихся в медицинские организации региона за медицинской помощью по профилю "онкология"`
 
 * [/patient/get](methods/patient/index.md#get)
 * [/patient/add](methods/patient/add/index.md) ![done](img/done.png)
@@ -16,7 +16,7 @@
 
 ### [Работа со справочниками](methods/directory/index.md)
 
-`Получение записей справочников`
+`Модуль работы со справочниками обеспечивает хранение выдачу содержимого справочников комплекса`
 
 * [/directory/get/DrPrsG](methods/directory/get/DrPrsG/index.md) ![done](img/done.png)
 * [/directory/get/BloodType](methods/directory/get/BloodType/index.md) ![done](img/done.png)
@@ -42,7 +42,7 @@
 
 ### [Работа с вложениями](methods/attachment/index.md)
 
-`Получение, создание вложений`
+`Модуль работы с вложенями обеспечивает прием, хранение, изменение и выдачу выложений, присоединенных к другим записям о пациенте`
 
 * [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png)
 * [/attachment/file](methods/attachment/index.md#file)
