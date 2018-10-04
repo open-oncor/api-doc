@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/DrNK0465](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET `http://tempurl.com/directory/get/DrNK0465 HTTP/1.1`
+**Request:** GET `http://tempurl.com/directory/get/DrNK0465 HTTP/1.1`
 
 **Response**
 

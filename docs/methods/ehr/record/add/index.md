@@ -1,22 +1,25 @@
 [Работа с ЭМЗ](../../index.md)
 =====================================
 
-<a name="add"/>
-
 ### ![POST](../../../../img/post.png) /ehr/record/add
-* **Request:** [Rc](../../../../types.md#rc) **record** <patient_id, ehr_id, rc>
-* **Response:** [[Rc](../../../../types.md#rc)]
+* **Request:** [Rc](../../../../types/types.md#rc) **record** <patient_id, ehr_id, rc>
+* **Response:** [[Rc](../../../../types/types.md#rc)]
 
 Добавляет запись в ЭМЗ.
 
 В запросе передаётся:
 
-[Rc](../../../../types.md#rc):
+[Rc](../../../../types/types.md#rc):
 * required patient_id
 * required ehr_id
-* one of ([RcDoc](../../../../types.md#rcrcdoc), [RcReferral](../../../../types.md),
- [RcAppointment](../../../../types.md#rcrcappointment), [RcOper](../../../../types.md#rcrcoper))
+* one of ([RcDoc](../../../../types/types.md#rcrcdoc), [RcReferral](../../../../types/types.md#rcrcreferral), 
+[RcOper](../../../../types/types.md#rcrcoper), [RcHorm](../../../../types/types.md#rcrchorm), 
+[RcChem](../../../../types/types.md#rcrcchem), [RcRay](../../../../types/types.md#rcrcray)
 
-В ответе передаётся [Rc](../../../../types.md#rc).
+В ответе передаётся [Rc](../../../../types/types.md#rc).
 
-**[Examples](examples/add.md)**
+* **[Пример добавления записи RcChem](examples/RcChem/add.md)**
+* **[Пример добавления записи RcDz](examples/RcDz/add.md)**
+* **[Пример добавления записи RcHorm](examples/RcHorm/add.md)**
+* **[Пример добавления записи RcOper](examples/RcOper/add.md)**
+* **[Пример добавления записи RcRay](examples/RcRay/add.md)**

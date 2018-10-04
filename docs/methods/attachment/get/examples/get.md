@@ -3,11 +3,11 @@
 
 ### ![GET](../../../../img/get.png) [/attachment/get`?id={id}`](../index.md)
 
-### Examples
-
-**URI** GET `http://tempurl.com/attachment/get?id=1586:412 HTTP/1.1`
+### Примеры
 
 **Response**
+
+GET `http://tempurl.com/attachment/get?id=1586:412 HTTP/1.1`
 ```json
 {
     "result":[

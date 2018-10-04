@@ -1,16 +1,16 @@
 ### [Работа с пациентами](methods/patient/index.md)
 `Модуль работы с пациентом обеспечивает прием, хранение, изменение и выдачу по поисковым запросам данных о лицах (пациентах), обращавшихся в медицинские организации региона за медицинской помощью по профилю "онкология"`
 
-* [/patient/get](methods/patient/index.md#get)
+* [/patient/get](methods/patient/get/index.md) ![done](img/done.png)
 * [/patient/add](methods/patient/add/index.md) ![done](img/done.png)
 * [/patient/search](methods/patient/search/index.md) ![done](img/done.png)
-* [/patient/forceAdd](methods/patient/index.md#forceAdd)
-* [/patient/update](methods/patient/index.md#update)
+* [/patient/forceAdd](methods/patient/forceAdd/index.md) ![done](img/done.png)
+* [/patient/update](methods/patient/update/index.md) ![done](img/done.png)
 * [/patient/record/add](methods/patient/index.md#add)
 * [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png)
-* [/patient/RcAppointment/add](methods/patient/index.md#RcAppointmentAdd)
+* [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png)
 * [/patient/getList](methods/patient/index.md#getList)
-* [/patient/RcReferralRc/getList](methods/patient/index.md#RcRefferralRcGetList)
+* [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png)
 
 ---
 
@@ -44,8 +44,8 @@
 
 `Получение, добавление ЭМЗ`
 
-* [/ehr/getList](methods/ehr/index.md#getList)
-* [/ehr/getActive](methods/ehr/index.md#getActive)
+* [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png)
+* [/ehr/getActive](methods/ehr/getActive/index.md) ![done](img/done.png)
 * [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png)
 * [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png)
 
@@ -56,7 +56,7 @@
 `Получение записей`
 
 * [/rc/get](methods/rc/get/index.md) ![done](img/done.png)
-* [/rc/getList](methods/rc/getList/index.md)
+* [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png)
 
 ---
 
@@ -67,16 +67,16 @@
 * [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png)
 * [/attachment/file](methods/attachment/index.md#file)
 * [/attachment/create](methods/attachment/create/index.md) ![done](img/done.png)
-* [/attachment/query](methods/attachment/index.md#query)
+* [/attachment/query](methods/attachment/query/index.md) ![done](img/done.png)
 
 ---
 
-### [Работа с метаданными](methods/meta/meta.md)
+### [Работа с метаданными](methods/meta/index.md)
 
 `Получение метаданных`
 
-* [/meta/query](methods/meta/meta.md#query)
-* [/meta/update](methods/meta/meta.md#update)
+* [/meta/query](methods/meta/query/index.md) ![done](img/done.png)
+* [/meta/update](methods/meta/update/index.md) ![done](img/done.png)
 
 ---
 

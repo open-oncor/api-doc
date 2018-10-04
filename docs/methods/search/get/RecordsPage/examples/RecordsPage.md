@@ -3,12 +3,11 @@
 
 ### ![POST](../../../../../img/post.png) [/search/get/RecordsPage](../index.md)
 
-### Examples
-
-**URI** POST `http://tempurl.com/search/get/RecordsPage HTTP/1.1`
+### Примеры
 
 **Request**
 
+POST `http://tempurl.com/search/get/RecordsPage HTTP/1.1`
 ```json
 {
     "page":{

@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/DzStage](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET ``
+**Request** \n GET ``
 
 **Response**
 ```json

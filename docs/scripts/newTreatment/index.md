@@ -5,7 +5,7 @@
 1. [/patient/add](../../methods/patient/add/examples/add.md) `добавление нового пациента в ОНКОР` или
 [/patient/search](../../methods/patient/search/examples/search.md) `поиск пациента`
 2. [/ehr/add](../../methods/ehr/add/examples/add.md) `добавление ЭМЗ пациенту`
-3. [/ehr/record/add](../../methods/ehr/record/add/examples/add.md) `добавление записи в ЭМЗ`
+3. [/ehr/record/add](../../methods/ehr/record/add/examples/RcDz/add.md) `добавление записи в ЭМЗ`
 
 **Java example**
 ```java

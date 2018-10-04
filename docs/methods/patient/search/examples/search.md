@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/patient/search](../../search/index.md)
 
-### Examples
-
-**URL** POST `http://tempurl.com/patient/search HTTP/1.1`
+### Примеры
 
 **Request**
+
+POST `http://tempurl.com/patient/search HTTP/1.1`
 ```json
 {
     "patient_query":{

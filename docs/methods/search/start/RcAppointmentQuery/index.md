@@ -2,11 +2,11 @@
 ==================================
 
 ### ![POST](../../../../img/post.png) /search/start/RcAppointmentQuery
-* **Request:** [RcAppointmentQuery](../../../../types.md#rcappointmentquery) **query**
-* **Response:** [[SearchJob](../../../../types.md#searchjob)]
+* **Request:** [RcAppointmentQuery](../../../../types/types.md#rcappointmentquery) **query**
+* **Response:** [[SearchJob](../../../../types/types.md#searchjob)]
 
-В запросе передаётся [RcAppointmentQuery](../../../../types.md#rcappointmentquery). 
+В запросе передаётся [RcAppointmentQuery](../../../../types/types.md#rcappointmentquery). 
 
-В ответе передаётся [SearchJob](../../../../types.md#searchjob)
+В ответе передаётся [SearchJob](../../../../types/types.md#searchjob)
 
 **[Examples](examples/RcAppointmentQuery.md)**

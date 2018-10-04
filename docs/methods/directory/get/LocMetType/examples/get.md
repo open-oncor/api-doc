@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/LocMetType](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET `http://tempurl.com/directory/get/LocMetType HTTP/1.1`
+**Request** \n GET `http://tempurl.com/directory/get/LocMetType HTTP/1.1`
 
 **Response**
 ```json

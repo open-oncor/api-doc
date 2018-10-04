@@ -2,7 +2,9 @@
 
 ## Регистрация нового пациента в ОНКОР
 
-1. [/patient/add](../../methods/patient/add/examples/add.md) `добавление нового пациента в ОНКОР`
+1. [/patient/search](../../methods/patient/search/examples/search.md) `поиск пациента`, если пациент не найден, 
+то см. 2 шаг
+2. [/patient/add](../../methods/patient/add/examples/add.md) `добавление нового пациента в ОНКОР`
 
 ```java
 class AddPatient {

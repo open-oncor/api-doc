@@ -2,7 +2,7 @@
 =========================================
 
 ### ![GET](../../../../img/get.png) /directory/get/BloodType
-* **Response: [[BloodType](../../../../types.md#bloodtype)]**
+* **Response: [[BloodType](../../../../types/types.md#bloodtype)]**
 
 В ответе передаётся массив записей из справочника
 

@@ -2,11 +2,11 @@
 ==================================
 
 ### ![POST](../../../../img/post.png) /search/start/RcReferralQuery
-* **Request:** [RcReferralQuery](../../../../types.md#rcreferralquery) **query**
-* **Response:** [[SearchJob](../../../../types.md#searchjob)]
+* **Request:** [RcReferralQuery](../../../../types/types.md#rcreferralquery) **query**
+* **Response:** [[SearchJob](../../../../types/types.md#searchjob)]
 
-В запросе передаётся [RcReferralQuery](../../../../types.md#rcreferralquery).
+В запросе передаётся [RcReferralQuery](../../../../types/types.md#rcreferralquery).
 
-В ответе передаётся [SearchJob](../../../../types.md#searchjob)
+В ответе передаётся [SearchJob](../../../../types/types.md#searchjob)
 
 **[Examples](examples/RcReferralQuery.md)**

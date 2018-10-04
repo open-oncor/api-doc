@@ -3,16 +3,16 @@
 =====================================
 
 ### ![POST](../../../../img/post.png) /search/get/RecordsPage
-* **Request:** [Page](../../../../types.md#page) **page** <job>
-* **Response:** [[RecordsPage](../../../../types.md#recordspage)]
+* **Request:** [Page](../../../../types/types.md#page) **page** <job>
+* **Response:** [[RecordsPage](../../../../types/types.md#recordspage)]
 
 Постранично ищет записи. 
 
 В запрос передаётся 
 
-[Page](../../../../types.md#page)
-* required [job](../../../../types.md#searchjob)
+[Page](../../../../types/types.md#page)
+* required [job](../../../../types/types.md#searchjob)
 
-В ответ переаётся [RecordsPage](../../../../types.md#recordspage).
+В ответ переаётся [RecordsPage](../../../../types/types.md#recordspage).
 
 **[Examples](examples/RecordsPage.md)**

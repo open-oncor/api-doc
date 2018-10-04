@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/medTerr/getList](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET ``
+**Request:** GET ``
 
 **Response**
 ```json

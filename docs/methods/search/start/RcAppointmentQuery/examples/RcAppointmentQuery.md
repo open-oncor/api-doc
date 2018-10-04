@@ -3,12 +3,11 @@
 
 ### ![POST](../../../../../img/post.png) [/search/start/RcAppointmentQuery](../index.md)
 
-### Examples
-
-**URI** POST `http://tempurl.com/search/start/RcAppointmentQuery HTTP/1.1`
+### Примеры
 
 **Request**
 
+POST `http://tempurl.com/search/start/RcAppointmentQuery HTTP/1.1`
 ```json
 {
     "query":{

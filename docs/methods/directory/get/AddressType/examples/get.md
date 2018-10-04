@@ -3,11 +3,11 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/Gender](../index.md)
 
-### Examples
-
-**URI** GET `GET http://tempurl.com/directory/get/AddressType HTTP/1.1`
+### Примеры
 
 **Response**
+
+GET `http://tempurl.com/directory/get/AddressType HTTP/1.1`
 ```json
 {
     "result":[

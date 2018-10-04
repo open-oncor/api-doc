@@ -1,11 +1,11 @@
-[Работа с пациентами](../../index.md)
+[Работа с пациентами](../../../index.md)
 ==================================
 
 ### ![GET](../../../../../img/get.png) [/patient/record/getList`?patient_id={patient_id}`](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET `http://tempurl/patient/record/getList?patient_id=65:33650 HTTP/1.1`
+**Request:** GET `http://tempurl/patient/record/getList?patient_id=65:33650 HTTP/1.1`
 
 **Response**
 

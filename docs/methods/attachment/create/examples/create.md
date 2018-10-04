@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/get.png) [/attachment/create](../index.md)
 
-### Examples
-
-**URI** POST `http://tempurl.com/attachment/create HTTP/1.1`
+### Примеры
 
 **Request**
+
+POST `http://tempurl.com/attachment/create HTTP/1.1`
 ```json
 {
     "attachment":{

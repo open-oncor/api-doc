@@ -4,11 +4,11 @@
 <a name="get"/>
 
 ### ![GET](../../../img/get.png) /attachment/get`?id={id}`
-* **URL parameter:** [id](../../../types.md#attachmentmeta)
-* **Response:** [[Attachment](../../../types.md#attachment)]
+* **URL parameter:** [id](../../../types/types.md#attachmentmeta)
+* **Response:** [[Attachment](../../../types/types.md#attachment)]
 
-Возвращает объект типа [Attachment](../../../types.md#attachment) с идентификатором [id](../../../types.md#attachmentmeta)
+Возвращает объект типа [Attachment](../../../types/types.md#attachment) с идентификатором [id](../../../types/types.md#attachmentmeta)
 
-Поле [Attachment.data](../../../types.md#attachment) представляет собой [ByteString](../../../types.md#scalar-value-types)
+Поле [Attachment.data](../../../types/types.md#attachment) представляет собой [ByteString](../../../types/types.md#scalar-value-types)
 
 [Examples](examples/get.md)

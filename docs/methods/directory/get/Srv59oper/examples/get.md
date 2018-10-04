@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/Srv59oper](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET `http://tempurl.com/directory/get/Srv59Oper HTTP/1.1`
+**Request** \n GET `http://tempurl.com/directory/get/Srv59Oper HTTP/1.1`
 
 **Response**
 

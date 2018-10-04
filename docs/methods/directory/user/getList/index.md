@@ -2,8 +2,8 @@
 =========================================
 
 ### ![GET](../../../../img/get.png) /user/getList
-* **Response:** [[User](../../../../types.md#user)]
+* **Response:** [[User](../../../../types/types.md#user)]
 
-Возвращает список пользователей [{User}](../../../../types.md#user).
+Возвращает список пользователей [{User}](../../../../types/types.md#user).
 
 **[Examples](examples/getList.md)**

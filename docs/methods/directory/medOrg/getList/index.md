@@ -2,9 +2,9 @@
 =========================================
 
 ### ![GET](../../../../img/get.png) /medOrg/getList
-* **Response:** [[MedOrg](../../../../types.md#medorg)]
+* **Response:** [[MedOrg](../../../../types/types.md#medorg)]
 
-Возвращает список медицинских организаций [{MedOrg}](../../../../types.md#medorg) из системы oncor отсутствующих в реестре 
+Возвращает список медицинских организаций [{MedOrg}](../../../../types/types.md#medorg) из системы oncor отсутствующих в реестре 
 “Регистр медицинских организаций Российской Федерации".
 
 **[Examples](examples/getList.md)**

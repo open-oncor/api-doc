@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/patient/add](../index.md)
 
-### Examples
-
-**URI** POST `http://tempurl.com/patient/add HTTP/1.1`
+### Примеры
 
 **Request**
+
+POST `http://tempurl.com/patient/add HTTP/1.1`
 
 ```json
 {
@@ -47,18 +47,6 @@
             "phones":"+7 911"
         }
     ]
-}
-```
-
-**Response `422`**
-
-```json
-{
-    "error":{
-        "name":"com.siams.med.api.PatientAlreadyExistsException",
-        "message":"Too many patients: 1",
-        "uuid":"bdc58e0b-a442-4fa6-a5e6-fdbebc9d8ebb"
-    }
 }
 ```
 

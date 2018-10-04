@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/TherapyCond](../index.md)
 
-### Examples
+### Примеры
 
-**URI** GET `http://tempurl.com/directory/get/TherapyCond HTTP/1.1`
+**Request** \n GET `http://tempurl.com/directory/get/TherapyCond HTTP/1.1`
 
 **Response**
 

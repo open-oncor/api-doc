@@ -1,14 +1,13 @@
-[Работа с ЭМЗ](../../../index.md)
+[Работа с ЭМЗ](../../../../index.md)
 =================================
 
-### ![POST](../../../../../img/post.png) [/ehr/record/add](../index.md)
+### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
 
-### Examples
-
-**URI** POST `http://tempurl.com/ehr/record/add HTTP/1.1`
+### Пример добавления записи [RcDz](../../../../../../types/types.md#rcrcdz)
 
 **Request**
 
+POST `http://tempurl.com/ehr/record/add HTTP/1.1`
 ```json
 {
     "record":{

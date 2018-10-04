@@ -2,8 +2,8 @@
 =========================================
 
 ### ![GET](../../../../img/get.png) /directory/get/MedOrgType
-* **Response: [[MedOrgType](../../../../types.md#medorgtype)]**
+* **Response: [[MedOrgType](../../../../types/types.md#medorgtype)]**
 
-В ответе передаётся массив записей из справочника [MedOrgType](../../../../types.md#medorgtype).
+В ответе передаётся массив записей из справочника [MedOrgType](../../../../types/types.md#medorgtype).
 
 **[Examples](examples/get.md)**

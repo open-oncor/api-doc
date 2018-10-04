@@ -2,8 +2,8 @@
 =========================================
 
 ### ![GET](../../../../img/get.png) /directory/get/Gender
-* **Response: [[DrPrsG](../../../../types.md#drprsg)]**
+* **Response: [[DrPrsG](../../../../types/types.md#drprsg)]**
 
-В ответе передаётся массив записей из справочника [DrPrsG](../../../../types.md#drprsg).
+В ответе передаётся массив записей из справочника [DrPrsG](../../../../types/types.md#drprsg).
 
 **[Examples](examples/get.md)**

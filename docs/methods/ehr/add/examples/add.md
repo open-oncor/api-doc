@@ -3,12 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/ehr/add](../index.md)
 
-### Examples
-
-**URI** POST `http://tempurl.com/ehr/add HTTP/1.1`
+### Примеры
 
 **Request**
 
+POST `http://tempurl.com/ehr/add HTTP/1.1`
 ```json
 {
     "ehr":{
