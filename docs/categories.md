@@ -40,17 +40,6 @@
 
 ---
 
-### [Работа с вложениями](methods/attachment/index.md)
-
-`Модуль работы с вложенями обеспечивает прием, хранение, изменение и выдачу выложений, присоединенных к другим записям о пациенте`
-
-* [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png)
-* [/attachment/file](methods/attachment/index.md#file)
-* [/attachment/create](methods/attachment/create/index.md) ![done](img/done.png)
-* [/attachment/query](methods/attachment/index.md#query)
-
----
-
 ### [Работа с ЭМЗ](methods/ehr/index.md)
 
 `Получение, добавление ЭМЗ`
@@ -59,15 +48,6 @@
 * [/ehr/getActive](methods/ehr/index.md#getActive)
 * [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png)
 * [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png)
-
----
-
-### [Работа с метаданными](methods/meta/meta.md)
-
-`Получение метаданных`
-
-* [/meta/query](methods/meta/meta.md#query)
-* [/meta/update](methods/meta/meta.md#update)
 
 ---
 
@@ -80,7 +60,27 @@
 
 ---
 
-### [Работа с поиском](methods/search/index.md)
+### [Работа с вложениями](methods/attachment/index.md)
+
+`Модуль работы с вложенями обеспечивает прием, хранение, изменение и выдачу выложений, присоединенных к другим записям о пациенте`
+
+* [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png)
+* [/attachment/file](methods/attachment/index.md#file)
+* [/attachment/create](methods/attachment/create/index.md) ![done](img/done.png)
+* [/attachment/query](methods/attachment/index.md#query)
+
+---
+
+### [Работа с метаданными](methods/meta/meta.md)
+
+`Получение метаданных`
+
+* [/meta/query](methods/meta/meta.md#query)
+* [/meta/update](methods/meta/meta.md#update)
+
+---
+
+### [Поисковые функции](methods/search/index.md)
 
 `Поиск записей`
 
