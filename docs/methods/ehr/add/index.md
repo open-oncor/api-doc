@@ -18,4 +18,4 @@
 В случае успешного добавления, в ответе будет массив с единственным объектом - 
 [EHR](../../../types/types.md#ehr) с заполненым полем [id](../../../types/types.md#ehr).
 
-**[Examples](examples/add.md)**
+**[Примеры](examples/add.md)**

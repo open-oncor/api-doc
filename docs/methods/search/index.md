@@ -9,7 +9,7 @@
 
 В ответе передаётся [SearchJob](../../types/types.md#searchjob)
 
-**[Examples](start/RcReferralQuery/examples/RcReferralQuery.md)**
+**[Примеры](start/RcReferralQuery/examples/RcReferralQuery.md)**
 
 ---
 
@@ -21,7 +21,7 @@
 
 В ответе передаётся [SearchJob](../../types/types.md#searchjob)
 
-**[Examples](start/RcAppointmentQuery/examples/RcAppointmentQuery.md)**
+**[Примеры](start/RcAppointmentQuery/examples/RcAppointmentQuery.md)**
 
 ---
 
@@ -32,7 +32,7 @@
 В запросе передаётся [RcDocQuery](../../types/types.md#rcdocquery). 
 В ответе передаётся [SearchJob](../../types/types.md#searchjob)
 
-**[Examples](start/RcDocQuery/examples/RcDocQuery.md)**
+**[Примеры](start/RcDocQuery/examples/RcDocQuery.md)**
 
 ---
 
@@ -49,4 +49,4 @@
 
 В ответ переаётся [RecordsPage](../../types/types.md#recordspage).
 
-**[Examples](get/RecordsPage/examples/RecordsPage.md)**
+**[Примеры](get/RecordsPage/examples/RecordsPage.md)**

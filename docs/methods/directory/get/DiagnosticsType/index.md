@@ -6,4 +6,4 @@
 
 В ответе передаётся массив записей из справочника [DiagnosticsType](../../../../types/types.md#diagnosticstype).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**

@@ -50,3 +50,5 @@ GET `http://tempurl.com/directory/get/AddressType HTTP/1.1`
     ]
 }
 ```
+
+**[Пример кода](getCode.md)**

@@ -17,4 +17,5 @@
 
 В ответе - массив объектов [Patient](../../../types/types.md#Patient), пустой, если не найдено ни одного пациента.
 
-**[Examples](examples/search.md)**
+**[Примеры](examples/search.md)**
+**[Примеры](examples/searchCode.md)**

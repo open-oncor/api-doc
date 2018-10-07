@@ -6,4 +6,4 @@
 
 Обновляет метаданные [Meta.proto](../../../types/types.md#metaproto)
 
-**[Examples](examples/update.md)**
+**[Примеры](examples/update.md)**

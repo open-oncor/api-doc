@@ -7,7 +7,7 @@
 
 Возвращает объект типа [Rc](../../types/types.md#rc) с идентификатором [id](../../types/types.md#rc).
 
-**[Examples](get/examples/get.md)**
+**[Примеры](get/examples/get.md)**
 
 ---
 
@@ -17,4 +17,4 @@
 
 Возвращает список записей [{Rc}](../../types/types.md#rc) для указанной ЭМЗ c идентификатором [ehr_id](../../types/types.md#rc)
 
-**[Examples](getList/examples/getList.md)**
+**[Примеры](getList/examples/getList.md)**

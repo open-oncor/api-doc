@@ -5,7 +5,7 @@
 
 ### Примеры
 
-**Request** \n GET `http://tempurl.com/directory/get/LocMetType HTTP/1.1`
+**Request** GET `http://tempurl.com/directory/get/LocMetType HTTP/1.1`
 
 **Response**
 ```json
@@ -66,3 +66,5 @@
     ]
 }
 ```
+
+**[Примеры кода](getCode.md)**

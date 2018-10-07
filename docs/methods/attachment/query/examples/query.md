@@ -31,3 +31,5 @@ POST `http://tempurl.com/attachment/query HTTP/1.1`
     ]
 }
 ```
+
+**[Примеры кода](queryAttachment.md)**

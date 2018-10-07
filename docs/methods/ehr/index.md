@@ -9,7 +9,7 @@
 
 В ответе передаётся массив объектов [EHR](../../types/types.md#ehr).
 
-**[Examples](getList/examples/getList.md)**
+**[Примеры](getList/examples/getList.md)**
 
 ---
 
@@ -21,7 +21,7 @@
 
 В ответе передаётся массив с единственным объектом - [EHR](../../types/types.md#ehr) или пустой, если у пациента нет активных ЭМЗ.
 
-**[Examples](getActive/examples/getActive.md)**
+**[Примеры](getActive/examples/getActive.md)**
 
 ---
 
@@ -40,7 +40,7 @@
 В случае успешного добавления, в ответе будет массив с единственным объектом - 
 [EHR](../../types/types.md#ehr) с заполненым полем [id](../../types/types.md#ehr).
 
-**[Examples](add/examples/add.md)**
+**[Примеры](add/examples/add.md)**
 
 ---
 

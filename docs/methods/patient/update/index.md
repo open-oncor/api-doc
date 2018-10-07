@@ -11,4 +11,5 @@
 
 В ответе - объект [Patient](../../../types/types.md#Patient).
 
-**[Examples](examples/update.md)**
+**[Примеры](examples/update.md)**
+**[Примеры](examples/updateCode.md)**

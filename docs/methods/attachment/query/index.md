@@ -9,4 +9,5 @@
 
 В ответе передаётся массив [Attachment](../../../types/types.md#attachment) c указанными [id](../../../types/types.md#attachmentmeta).
 
-**[Examples](examples/query.md)**
+**[HTTP примеры](examples/query.md)**
+**[Примеры кода](examples/queryAttachment.md)**

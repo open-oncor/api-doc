@@ -15,4 +15,4 @@
 
 В ответ переаётся [RecordsPage](../../../../types/types.md#recordspage).
 
-**[Examples](examples/RecordsPage.md)**
+**[Примеры](examples/RecordsPage.md)**

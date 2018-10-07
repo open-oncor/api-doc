@@ -61,3 +61,5 @@ POST `http://tempurl.com/patient/add HTTP/1.1`
     }
 }
 ```
+
+**[Примеры кода](addCode.md)**

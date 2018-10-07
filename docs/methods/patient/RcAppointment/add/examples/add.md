@@ -45,3 +45,5 @@ POST `http://tempurl.com/patient/RcAppointment/add HTTP/1.1`
     ]
 }
 ```
+
+**[Примеры кода](addRcAppointmentCode.md)**

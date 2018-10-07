@@ -7,4 +7,4 @@
 
 Возвращает список записей [{Rc}](../../../types/types.md#rc) для указанной ЭМЗ c идентификатором [ehr_id](../../../types/types.md#rc)
 
-**[Examples](examples/getList.md)**
+**[Примеры](examples/getList.md)**

@@ -9,4 +9,5 @@
 
 В ответе передаётся массив с единственным объектом - [Patient](../../../types/types.md#Patient).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**
+**[Примеры кода](examples/getCode.md)**

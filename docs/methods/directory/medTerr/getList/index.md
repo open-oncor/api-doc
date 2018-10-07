@@ -6,4 +6,4 @@
 
 Возвращает список медицинских территорий [{MedTerr}](../../../../types/types.md#medterr).
 
-**[Examples](examples/getList.md)**
+**[Примеры](examples/getList.md)**

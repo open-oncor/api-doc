@@ -5,7 +5,7 @@
 
 ### Примеры
 
-**Request** \n GET `http://tempurl.com/medOrg/getList HTTP/1.1`
+**Request**  GET `http://tempurl.com/medOrg/getList HTTP/1.1`
 
 **Response**
 
@@ -58,3 +58,5 @@
     ]
 }
 ```
+
+**[Примеры кода](getListCode.md)**

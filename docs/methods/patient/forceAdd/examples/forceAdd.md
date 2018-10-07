@@ -9,6 +9,10 @@ POST `http://tempurl.com/patient/forceAdd HTTP/1.1`
 ```json
 {
     "patient":{
+          "first_name":"Сергей",
+          "middle_name":"Сергеевич",
+          "last_name":"Сергеев",
+          "birth_day":"1977-01-0",
     }
 }
 ```
@@ -19,10 +23,10 @@ POST `http://tempurl.com/patient/forceAdd HTTP/1.1`
     "result":[
         {
             "id":"#71:32905",
-            "first_name":"",
-            "middle_name":"",
-            "last_name":"",
-            "birth_day":"",
+            "first_name":"Сергей",
+            "middle_name":"Сергеевич",
+            "last_name":"Сергеев",
+            "birth_day":"1977-01-01",
             "code":"",
             "ehr_count":0,
             "company_name":"",
@@ -31,3 +35,5 @@ POST `http://tempurl.com/patient/forceAdd HTTP/1.1`
     ]
 }
 ```
+
+**[Примеры кода](forceAddCode.md)**

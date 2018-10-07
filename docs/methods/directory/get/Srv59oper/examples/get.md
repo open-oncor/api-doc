@@ -5,7 +5,7 @@
 
 ### Примеры
 
-**Request** \n GET `http://tempurl.com/directory/get/Srv59Oper HTTP/1.1`
+**Request**  GET `http://tempurl.com/directory/get/Srv59Oper HTTP/1.1`
 
 **Response**
 
@@ -63,3 +63,5 @@
     ]
 }
 ```
+
+**[Примеры кода](getCode.md)**

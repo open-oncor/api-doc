@@ -6,4 +6,4 @@
 
 В ответе передаётся массив записей из справочника [DzStage](../../../../types/types.md#dzstage).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**

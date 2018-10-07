@@ -7,4 +7,4 @@
 
 Возвращает объект типа [Rc](../../../types/types.md#rc) с идентификатором [id](../../../types/types.md#rc).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**

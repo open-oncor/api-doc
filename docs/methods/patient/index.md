@@ -9,7 +9,7 @@
 
 В ответе передаётся массив с единственным объектом - [Patient](../../types/types.md#Patient).
 
-**[Examples](get/examples/get.md)**
+**[Примеры](get/examples/get.md)**
 
 ---
 
@@ -31,7 +31,7 @@
 В случае успешного добавления, в ответе будет массив с единственным объектом - 
 [Patient](../../types/types.md#Patient) с заполненым полем [id](../../types/types.md#Patient).
 
-**[Examples](add/examples/add.md)**
+**[Примеры](add/examples/add.md)**
 
 ---
 
@@ -51,7 +51,7 @@
 
 В ответе - массив объектов [Patient](../../types/types.md#Patient), пустой, если не найдено ни одного пациента.
 
-**[Examples](search/examples/search.md)**
+**[Примеры](search/examples/search.md)**
 
 ---
 
@@ -65,7 +65,7 @@
 В случае успешного добавления, в ответе будет массив с единственным объектом - [Patient](../../types/types.md#Patient) 
 с заполненым полем id.
 
-**[Examples](forceAdd/examples/forceAdd.md)**
+**[Примеры](forceAdd/examples/forceAdd.md)**
 
 ---
 
@@ -79,7 +79,7 @@
 
 В ответе - объект [Patient](../../types/types.md#Patient).
 
-**[Examples](update/examples/update.md)**
+**[Примеры](update/examples/update.md)**
 
 ---
 
@@ -103,7 +103,7 @@
 
 В ответе - [Rc](../../types/types.md#rc).
 
-**[Examples](RcAppointment/add/examples/add.md)**
+**[Примеры](RcAppointment/add/examples/add.md)**
 
 ---
 
@@ -115,7 +115,7 @@
 
 В ответе передаётся массив объектов [Rc](../../types/types.md#rc).
 
-**[Examples](record/getList/examples/getList.md)**
+**[Примеры](record/getList/examples/getList.md)**
 
 ---
 
@@ -127,4 +127,4 @@
 
 В ответе передаётся массив объектов [Rc](../../types/types.md#rc).
 
-**[Examples](RcReferralRl/getList/examples/getList.md)**
+**[Примеры](RcReferralRl/getList/examples/getList.md)**

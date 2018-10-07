@@ -8,4 +8,4 @@
 В запросе передаётся [RcDocQuery](../../../../types/types.md#rcdocquery). 
 В ответе передаётся [SearchJob](../../../../types/types.md#searchjob)
 
-**[Examples](examples/RcDocQuery.md)**
+**[Примеры](examples/RcDocQuery.md)**

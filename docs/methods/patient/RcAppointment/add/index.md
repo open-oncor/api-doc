@@ -9,4 +9,5 @@
 
 В ответе - [Rc](../../../../types/types.md#rc).
 
-**[Examples](examples/add.md)**
+**[Примеры](examples/add.md)**
+**[Примеры кода](examples/addRcAppointmentCode.md)**

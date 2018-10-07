@@ -6,7 +6,7 @@
 
 В ответе передаётся массив записей из справочника [DrPrsG](../../types/types.md#drprsg).
 
-**[Examples](get/DrPrsG/examples/get.md)**
+**[Примеры](get/DrPrsG/examples/get.md)**
 
 ---
 
@@ -15,7 +15,7 @@
 
 В ответе передаётся массив записей из справочника
 
-**[Examples](get/BloodType/examples/get.md)**
+**[Примеры](get/BloodType/examples/get.md)**
 
 ---
 
@@ -24,7 +24,7 @@
 
 В ответе передаётся массив записей из справочника [DiagnosticsType](../../types/types.md#diagnosticstype).
 
-**[Examples](get/DiagnosticsType/examples/get.md)**
+**[Примеры](get/DiagnosticsType/examples/get.md)**
 
 ---
 
@@ -33,7 +33,7 @@
 
 В ответе передаётся массив записей из справочника [AddressType](../../types/types.md#addresstype).
 
-**[Examples](get/AddressType/examples/get.md)**
+**[Примеры](get/AddressType/examples/get.md)**
 
 ---
 
@@ -42,7 +42,7 @@
 
 В ответе передаётся массив записей из справочника [MedOrgType](../../types/types.md#medorgtype).
 
-**[Examples](get/MedOrgType/examples/get.md)**
+**[Примеры](get/MedOrgType/examples/get.md)**
 
 ---
 
@@ -51,7 +51,7 @@
 
 В ответе передаётся массив записей из справочника [DzStage](../../types/types.md#dzstage).
 
-**[Examples](get/DzStage/examples/get.md)**
+**[Примеры](get/DzStage/examples/get.md)**
 
 ---
 
@@ -60,7 +60,7 @@
 
 В ответе передаётся массив записей из справочника [TnmT](../../types/types.md#tnmt).
 
-**[Examples](get/TnmT/examples/get.md)**
+**[Примеры](get/TnmT/examples/get.md)**
 
 ---
 
@@ -69,7 +69,7 @@
 
 В ответе передаётся массив записей из справочника [TnmN](../../types/types.md#tnmn).
 
-**[Examples](get/TnmN/examples/get.md)**
+**[Примеры](get/TnmN/examples/get.md)**
 
 ---
 
@@ -78,7 +78,7 @@
 
 В ответе передаётся массив записей из справочника [TnmM](../../types/types.md#tnmm).
 
-**[Examples](get/TnmM/examples/get.md)**
+**[Примеры](get/TnmM/examples/get.md)**
 
 ---
 
@@ -87,7 +87,7 @@
 
 В ответе передаётся массив записей из справочника [TnmG](../../types/types.md#tnmm).
 
-**[Examples](get/TnmG/examples/get.md)**
+**[Примеры](get/TnmG/examples/get.md)**
 
 ---
 
@@ -96,7 +96,7 @@
 
 В ответе передаётся массив записей из справочника [DrDzHD](../../types/types.md#drdzhd).
 
-**[Examples](get/DrDzHD/examples/get.md)**
+**[Примеры](get/DrDzHD/examples/get.md)**
 
 ---
 
@@ -105,7 +105,7 @@
 
 В ответе передаётся массив записей из справочника [DrNK0465](../../types/types.md#drnk0465).
 
-**[Examples](get/DrNK0465/examples/get.md)**
+**[Примеры](get/DrNK0465/examples/get.md)**
 
 ---
 
@@ -116,7 +116,7 @@
 
 В ответе передаётся массив записей из справочника [DrNK0439](../../types/types.md#drnk0439).
 
-**[Examples](get/DrNK0439/examples/get.md)**
+**[Примеры](get/DrNK0439/examples/get.md)**
 
 ---
 
@@ -125,7 +125,7 @@
 
 В ответе передаётся массив записей из справочника [TherapyCond](../../types/types.md#therapycond).
 
-**[Examples](get/TherapyCond/examples/get.md)**
+**[Примеры](get/TherapyCond/examples/get.md)**
 
 ---
 
@@ -134,7 +134,7 @@
 
 В ответе передаётся массив записей из справочника [LocMetType](../../types/types.md#locmettype).
 
-**[Examples](get/LocMetType/examples/get.md)**
+**[Примеры](get/LocMetType/examples/get.md)**
 
 ---
 
@@ -143,7 +143,7 @@
 
 В ответе передаётся массив записей из справочника [Srv59oper](../../types/types.md#srv59oper).
 
-**[Examples](get/Srv59oper/examples/get.md)**
+**[Примеры](get/Srv59oper/examples/get.md)**
 
 ---
 
@@ -153,7 +153,7 @@
 Возвращает список медицинских организаций [{MedOrg}](../../types/types.md#medorg) из системы oncor отсутствующих в реестре 
 “Регистр медицинских организаций Российской Федерации".
 
-**[Examples](medOrg/getList/examples/getList.md)**
+**[Примеры](medOrg/getList/examples/getList.md)**
 
 ---
 
@@ -162,7 +162,7 @@
 
 Возвращает список медицинских территорий [{MedTerr}](../../types/types.md#medterr).
 
-**[Examples](medTerr/getList/examples/getList.md)**
+**[Примеры](medTerr/getList/examples/getList.md)**
 
 ---
 
@@ -171,4 +171,4 @@
 
 Возвращает список пользователей [{User}](../../types/types.md#user).
 
-**[Examples](user/getList/examples/getList.md)**
+**[Примеры](user/getList/examples/getList.md)**

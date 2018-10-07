@@ -9,4 +9,4 @@
 
 В ответе передаётся массив объектов [Rc](../../../../types/types.md#rc).
 
-**[Examples](examples/getList.md)**
+**[Примеры](examples/getList.md)**

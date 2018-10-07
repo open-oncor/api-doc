@@ -8,4 +8,4 @@
 Возвращает список метаданных [Meta.proto](../../../types/types.md#metaproto) 
 для объектов с указанными [id](../../../types/types.md#metaproto)
 
-**[Examples](examples/query.md)**
+**[Примеры](examples/query.md)**

@@ -5,7 +5,7 @@
 
 ### Примеры
 
-**Request** \n GET ``
+**Request**  GET ``
 
 **Response**
 ```json

@@ -5,4 +5,4 @@
 
 ### Примеры
 
-**Request** \n GET ``
+**Request**  GET ``

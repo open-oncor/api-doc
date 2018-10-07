@@ -9,4 +9,4 @@
 
 В ответе передаётся [SearchJob](../../../../types/types.md#searchjob)
 
-**[Examples](examples/RcReferralQuery.md)**
+**[Примеры](examples/RcReferralQuery.md)**

@@ -41,3 +41,5 @@ POST `http://tempurl.com/patient/search HTTP/1.1`
     }
 }
 ```
+
+**[Примеры кода](searchCode.md)**

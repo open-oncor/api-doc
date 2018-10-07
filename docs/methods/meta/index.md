@@ -8,7 +8,7 @@
 Возвращает список метаданных [Meta.proto](../../types/types.md#metaproto) 
 для объектов с указанными [id](../../types/types.md#metaproto)
 
-**[Examples](query/examples/query.md)**
+**[Примеры](query/examples/query.md)**
 
 ---
 
@@ -18,4 +18,4 @@
 
 Обновляет метаданные [Meta.proto](../../types/types.md#metaproto)
 
-**[Examples](update/examples/update.md)**
+**[Примеры](update/examples/update.md)**

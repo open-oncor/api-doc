@@ -9,4 +9,4 @@
 
 В ответе передаётся массив объектов [EHR](../../../types/types.md#ehr).
 
-**[Examples](examples/getList.md)**
+**[Примеры](examples/getList.md)**

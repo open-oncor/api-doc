@@ -6,4 +6,5 @@
 
 В ответе передаётся массив записей из справочника [LocMetType](../../../../types/types.md#locmettype).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**
+**[HTTP примеры](examples/get.md)**

@@ -6,4 +6,5 @@
 
 В ответе передаётся массив записей из справочника [MedOrgType](../../../../types/types.md#srv59oper).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**
+**[Примеры кода](examples/getCode.md)**

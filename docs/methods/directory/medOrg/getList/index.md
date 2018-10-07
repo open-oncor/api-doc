@@ -7,4 +7,5 @@
 Возвращает список медицинских организаций [{MedOrg}](../../../../types/types.md#medorg) из системы oncor отсутствующих в реестре 
 “Регистр медицинских организаций Российской Федерации".
 
-**[Examples](examples/getList.md)**
+**[Примеры](examples/getList.md)**
+**[Примеры кода](examples/getListCode.md)**

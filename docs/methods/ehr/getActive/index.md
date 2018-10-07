@@ -10,4 +10,4 @@
 В ответе передаётся массив с единственным объектом - [EHR](../../../types/types.md#ehr) или пустой, 
 если у пациента нет активных ЭМЗ.
 
-**[Examples](examples/getActive.md)**
+**[Примеры](examples/getActive.md)**

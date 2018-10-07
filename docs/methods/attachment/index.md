@@ -7,7 +7,7 @@
 
 Возвращает объект типа [Attachment](../../types/types.md#attachment) с идентификатором [id](../../types/types.md#attachmentmeta)
 
-[Examples](get/examples/get.md)
+**[Примеры](get/examples/get.md)**
 
 ---
 
@@ -29,7 +29,7 @@
 
 В ответе передаётся [Attachment](../../types/types.md#attachment).
 
-[Examples](create/examples/create.md)
+**[Примеры](create/examples/create.md)**
 
 ---
 
@@ -41,4 +41,4 @@
 
 В ответе передаётся массив [Attachment](../../types/types.md#attachment) c указанными [id](../../types/types.md#attachmentmeta).
 
-**[Examples](query/examples/query.md)**
+**[Примеры](query/examples/query.md)**

@@ -26,4 +26,4 @@ GET `http://tempurl.com/attachment/get?id=1586:412 HTTP/1.1`
 }
 ```
 
-
+**[Примеры кода](getCode.mdt)**

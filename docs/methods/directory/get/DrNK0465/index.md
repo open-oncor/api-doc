@@ -6,4 +6,5 @@
 
 В ответе передаётся массив записей из справочника [DrNK0465](../../../../types/types.md#drnk0465).
 
-**[Examples](examples/get.md)**
+**[Примеры](examples/get.md)**
+**[Примеры кода](examples/getCode.md)**
