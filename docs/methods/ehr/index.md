@@ -13,18 +13,6 @@
 
 ---
 
-### ![GET](../../img/get.png) /ehr/getActive`?patient_id={patient_id}`
-* **URL parameter:** [patient_id](../../types/types.md#ehr)
-* **Response:** [[EHR](../../types/types.md#ehr)]
-
-Устаревший метод. Возвращает активное заболевание пациента с идентификатором [patient_id](../../types/types.md#ehr).
-
-В ответе передаётся массив с единственным объектом - [EHR](../../types/types.md#ehr) или пустой, если у пациента нет активных заболеваний.
-
-**[Примеры](getActive/examples/getActive.md)**
-
----
-
 ### ![POST](../../img/post.png) [/ehr/add](add/index.md)
 * **Request:** [EHR](../../types/types.md#ehr) **ehr <patient_id>**
 * **Response ```200```:** [[EHR](../../types/types.md#ehr)]
