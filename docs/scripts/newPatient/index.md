@@ -26,8 +26,6 @@ class AddPatient {
 
         if(patients.isEmpty()){
             client.addPatient(patientToAdd);
-        } else {
-            client.forceAddPatient(patientToAdd);   
         }
     }
 }
