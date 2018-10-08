@@ -1,16 +1,66 @@
 ### [Работа с пациентами](methods/patient/index.md)
 `Модуль работы с пациентом обеспечивает прием, хранение, изменение и выдачу по поисковым запросам данных о лицах (пациентах), обращавшихся в медицинские организации региона за медицинской помощью по профилю "онкология"`
 
-* [/patient/get](methods/patient/get/index.md) ![done](img/done.png)
-* [/patient/add](methods/patient/add/index.md) ![done](img/done.png)
-* [/patient/search](methods/patient/search/index.md) ![done](img/done.png)
-* [/patient/forceAdd](methods/patient/forceAdd/index.md) ![done](img/done.png)
-* [/patient/update](methods/patient/update/index.md) ![done](img/done.png)
-* [/patient/record/add](methods/patient/index.md#add)
-* [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png)
-* [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png)
-* [/patient/getList](methods/patient/index.md#getList)
-* [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png)
+* [/patient/search](methods/patient/search/index.md) ![done](img/done.png) - `поиск пациентов`
+* [/patient/get](methods/patient/get/index.md) ![done](img/done.png) - `получение данных пациента по его ключу`
+* [/patient/update](methods/patient/update/index.md) ![done](img/done.png) - `изменение данных пациента` 
+* [/patient/add](methods/patient/add/index.md) ![done](img/done.png) - `добавление пациента`
+* [/patient/forceAdd](methods/patient/forceAdd/index.md) ![done](img/done.png) - `добавление пациента без анализа 'двойников'`
+
+---
+
+### [Работа с заболеваниями пациента](methods/ehr/index.md)
+
+`Получение, добавление данных о заболеваниях пациента`
+
+* [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png) - `получение списка заболеваний пациента`
+* [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png) - `регистрация нового заболевания пациента`
+* [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление медицинской записи в указанное заболевание` 
+* [/ehr/getActive](methods/ehr/getActive/index.md) ![done](img/done.png) - `устаревший метод`
+
+---
+
+### [Работа с медицинскими записями](methods/rc/index.md)
+
+`Получение записей`
+
+* [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей пациента для указанного заболевания`
+* [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей на всех уровнях (во всех заболеваниях, а также записей общих для пациента)`
+* [/rc/get](methods/rc/get/index.md) ![done](img/done.png) - `получение медицинской записи пациента по ключу`
+* [/patient/record/add](methods/patient/index.md) - `добавление медицинской записи пациенту`
+* [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
+* [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`
+
+---
+
+### [Работа с вложениями](methods/attachment/index.md)
+
+`Модуль работы с вложенями обеспечивает хранение, изменение и выдачу выложений, присоединенных к другим записям о пациенте`
+
+* [/attachment/query](methods/attachment/query/index.md) ![done](img/done.png) - `получение списка вложений по набору их ключей`
+* [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png) - `получение описания вложения`
+* [/attachment/file](methods/attachment/index.md) - `получение содержимого вложения`
+* [/attachment/create](methods/attachment/create/index.md) ![done](img/done.png) - `добавление вложения`
+
+---
+
+### [Работа с метаданными](methods/meta/index.md)
+
+`Модуль работы с метаданными обеспечивает хранение, изменение и выдачу метаданных, присоединенных к другим записям о пациенте`
+
+* [/meta/query](methods/meta/query/index.md) ![done](img/done.png) - `получение массива метаданных`
+* [/meta/update](methods/meta/update/index.md) ![done](img/done.png) - `изменение метаданных для медицинской записи`
+
+---
+
+### [Поисковые функции](methods/search/index.md)
+
+`Поиск записей`
+
+* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md) ![done](img/done.png) - ``
+* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md) ![done](img/done.png) - ``
+* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md) ![done](img/done.png) - ``
+* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png) - ``
 
 ---
 
@@ -37,54 +87,3 @@
 * [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png) - `получение списка медицинских орагнизаций региона` 
 * [/medTerr/getList](methods/directory/medTerr/getList/index.md) - `получение списка территорий региона`
 * [/user/getList](methods/directory/user/getList/index.md) ![done](img/done.png) - `получение списка пользователей`
-
----
-
-### [Работа с заболеваниями пациента](methods/ehr/index.md)
-
-`Получение, добавление данных о заболеваниях пациента`
-
-* [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png) - `получение списка заболеваний пациента`
-* [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png) - `регистрация нового заболевания пациента`
-* [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление медицинской записи в указанное заболевание` 
-* [/ehr/getActive](methods/ehr/getActive/index.md) ![done](img/done.png) - `устаревший метод`
-
----
-
-### [Работа с записями](methods/rc/index.md)
-
-`Получение записей`
-
-* [/rc/get](methods/rc/get/index.md) ![done](img/done.png)
-* [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png)
-
----
-
-### [Работа с вложениями](methods/attachment/index.md)
-
-`Модуль работы с вложенями обеспечивает прием, хранение, изменение и выдачу выложений, присоединенных к другим записям о пациенте`
-
-* [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png)
-* [/attachment/file](methods/attachment/index.md#file)
-* [/attachment/create](methods/attachment/create/index.md) ![done](img/done.png)
-* [/attachment/query](methods/attachment/query/index.md) ![done](img/done.png)
-
----
-
-### [Работа с метаданными](methods/meta/index.md)
-
-`Получение метаданных`
-
-* [/meta/query](methods/meta/query/index.md) ![done](img/done.png)
-* [/meta/update](methods/meta/update/index.md) ![done](img/done.png)
-
----
-
-### [Поисковые функции](methods/search/index.md)
-
-`Поиск записей`
-
-* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md) ![done](img/done.png)
-* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md) ![done](img/done.png)
-* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md) ![done](img/done.png)
-* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png)

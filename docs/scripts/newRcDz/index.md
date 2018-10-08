@@ -4,8 +4,8 @@
 
 1. [/patient/add](../../methods/patient/add/examples/add.md) `добавление нового пациента в ОНКОР` или
  [/patient/search](../../methods/patient/search/examples/search.md) `поиск пациента в ОНКОР`
-2. [/ehr/add](../../methods/ehr/add/examples/add.md) `добавление ЭМЗ пациента`
-3. [/ehr/record/add](../../methods/ehr/record/add/examples/RcDz/add.md) `добавление записи в ЭМЗ`
+2. [/ehr/add](../../methods/ehr/add/examples/add.md) `регистрация нового заболевания пациента`
+3. [/ehr/record/add](../../methods/ehr/record/add/examples/RcDz/add.md) `добавление медицинской записи в указанное заболевание`
 
 ```java
 class NewPatientRcDz {

@@ -1,4 +1,4 @@
-[Работа с ЭМЗ](../../index.md)
+[Работа с заболеваниями пациента](../../index.md)
 ==============================
 
 ### ![GET](../../../../img/get.png) [/ehr/getActive`?patient_id={patient_id}`](../index.md)
