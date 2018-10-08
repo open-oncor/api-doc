@@ -1,5 +1,5 @@
 ### [Работа с пациентами](methods/patient/index.md)
-`Модуль работы с пациентом обеспечивает прием, хранение, изменение и выдачу по поисковым запросам данных о лицах (пациентах), обращавшихся в медицинские организации региона за медицинской помощью по профилю "онкология"`
+`Модуль обеспечивает приём, изменение и выдачу по поисковым запросам данных о лицах (пациентах), обращавшихся в медицинские организации региона за медицинской помощью по профилю 'онкология'`
 
 * [/patient/search](methods/patient/search/index.md) ![done](img/done.png) - `поиск пациентов`
 * [/patient/get](methods/patient/get/index.md) ![done](img/done.png) - `получение данных пациента по его ключу`
@@ -11,7 +11,7 @@
 
 ### [Работа с заболеваниями пациента](methods/ehr/index.md)
 
-`Получение, добавление данных о заболеваниях пациента`
+`Модуль обеспечивает приём, хранение и добавление данных о заболеваниях пациента. Заболеванием пациента является его предварительный или окончательно установленный диагноз. У пациента не может быть зарегистрировано два одинаковых диагноза. В процессе проведения диагностических исследований пациенту диагноз может быть подтвержден, изменен или отвергнут.`
 
 * [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png) - `получение списка заболеваний пациента`
 * [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png) - `регистрация нового заболевания пациента`
@@ -22,7 +22,7 @@
 
 ### [Работа с медицинскими записями](methods/rc/index.md)
 
-`Получение записей`
+`Модуль обеспечивает приём, хранение и добавление медицинских записей пациента. Медицинские записи пациента могут находится на одном из двух уровней иерархии: привязаны непссредственно к данным пациента (записи общие для пациента) или привязаны к одному из заболеваний пациента. Записи условно можно разделить на учётные записи и медицинские документы. Учётные записи предназначены для формировния онкологической статистики. Медицинские документы формируют электронную историю болезни. При добавлении медицинских записей пациента необходимо соблюдать требования к их расположению в иерархии данных пациента.`
 
 * [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей пациента для указанного заболевания`
 * [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей на всех уровнях (во всех заболеваниях, а также записей общих для пациента)`
@@ -31,11 +31,18 @@
 * [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
 * [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`
 
+    #### [Поисковые функции для медицинских записей](methods/search/index.md)
+
+* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md) ![done](img/done.png) - `поиск направлений по набору условий`
+* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md) ![done](img/done.png) - `поиск предварительных записей на приём для пациента по набору условий`
+* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md) ![done](img/done.png) - `поиск медицинских документов пациента`
+* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png) - `постраниченое получение найденных ранее в поисковом запросе записей`
+
 ---
 
 ### [Работа с вложениями](methods/attachment/index.md)
 
-`Модуль работы с вложенями обеспечивает хранение, изменение и выдачу выложений, присоединенных к другим записям о пациенте`
+`Модуль обеспечивает приём, изменение и выдачу вложений, присоединенных к другим записям о пациенте`
 
 * [/attachment/query](methods/attachment/query/index.md) ![done](img/done.png) - `получение списка вложений по набору их ключей`
 * [/attachment/get](methods/attachment/get/index.md) ![done](img/done.png) - `получение описания вложения`
@@ -46,27 +53,16 @@
 
 ### [Работа с метаданными](methods/meta/index.md)
 
-`Модуль работы с метаданными обеспечивает хранение, изменение и выдачу метаданных, присоединенных к другим записям о пациенте`
+`Модуль обеспечивает приём, изменение и выдачу метаданных, присоединенных к другим записям о пациенте`
 
 * [/meta/query](methods/meta/query/index.md) ![done](img/done.png) - `получение массива метаданных`
 * [/meta/update](methods/meta/update/index.md) ![done](img/done.png) - `изменение метаданных для медицинской записи`
 
 ---
 
-### [Поисковые функции](methods/search/index.md)
-
-`Поиск записей`
-
-* [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md) ![done](img/done.png) - ``
-* [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md) ![done](img/done.png) - ``
-* [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md) ![done](img/done.png) - ``
-* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png) - ``
-
----
-
 ### [Работа со справочниками](methods/directory/index.md)
 
-`Модуль работы со справочниками обеспечивает хранение и выдачу содержимого справочников комплекса`
+`Модуль обеспечивает хранение и выдачу содержимого справочников комплекса`
 
 * [/directory/get/DrPrsG](methods/directory/get/DrPrsG/index.md) ![done](img/done.png) - `справочник половой принадлежности` 
 * [/directory/get/BloodType](methods/directory/get/BloodType/index.md) ![done](img/done.png) - `справочник групп крови`

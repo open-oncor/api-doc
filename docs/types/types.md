@@ -1906,7 +1906,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 | apply_last_date | [string](#string) | optional | Date lastVisitConsultantLPU; Дата последнего посещения профильной специальности |
 | apply_first_date | [string](#string) | optional | Date firstComeLPUDate; Дата первого обращения в ЛПУ по месту жительства по поводу данного заболевания |
 | request_date | [string](#string) | optional | Date oodConsultDatePlan; Дата формирования направления с места жительства в ОД // название лучше бы подошло refToODDate |
-| admission_date | [string](#string) | optional | Date oodConsultDateFact; Дата фактического приема в ООД |
+| admission_date | [string](#string) | optional | Date oodConsultDateFact; Дата фактического приёма в ООД |
 | examination_lsat_date | [string](#string) | optional | Date oodEndDiagDate; Дата окончания обследования в ОД |
 | treatment_first_date | [string](#string) | optional | Date oodStartTherapyDate; дата начала лечения в ОД |
 | health_record_code | [string](#string) | optional | String slNumber; номер больничного листа |
