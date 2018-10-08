@@ -14,7 +14,7 @@
 * required ehr_id
 * one of ([RcDoc](../../../../types/types.md#rcrcdoc), [RcReferral](../../../../types/types.md#rcrcreferral), 
 [RcOper](../../../../types/types.md#rcrcoper), [RcHorm](../../../../types/types.md#rcrchorm), 
-[RcChem](../../../../types/types.md#rcrcchem), [RcRay](../../../../types/types.md#rcrcray)
+[RcChem](../../../../types/types.md#rcrcchem), [RcRay](../../../../types/types.md#rcrcray))
 
 В ответе передаётся [Rc](../../../../types/types.md#rc).
 

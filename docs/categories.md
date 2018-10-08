@@ -16,38 +16,38 @@
 
 ### [Работа со справочниками](methods/directory/index.md)
 
-`Модуль работы со справочниками обеспечивает хранение выдачу содержимого справочников комплекса`
+`Модуль работы со справочниками обеспечивает хранение и выдачу содержимого справочников комплекса`
 
-* [/directory/get/DrPrsG](methods/directory/get/DrPrsG/index.md) ![done](img/done.png)
-* [/directory/get/BloodType](methods/directory/get/BloodType/index.md) ![done](img/done.png)
-* [/directory/get/DiagnosticsType](methods/directory/get/DiagnosticsType/index.md)
-* [/directory/get/AddressType](methods/directory/get/AddressType/index.md)  ![done](img/done.png)
-* [/directory/get/MedOrgType](methods/directory/get/MedOrgType/index.md)
-* [/directory/get/DzStage](methods/directory/get/DzStage/index.md)
-* [/directory/get/TnmT](methods/directory/get/TnmT/index.md)
-* [/directory/get/TnmN](methods/directory/get/TnmN/index.md)
-* [/directory/get/TnmM](methods/directory/get/TnmM/index.md)
-* [/directory/get/TnmG](methods/directory/get/TnmG/index.md)
-* [/directory/get/DrDzHD](methods/directory/get/DrDzHD/index.md)
-* [/directory/get/DrNK0465](methods/directory/get/DrNK0465/index.md) ![done](img/done.png)
-* [/directory/get/DrNK0439](methods/directory/get/DrNK0439/index.md) ![done](img/done.png)
-* [/directory/get/TherapyCond](methods/directory/get/TherapyCond/index.md) ![done](img/done.png)
-* [/directory/get/LocMetType](methods/directory/get/LocMetType/index.md) ![done](img/done.png)
-* [/directory/get/Srv59oper](methods/directory/get/Srv59oper/index.md) ![done](img/done.png)
-* [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png)
-* [/medTerr/getList](methods/directory/medTerr/getList/index.md)
-* [/user/getList](methods/directory/user/getList/index.md) ![done](img/done.png)
+* [/directory/get/DrPrsG](methods/directory/get/DrPrsG/index.md) ![done](img/done.png) - `справочник половой принадлежности` 
+* [/directory/get/BloodType](methods/directory/get/BloodType/index.md) ![done](img/done.png) - `справочник групп крови`
+* [/directory/get/DiagnosticsType](methods/directory/get/DiagnosticsType/index.md) - `справочник диагностических исследований`
+* [/directory/get/AddressType](methods/directory/get/AddressType/index.md)  ![done](img/done.png) - `справочник типов адресов`
+* [/directory/get/MedOrgType](methods/directory/get/MedOrgType/index.md) - `справочник типов медицинских организаций`
+* [/directory/get/DzStage](methods/directory/get/DzStage/index.md) - `справочник стадий`
+* [/directory/get/TnmT](methods/directory/get/TnmT/index.md) - `справочник T`
+* [/directory/get/TnmN](methods/directory/get/TnmN/index.md) - `справочник N`
+* [/directory/get/TnmM](methods/directory/get/TnmM/index.md) - `справочник M`
+* [/directory/get/TnmG](methods/directory/get/TnmG/index.md) - `справочник G`
+* [/directory/get/DrDzHD](methods/directory/get/DrDzHD/index.md) - `справочник обстоятельств выявления заболевания`
+* [/directory/get/DrNK0465](methods/directory/get/DrNK0465/index.md) ![done](img/done.png) - `справочник операций`
+* [/directory/get/DrNK0439](methods/directory/get/DrNK0439/index.md) ![done](img/done.png) - `справочник осложнений`
+* [/directory/get/TherapyCond](methods/directory/get/TherapyCond/index.md) ![done](img/done.png) - `справочник условий проведения лечения`
+* [/directory/get/LocMetType](methods/directory/get/LocMetType/index.md) ![done](img/done.png) - `справочник типов отдаленных метастаз`
+* [/directory/get/Srv59oper](methods/directory/get/Srv59oper/index.md) ![done](img/done.png) - `справочник услуг при лечении онкологического заболевания (приказ ФФОМС от 30.03.2018 № 59)`
+* [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png) - `получение списка медицинских орагнизаций региона` 
+* [/medTerr/getList](methods/directory/medTerr/getList/index.md) - `получение списка территорий региона`
+* [/user/getList](methods/directory/user/getList/index.md) ![done](img/done.png) - `получение списка пользователей`
 
 ---
 
-### [Работа с ЭМЗ](methods/ehr/index.md)
+### [Работа с заболеваниями пациента](methods/ehr/index.md)
 
-`Получение, добавление ЭМЗ`
+`Получение, добавление данных о заболеваниях пациента`
 
-* [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png)
-* [/ehr/getActive](methods/ehr/getActive/index.md) ![done](img/done.png)
-* [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png)
-* [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png)
+* [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png) - `получение списка заболеваний пациента`
+* [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png) - `регистрация нового заболевания пациента`
+* [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление медицинской записи в указанное заболевание` 
+* [/ehr/getActive](methods/ehr/getActive/index.md) ![done](img/done.png) - `устаревший метод`
 
 ---
 
