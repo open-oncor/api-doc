@@ -7,7 +7,7 @@
 
 **Request**
 
-POST `http://tempurl.com/ehr/record/add HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 ```json
 {
     "record":{
@@ -95,3 +95,5 @@ POST `http://tempurl.com/ehr/record/add HTTP/1.1`
     ]
 }
 ```
+
+**[Java пример](addJava.md)**

@@ -5,7 +5,7 @@
 
 **Request**
 
-POST `http://tempurl.com/patient/forceAdd HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/patient/forceAdd HTTP/1.1`
 ```json
 {
     "patient":{
@@ -36,4 +36,4 @@ POST `http://tempurl.com/patient/forceAdd HTTP/1.1`
 }
 ```
 
-**[Примеры кода](forceAddCode.md)**
+**[Java пример](forceAddJava.md)**

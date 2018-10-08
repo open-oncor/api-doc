@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../../img/post.png) [/search/start/RcReferralQuery](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/search/start/RcReferralQuery HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcReferralQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -24,8 +24,10 @@ POST `http://tempurl.com/search/start/RcReferralQuery HTTP/1.1`
 {
     "result":[
         {
-            "id":"c3f5422c-3450-4b5f-bb12-f51f35729b89"
+            "id":"a8a10778-dc14-41cc-ac97-4db300fa99a4"
         }
     ]
 }
 ```
+
+**[Java пример](RcReferralQueryJava.md)**

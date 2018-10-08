@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/patient/add](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/patient/add HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
 
 ```json
 {
@@ -55,11 +55,11 @@ POST `http://tempurl.com/patient/add HTTP/1.1`
 ```json
 {
     "error":{
-        "name":"com.siams.med.api.InvalidArgumentsException",
+        "name":"InvalidArgumentsException",
         "message":"Invalid patient name",
         "uuid":"16bfee9a-2616-4a58-85c2-9ba4ac782cf4"
     }
 }
 ```
 
-**[Примеры кода](addCode.md)**
+**[Java пример](addJava.md)**

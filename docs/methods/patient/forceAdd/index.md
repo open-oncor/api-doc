@@ -12,4 +12,4 @@
 с заполненым полем id.
 
 **[Примеры](examples/forceAdd.md)**
-**[Примеры кода](examples/forceAddCode.md)**
+**[Java пример](examples/forceAddJava.md)**

@@ -3,16 +3,16 @@
 
 ### ![GET](../../../../img/get.png) [/patient/get`?id={patient_id}`](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request:** GET `http://localhost:8080/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`
+**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`
 
 **Response**
 ```json
 {
     "result":[
         {
-            "id":"#65:33650",
+            "id":"#70:33669",
             "first_name":"Иван",
             "middle_name":"Иванович",
             "last_name":"Иванов",
@@ -32,4 +32,4 @@
 }
 ```
 
-**[Примеры кода](getCode.md)**
+**[Java пример](getJava.md)**

@@ -3,11 +3,4 @@
 
 ### ![GET](../../../../../img/get.png) [/medTerr/getList](../index.md)
 
-### Примеры
-
-**Request:** GET ``
-
-**Response**
-```json
-
-```
+### HTTP примеры

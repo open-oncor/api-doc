@@ -18,4 +18,4 @@
 В ответе - массив объектов [Patient](../../../types/types.md#Patient), пустой, если не найдено ни одного пациента.
 
 **[Примеры](examples/search.md)**
-**[Примеры](examples/searchCode.md)**
+**[Примеры](examples/searchJava.md)**

@@ -3,19 +3,19 @@
 
 ### ![POST](../../../../../img/post.png) [/patient/RcAppointment/add](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/patient/RcAppointment/add HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/patient/RcAppointment/add HTTP/1.1`
 ```json
 {
     "record":{
-        "patient_id":"#66:30293",
+        "patient_id":"#70:33669",
         "rc_appointment":{
-            "rc_referral_id":"#1505:561",
-            "confirmed":true,
-            "note":"Проверка"
+            "rc_referral_id":"#1505:3512",
+            "confirmed":false,
+            "note":"Example"
         }
     }
 }
@@ -26,24 +26,24 @@ POST `http://tempurl.com/patient/RcAppointment/add HTTP/1.1`
 {
     "result":[
         {
-            "id":"#1089:2655",
+            "id":"#1089:3142",
             "class_name":"RcAppointment",
-            "patient_id":"#66:30293",
-            "ehr_id":"#873:32688",
+            "patient_id":"#70:33669",
+            "ehr_id":"#876:36710",
             "published":{
-                "user_id":"#961:160",
-                "time":"2018-10-04 21:52:51"
+                "user_id":"#961:170",
+                "time":"2018-10-09 00:54:18"
             },
             "org_unit_id":"#999:28",
-            "time_rc":"2018-10-04 21:52:51",
+            "time_rc":"2018-10-09 00:54:18",
             "rc_appointment":{
-                "rc_referral_id":"#1505:561",
-                "confirmed":true,
-                "note":"Проверка"
+                "rc_referral_id":"#1505:3512",
+                "confirmed":false,
+                "note":"Example"
             }
         }
     ]
 }
 ```
 
-**[Примеры кода](addRcAppointmentCode.md)**
+**[Java пример](addRcAppointmentJava.md)**

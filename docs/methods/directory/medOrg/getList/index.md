@@ -8,4 +8,4 @@
 “Регистр медицинских организаций Российской Федерации".
 
 **[Примеры](examples/getList.md)**
-**[Примеры кода](examples/getListCode.md)**
+**[Java пример](examples/getListJava.md)**

@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/ehr/add](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/ehr/add HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/ehr/add HTTP/1.1`
 ```json
 {
     "ehr":{
@@ -34,9 +34,11 @@ POST `http://tempurl.com/ehr/add HTTP/1.1`
 ```json
 {
     "error":{
-        "name":"com.siams.med.api.PatientNotFoundException",
+        "name":"PatientNotFoundException",
         "message":"Patient \"\" not found",
         "uuid":"9b2ef941-b81d-43e3-8e87-e8b0dad6e6e2"
     }
 }
 ```
+
+**[Java пример](addJava.md)**

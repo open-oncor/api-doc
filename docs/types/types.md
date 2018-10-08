@@ -35,8 +35,10 @@
     - [AddressType](#AddressType)
     - [BloodType](#BloodType)
     - [ChemKind](#ChemKind)
+    - [ClinicalGroupType](#ClinicalGroupType)
     - [DiagnosticsType](#DiagnosticsType)
     - [DoseUnit](#DoseUnit)
+    - [DrAutopsy](#DrAutopsy)
     - [DrDzHD](#DrDzHD)
     - [DrDzMthd](#DrDzMthd)
     - [DrDzPl](#DrDzPl)
@@ -68,6 +70,8 @@
     - [RayMethod](#RayMethod)
     - [RayRadio](#RayRadio)
     - [RayWay](#RayWay)
+    - [RegInClause](#RegInClause)
+    - [RegOutReason](#RegOutReason)
     - [Srv59Chem](#Srv59Chem)
     - [Srv59Oper](#Srv59Oper)
     - [Srv59Ray](#Srv59Ray)
@@ -114,12 +118,16 @@
     - [Rc.Published](#Rc.Published)
     - [Rc.RcAppointment](#Rc.RcAppointment)
     - [Rc.RcChem](#Rc.RcChem)
+    - [Rc.RcClinicalGroup](#Rc.RcClinicalGroup)
+    - [Rc.RcDeath](#Rc.RcDeath)
     - [Rc.RcDoc](#Rc.RcDoc)
     - [Rc.RcDz](#Rc.RcDz)
     - [Rc.RcHorm](#Rc.RcHorm)
     - [Rc.RcOper](#Rc.RcOper)
     - [Rc.RcRay](#Rc.RcRay)
     - [Rc.RcReferral](#Rc.RcReferral)
+    - [Rc.RcRegIn](#Rc.RcRegIn)
+    - [Rc.RcRegOut](#Rc.RcRegOut)
   
   
   
@@ -441,6 +449,31 @@
 
 
 
+<a name="ClinicalGroupType"/>
+
+### ClinicalGroupType
+Запись справочника &#34;Клиническая группа&#34;
+* NONE(&#34;&#34;, null),
+* I(&#34;I&#34;, 1),
+* I_a(&#34;Iа&#34;, 6),
+* I_b(&#34;Iб&#34;, 7),
+* II(&#34;II&#34;, 3),
+* II_b(&#34;IIа&#34;, 2),
+* III(&#34;III&#34;, 4),
+* IV(&#34;IV&#34;, 5);
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
 <a name="DiagnosticsType"/>
 
 ### DiagnosticsType
@@ -475,6 +508,27 @@
 | ----- | ---- | ----- | ----------- |
 | id | [string](#string) | optional |  |
 | code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="DrAutopsy"/>
+
+### DrAutopsy
+Запись справочника &#34;Аутопсия&#34;
+   id =  1 - не проводилась
+   id =  2 - проводилась
+   id =  3 - проводилась, результат неизвестен
+   id =  0 - неизвестно, проводилась ли
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| orid | [string](#string) | optional |  |
+| id | [string](#string) | optional |  |
 | caption | [string](#string) | optional |  |
 
 
@@ -1135,6 +1189,52 @@
 
 
 
+<a name="RegInClause"/>
+
+### RegInClause
+Запись справочника &#34;Условия взятия на учет&#34;
+* NONE(&#34;неизвестно&#34;, null),
+* RI_A1(&#34;при жизни впервые&#34;, 1),
+* RI_A2(&#34;при жизни повторно&#34;, 2),
+* RI_M1(&#34;посмертно ранее нигде не стоял&#34;, 3),
+* RI_M2(&#34;посмертно ранее состоял на учете&#34;, 4);
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="RegOutReason"/>
+
+### RegOutReason
+Запись справочника &#34;Условия взятия на учет&#34;
+* NONE(&#34;&#34;, null),
+* RO_LEAVED(&#34;выехал&#34;, 1),
+* RO_DS_REJECT(&#34;диагноз не подтвержден&#34;, 2),
+* RO_BASAL(&#34;состоял по базалиоме&#34;, 3),
+* RO_DIED_1(&#34;умер от причин связанных с основным заболеванием&#34;, 4),
+* RO_DIED_2(&#34;умер от осложений лечения&#34;, 5),
+* RO_DIED_3(&#34;умер от другого заболевания&#34;, 6);
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
 <a name="Srv59Chem"/>
 
 ### Srv59Chem
@@ -1693,6 +1793,10 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 | rc_ray | [Rc.RcRay](#Rc.RcRay) | optional |  |
 | rc_chem | [Rc.RcChem](#Rc.RcChem) | optional |  |
 | rc_horm | [Rc.RcHorm](#Rc.RcHorm) | optional |  |
+| rc_reg_in | [Rc.RcRegIn](#Rc.RcRegIn) | optional |  |
+| rc_reg_out | [Rc.RcRegOut](#Rc.RcRegOut) | optional |  |
+| rc_death | [Rc.RcDeath](#Rc.RcDeath) | optional |  |
+| rc_clinical_group | [Rc.RcClinicalGroup](#Rc.RcClinicalGroup) | optional |  |
 
 
 
@@ -1744,8 +1848,8 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| time_rc_in | [string](#string) | optional | [дата](date_time.md) начала курса |
-| time_rc_out | [string](#string) | optional | [дата](date_time.md) окончания курса |
+| time_rc_in | [string](#string) | optional | [дата](../types/date_time.md) начала курса |
+| time_rc_out | [string](#string) | optional | [дата](../types/date_time.md) окончания курса |
 | aim | [TherapyAim](#TherapyAim) | optional | применение на этапах лечения |
 | kind | [ChemKind](#ChemKind) | optional | вид |
 | condition | [TherapyCond](#TherapyCond) | optional | условия проведения |
@@ -1753,6 +1857,37 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 | org_id | [string](#string) | optional | место проведения |
 | drugs | [DrugRecord](#DrugRecord) | repeated | препараты |
 | srv | [Srv59Chem](#Srv59Chem) | repeated | тип |
+
+
+
+
+
+
+<a name="Rc.RcClinicalGroup"/>
+
+### Rc.RcClinicalGroup
+запись &#34;Клиническая группа&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| group_type | [ClinicalGroupType](#ClinicalGroupType) | optional | Клиническая группа |
+
+
+
+
+
+
+<a name="Rc.RcDeath"/>
+
+### Rc.RcDeath
+запись &#34;Регистрация смерти&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| reason | [RBiMKB308](#RBiMKB308) | optional | Причина смерти |
+| autopsy | [DrAutopsy](#DrAutopsy) | optional | Причина смерти |
 
 
 
@@ -1877,6 +2012,36 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
+
+<a name="Rc.RcRegIn"/>
+
+### Rc.RcRegIn
+запись постановки на учет
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| clause | [RegInClause](#RegInClause) | optional | Условия взятия на учет |
+
+
+
+
+
+
+<a name="Rc.RcRegOut"/>
+
+### Rc.RcRegOut
+запись снятия с учета
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| reason | [RegOutReason](#RegOutReason) | optional | Причина снятия с учета |
+
+
+
+
+
  
 
  
@@ -1906,7 +2071,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 | apply_last_date | [string](#string) | optional | Date lastVisitConsultantLPU; Дата последнего посещения профильной специальности |
 | apply_first_date | [string](#string) | optional | Date firstComeLPUDate; Дата первого обращения в ЛПУ по месту жительства по поводу данного заболевания |
 | request_date | [string](#string) | optional | Date oodConsultDatePlan; Дата формирования направления с места жительства в ОД // название лучше бы подошло refToODDate |
-| admission_date | [string](#string) | optional | Date oodConsultDateFact; Дата фактического приёма в ООД |
+| admission_date | [string](#string) | optional | Date oodConsultDateFact; Дата фактического приема в ООД |
 | examination_lsat_date | [string](#string) | optional | Date oodEndDiagDate; Дата окончания обследования в ОД |
 | treatment_first_date | [string](#string) | optional | Date oodStartTherapyDate; дата начала лечения в ОД |
 | health_record_code | [string](#string) | optional | String slNumber; номер больничного листа |

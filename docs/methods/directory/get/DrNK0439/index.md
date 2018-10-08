@@ -7,4 +7,4 @@
 В ответе передаётся массив записей из справочника [DrNK0439](../../../../types/types.md#drnk0439).
 
 **[Примеры](examples/get.md)**
-**[Примеры кода](examples/getCode.md)**
+**[Java пример](examples/getJava.md)**

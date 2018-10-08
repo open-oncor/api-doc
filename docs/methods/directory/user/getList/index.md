@@ -7,4 +7,4 @@
 Возвращает список пользователей [{User}](../../../../types/types.md#user).
 
 **[Примеры](examples/getList.md)**
-**[Примеры кода](examples/getListCode.md)**
+**[Java пример](examples/getListJava.md)**

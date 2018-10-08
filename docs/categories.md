@@ -26,7 +26,7 @@
 * [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей пациента для указанного заболевания`
 * [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей общих для пациента (не привязанных к конретному заболеванию)`
 * [/rc/get](methods/rc/get/index.md) ![done](img/done.png) - `получение медицинской записи пациента по ключу`
-* [/patient/record/add](methods/patient/index.md) - `добавление медицинской записи пациенту`
+* [/patient/record/add](methods/patient/record/add/index.md) - `добавление медицинской записи пациенту`
 * [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление медицинской записи в указанное заболевание` 
 * [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
 * [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`

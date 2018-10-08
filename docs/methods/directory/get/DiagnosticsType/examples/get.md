@@ -3,6 +3,4 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/DiagnosticsType](../index.md)
 
-### Примеры
-
-**Request** ``
+### HTTP примеры

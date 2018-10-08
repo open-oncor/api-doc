@@ -83,8 +83,6 @@
 
 ---
 
-<a name="add"/>
-
 ### ![POST](../../img/post.png) /patient/record/add
 * **Request:** [Rc](../../types/types.md#rc)
 * **Response:** [Rc](../../types/types.md#rc)
@@ -92,6 +90,8 @@
 Добавляет запись пациенту. В запросе передаётся объект - [Rc](../../types/types.md#rc).
 
 В ответе - [Rc](../../types/types.md#rc).
+
+**[Примеры](record/add/examples/RcRegIn/add.md)**
 
 ---
 

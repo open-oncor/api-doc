@@ -12,4 +12,4 @@
 Поле [Attachment.data](../../../types/types.md#attachment) представляет собой [ByteString](../../../types/types.md#scalar-value-types)
 
 **[HTTP примеры](examples/get.md)**
-**[Примеры кода](examples/getCode.md)**
+**[Java пример](examples/getJava.md)**

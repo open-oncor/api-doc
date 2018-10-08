@@ -5,16 +5,16 @@
 
 **Request**
 
-POST `http://tempurl.com/patient/update HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/patient/update HTTP/1.1`
 
 ```json
 {
     "patient_update":{
-        "id":"65:33650",
-        "code":"ИИИ",
+        "id":"70:33669",
+        "code":"ИИИ010154",
         "entry":[
             {
-                "snils":"Тестовый СНИЛС"
+                "snils":"Пример снилса"
             }
         ]
     }
@@ -26,24 +26,18 @@ POST `http://tempurl.com/patient/update HTTP/1.1`
 {
     "result":[
         {
-            "id":"#65:33650",
+            "id":"#70:33669",
             "first_name":"Иван",
             "middle_name":"Иванович",
             "last_name":"Иванов",
-            "birth_day":"1901-01-01",
-            "gender":{
-                "orid":"#721:0",
-                "id":"1",
-                "caption":"М"
-            },
-            "code":"ИИИ010101М",
-            "ehr_count":0,
+            "birth_day":"1954-01-01",
+            "code":"ИИИ010154",
+            "ehr_count":1,
             "company_name":"",
-            "snils":"Тестовый СНИЛС",
-            "phones":"+7 911"
+            "snils":"Пример снилса"
         }
     ]
 }
 ```
 
-**[Примеры кода](updateCode.md)**
+**[Java пример](updateJava.md)**

@@ -3,11 +3,11 @@
 
 ### ![GET](../../../../img/get.png) [/attachment/get`?id={id}`](../index.md)
 
-### Примеры
+### HTTP примеры
+
+**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/attachment/get?id=1586:412 HTTP/1.1`
 
 **Response**
-
-GET `http://tempurl.com/attachment/get?id=1586:412 HTTP/1.1`
 ```json
 {
     "result":[
@@ -26,4 +26,4 @@ GET `http://tempurl.com/attachment/get?id=1586:412 HTTP/1.1`
 }
 ```
 
-**[Примеры кода](getCode.mdt)**
+**[Пример Java](getJava.md)**

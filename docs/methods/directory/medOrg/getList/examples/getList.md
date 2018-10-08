@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/medOrg/getList](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request**  GET `http://tempurl.com/medOrg/getList HTTP/1.1`
+**Request**  GET `http://dev.onco-reg.ru/api/1.0/json/medOrg/getList HTTP/1.1`
 
 **Response**
 
@@ -59,4 +59,4 @@
 }
 ```
 
-**[Примеры кода](getListCode.md)**
+**[Java пример](getListJava.md)**

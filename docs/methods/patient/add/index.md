@@ -20,4 +20,4 @@
 с заполненым полем [id](../../../types/types.md#Patient).
 
 **[Примеры](examples/add.md)**
-**[Примеры кода](examples/addCode.md)**
+**[Java пример](examples/addJava.md)**

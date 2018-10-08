@@ -3,35 +3,36 @@
 
 ### ![GET](../../../../../img/get.png) [/patient/RcReferralRL/getList`?patient_id={patient_id}`](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request:** GET `http://tempurl.com/patient/RcReferralRL/getList?patient_id=71:30320 HTTP/1.1`
+**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/patient/RcReferralRL/getList?patient_id=70:33669 HTTP/1.1`
 
 **Response**
 ```json
 {
     "result":[
         {
-            "id":"#1505:730",
+            "id":"#1505:3512",
             "class_name":"RcReferralRL",
-            "patient_id":"#71:30320",
-            "ehr_id":"#879:32656",
+            "patient_id":"#70:33669",
+            "ehr_id":"#876:36710",
             "published":{
-                "user_id":"#963:30",
-                "time":"2017-12-06 15:26:05"
+                "user_id":"#961:0",
+                "time":"2018-10-09 00:49:27"
             },
-            "org_unit_id":"#996:21",
-            "time_rc":"2017-12-06 15:21:57",
+            "org_unit_id":"#999:28",
+            "time_rc":"2018-10-09 00:49:23",
             "rc_referral":{
-                "rc_appointment_id":"#1089:656",
-                "referral_org_unit_id":"#999:28",
+                "rc_appointment_id":"#1089:3142",
+                "referral_org_unit_id":"#993:34",
                 "referral_type":"RF_CONSULT",
                 "routing_list":{
-                    "note":"Киста левого яичника.",
-                    "referral_code":"1003899",
+                    "apply_last_date":"2018-10-09 00:49:23",
+                    "apply_first_date":"2018-10-09 00:49:23",
+                    "referral_code":"1023388",
                     "diagnosis":{
-                        "mkb_code":"D27",
-                        "mkb_name":"Доброкачественное новообразование яичника",
+                        "mkb_code":"C00",
+                        "mkb_name":"Злокачественные новообразования губы",
                         "tnm":{
                             "t":{
                                 "code":"NONE",
@@ -54,19 +55,12 @@
                             "code":"NONE",
                             "caption":""
                         }
-                    },
-                    "diagnostics":[
-                        {
-                            "type":{
-                                "id":"US_PELVIC",
-                                "caption":"УЗИ малого таза"
-                            },
-                            "date":"2016-10-27 00:00:00"
-                        }
-                    ]
+                    }
                 }
             }
         }
     ]
 }
 ```
+
+**[Java пример](getListJava.md)**

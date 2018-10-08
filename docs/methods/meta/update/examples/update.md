@@ -2,11 +2,11 @@
 
 ### ![POST](../../../../img/post.png) [/meta/update](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/meta/update HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/meta/update HTTP/1.1`
 ```json
 {
     "update":{
@@ -123,3 +123,5 @@ POST `http://tempurl.com/meta/update HTTP/1.1`
     ]
 }
 ```
+
+**[Java пример](updateJava.md)**

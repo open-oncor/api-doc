@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../../img/post.png) [/search/start/RcAppointmentQuery](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/search/start/RcAppointmentQuery HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcAppointmentQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -28,3 +28,5 @@ POST `http://tempurl.com/search/start/RcAppointmentQuery HTTP/1.1`
     ]
 }
 ```
+
+**[Java пример](RcAppointmentQueryJava.md)**

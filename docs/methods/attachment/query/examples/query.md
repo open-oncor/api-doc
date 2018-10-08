@@ -3,9 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/attachment/query](../index.md)
 
+### HTTP примеры
+
 **Request**
 
-POST `http://tempurl.com/attachment/query HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/attachment/query HTTP/1.1`
 ```json
 {
     "query":{
@@ -32,4 +34,4 @@ POST `http://tempurl.com/attachment/query HTTP/1.1`
 }
 ```
 
-**[Примеры кода](queryAttachment.md)**
+**[Java пример](queryJava.md)**

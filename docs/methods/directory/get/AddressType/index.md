@@ -7,4 +7,4 @@
 В ответе передаётся массив записей из справочника [DrPrsG](../../../../types/types.md#drprsg).
 
 **[Примеры](examples/get.md)**
-**[Пример кода](examples/getCode.md)**
+**[Пример кода](examples/getJava.md)**

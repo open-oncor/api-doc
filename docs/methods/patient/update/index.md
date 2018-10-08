@@ -12,4 +12,4 @@
 В ответе - объект [Patient](../../../types/types.md#Patient).
 
 **[Примеры](examples/update.md)**
-**[Примеры](examples/updateCode.md)**
+**[Примеры](examples/updateJava.md)**

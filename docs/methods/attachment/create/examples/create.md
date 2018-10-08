@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/get.png) [/attachment/create](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/attachment/create HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/attachment/create HTTP/1.1`
 ```json
 {
     "attachment":{
@@ -35,3 +35,5 @@ POST `http://tempurl.com/attachment/create HTTP/1.1`
     ]
 }
 ```
+
+**[Java пример](createJava.md)**

@@ -6,7 +6,13 @@
 ```java
 public class GetBloodTypes {
     public static void main(String[] args) throws IOException {
-            newProtoBuffClient().getBloodTypes();
+        ProtoBuffClient client = newProtoBuffClient();
+
+        List<Directories.BloodType> bloodTypes = client.getBloodTypes();
+        Directories.BloodType bloodType = bloodTypes.get(0);
+
+        String id = bloodType.getId();
+        String caption = bloodType.getCaption();
     }
 }
 ```

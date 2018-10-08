@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../img/get.png) [/rc/get`?id={id}`](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request:** GET `http://tempurl.com/rc/get?id=1577:16819 HTTP/1.1`
+**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/rc/get?id=1577:16819 HTTP/1.1`
 
 **Response**
 
@@ -15,23 +15,22 @@
         {
             "id":"#1577:16819",
             "class_name":"RcDoc",
-            "patient_id":"#65:33650",
-            "ehr_id":"#1049:33650",
+            "patient_id":"#70:29080",
+            "ehr_id":"#1054:29080",
             "published":{
-                "user_id":"#961:160",
-                "time":"2018-10-02 18:53:06"
+                "user_id":"#961:97",
+                "time":"2018-08-08 08:12:29"
             },
             "org_unit_id":"#999:28",
-            "summary":"Проверяем /patient/record/add",
-            "time_rc":"2018-10-02 18:53:06",
-            "attachment_id":[
-                "#1585:421"
-            ],
+            "summary":"Биохимическое исследование крови",
+            "time_rc":"2018-02-09 00:00:00",
             "rc_doc":{
-                "category":"TEST",
-                "html":"<b>Проверка Tue Oct 02 18:53:06 YEKT 2018</b>"
+                "category":"EXAMPLE",
+                "html":"<b>Example</b>"
             }
         }
     ]
 }
 ```
+
+**[Java пример](get.md)**

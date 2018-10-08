@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/LocMetType](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request** GET `http://tempurl.com/directory/get/LocMetType HTTP/1.1`
+**Request** GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/LocMetType HTTP/1.1`
 
 **Response**
 ```json
@@ -67,4 +67,4 @@
 }
 ```
 
-**[Примеры кода](getCode.md)**
+**[Java пример](getJava.md)**

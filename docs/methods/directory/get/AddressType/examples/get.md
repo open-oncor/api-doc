@@ -3,11 +3,11 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/Gender](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Response**
 
-GET `http://tempurl.com/directory/get/AddressType HTTP/1.1`
+GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/AddressType HTTP/1.1`
 ```json
 {
     "result":[
@@ -51,4 +51,4 @@ GET `http://tempurl.com/directory/get/AddressType HTTP/1.1`
 }
 ```
 
-**[Пример кода](getCode.md)**
+**[Java пример](getJava.md)**

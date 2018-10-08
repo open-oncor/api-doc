@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../../img/post.png) [/search/start/RcDocQuery](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/search/start/RcDocQuery HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcDocQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -22,8 +22,10 @@ POST `http://tempurl.com/search/start/RcDocQuery HTTP/1.1`
 {
     "result":[
         {
-            "id":"6921ac85-0e80-4b87-a1b5-66c817bb69b3"
+            "id":"23c89dab-2ddb-4bdf-a0c3-d5a33b44ff0e"
         }
     ]
 }
 ```
+
+**[Java пример](RcDocQueryJava.md)**

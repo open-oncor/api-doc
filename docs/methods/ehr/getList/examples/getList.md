@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../img/get.png) [/ehr/getList`?patient_id={patient_id}`](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request:** GET `http://tempurl.com/ehr/getList?patient_id=65:33650 HTTP/1.1`
+**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/ehr/getList?patient_id=65:33650 HTTP/1.1`
 
 **Response**
 
@@ -78,3 +78,5 @@
     ]
 }
 ```
+
+**[Java пример](getListJava.md)**

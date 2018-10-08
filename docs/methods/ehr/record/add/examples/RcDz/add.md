@@ -7,7 +7,7 @@
 
 **Request**
 
-POST `http://tempurl.com/ehr/record/add HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 ```json
 {
     "record":{
@@ -194,9 +194,11 @@ POST `http://tempurl.com/ehr/record/add HTTP/1.1`
 ```json
 {
     "error":{
-        "name":"com.siams.med.api.InvalidArgumentsException",
+        "name":"InvalidArgumentsException",
         "message":"Rc.ehr_id required",
         "uuid":"5f2ee073-bb3c-467d-afc4-275c411b27ca"
     }
 }
 ```
+
+**[Java пример](addJava.md)**

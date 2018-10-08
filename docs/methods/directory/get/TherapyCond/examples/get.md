@@ -3,9 +3,9 @@
 
 ### ![GET](../../../../../img/get.png) [/directory/get/TherapyCond](../index.md)
 
-### Примеры
+### HTTP примеры
 
-**Request**  GET `http://tempurl.com/directory/get/TherapyCond HTTP/1.1`
+**Request** GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/TherapyCond HTTP/1.1`
 
 **Response**
 
@@ -30,4 +30,4 @@
 }
 ```
 
-**[Примеры кода](getCode.md)**
+**[Java пример](getJava.md)**

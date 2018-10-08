@@ -3,11 +3,11 @@
 
 ### ![POST](../../../../img/post.png) [/meta/query](../index.md)
 
-### Примеры
+### HTTP примеры
 
 **Request**
 
-POST `http://tempurl.com/meta/query HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/meta/query HTTP/1.1`
 ```json
 {
     "query":{
@@ -79,4 +79,6 @@ POST `http://tempurl.com/meta/query HTTP/1.1`
     ]
 }
 ```
+
+**[Java пример](queryJava.md)**
 

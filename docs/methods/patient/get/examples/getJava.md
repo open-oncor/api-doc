@@ -7,9 +7,12 @@
 class GetPatient {
     public static void main(String[] args) throws IOException {
         final ProtoBuffClient client = newProtoBuffClient();
-        client.getPatient("65:33650");
+        Patients.Patient patient = client.getPatient("70:33669");
+        
+        String id = patient.getId();
+        String code = patient.getCode();
     }
 }
 ```
 
-**[HTTP примеры кода](get.md)**
+**[HTTP Java пример](get.md)**

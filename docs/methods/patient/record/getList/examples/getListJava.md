@@ -6,7 +6,11 @@
 ```java
 public class GetPatientRcList {
     public static void main(String[] args) throws IOException {
-        newProtoBuffClient().getPatientRecords("65:33650");
+        List<Records.Rc> patientRecords = newProtoBuffClient().getPatientRecords("70:33669");
+        Records.Rc rc = patientRecords.get(0);
+        
+        String id = rc.getId();
+        String ehrId = rc.getEhrId();
     }
 }
 ```
