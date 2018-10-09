@@ -1,5 +1,4 @@
-Добавление пациента
-=
+## Добавление пациента
 
 ### ![POST](../../../img/post.png) /patient/add
 * **Request:** [Patient](../../../types/types.md#Patient) **patient** <first_name, last_name, middle_name, birth_day>

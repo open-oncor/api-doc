@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../index.md)
-==============================
+## Получение списка заболеваний пациента (http)
 
 ### ![GET](../../../../img/get.png) [/ehr/getList`?patient_id={patient_id}`](../index.md)
-
-### HTTP примеры
 
 **Request:** GET `http://dev.onco-reg.ru/api/1.0/json/ehr/getList?patient_id=65:33650 HTTP/1.1`
 

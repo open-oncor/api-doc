@@ -1,5 +1,4 @@
-Получение данных пациента по его ключу
-===
+## Получение данных пациента по его ключу
 
 ### ![GET](../../../img/get.png) /patient/get`?id={patient_id}`
 * **URL parameter:** [id](../../../types/types.md#Patient)

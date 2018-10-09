@@ -1,5 +1,4 @@
-Добавление пациента без анализа 'двойников'
-=
+## Добавление пациента без анализа 'двойников'
 
 ### ![GET](../../../img/get.png) /patient/forceAdd
 * **Request:** [Patient](../../../types/types.md#Patient) patient
