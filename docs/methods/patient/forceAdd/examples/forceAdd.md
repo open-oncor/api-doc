@@ -1,5 +1,7 @@
 [Работа с пациентами](../index.md)
 ==================================
+**http**
+**[java](examples/forceAddJava.md)**
 
 ### ![GET](../../../../img/get.png) [/patient/forceAdd](../index.md)
 
@@ -12,7 +14,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/forceAdd HTTP/1.1`
           "first_name":"Сергей",
           "middle_name":"Сергеевич",
           "last_name":"Сергеев",
-          "birth_day":"1977-01-0",
+          "birth_day":"1977-01-0"
     }
 }
 ```
