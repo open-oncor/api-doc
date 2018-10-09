@@ -1,9 +1,6 @@
-[Работа с медицинскими записями](../index.md)
-===============================
+### Получение списка медицинских записей пациента для указанного заболевания (http)
 
 ### ![GET](../../../../img/get.png) [/rc/getList`?ehr_id={ehr_id}`](../index.md)
-
-### HTTP примеры
 
 **Request:** GET `http://dev.onco-reg.ru/api/1.0/json/rc/getList?ehr_id=1054:29080 HTTP/1.1`
 
@@ -52,5 +49,3 @@
     ]
 }
 ```
-
-**[Java пример](getListJava.md)**
