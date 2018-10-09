@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../../../index.md)
-=================================
+### Пример добавления записи RcHorm (http)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
-
-### Пример добавления записи [RcHorm](../../../../../../types/types.md#rcrchorm)
 
 **Request**
 
@@ -68,5 +65,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
     ]
 }
 ```
-
-**[Java пример](addJava.md)**

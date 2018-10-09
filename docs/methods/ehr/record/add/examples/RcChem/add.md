@@ -1,9 +1,7 @@
-[Работа с заболеваниями пациента](../../../../index.md)
-=================================
+### Пример добавления записи RcChem (http)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
 
-### Пример добавления записи [RcChem](../../../../../../types/types.md#rcrcchem)
 
 **Request**
 
@@ -73,4 +71,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 }
 ```
 
-**[Java пример](addJava.md)**

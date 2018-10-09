@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../../../index.md)
-=================================
+### Пример добавления записи RcChem (java)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
-
-### Java пример
 
 ```java
 public class AddRcChem {
@@ -40,5 +37,3 @@ public class AddRcChem {
 }
 
 ```
-
-**[HTTP примеры](add.md)**

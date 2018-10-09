@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../../../index.md)
-=================================
+### Пример добавления записи RcOper (http)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
-
-### Java пример
 
 ```java
 public class AddRcOper {
@@ -35,5 +32,3 @@ public class AddRcOper {
     }
 }
 ```
-
-**[HTTP примеры](add.md)**

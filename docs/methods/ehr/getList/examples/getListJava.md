@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../index.md)
-==============================
+### Получение списка заболеваний пациента (java)
 
 ### ![GET](../../../../img/get.png) [/ehr/getList`?patient_id={patient_id}`](../index.md)
-
-### Java пример
 
 ```java
 public class GetEhrList {
@@ -20,5 +17,3 @@ public class GetEhrList {
     }
 }
 ```
-
-**[HTTP примеры](getList.md)**

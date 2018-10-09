@@ -1,5 +1,4 @@
-[Работа с заболеваниями пациента](../../index.md)
-=====================================
+### Добавление медицинской записи в указанное заболевание
 
 ### ![POST](../../../../img/post.png) /ehr/record/add
 * **Request:** [Rc](../../../../types/types.md#rc) **record** <patient_id, ehr_id, rc>
@@ -7,19 +6,9 @@
 
 Добавляет запись в указанное заболевание.
 
-В запросе передаётся:
-
-[Rc](../../../../types/types.md#rc):
-* required patient_id
-* required ehr_id
-* one of ([RcDoc](../../../../types/types.md#rcrcdoc), [RcReferral](../../../../types/types.md#rcrcreferral), 
-[RcOper](../../../../types/types.md#rcrcoper), [RcHorm](../../../../types/types.md#rcrchorm), 
-[RcChem](../../../../types/types.md#rcrcchem), [RcRay](../../../../types/types.md#rcrcray))
-
-В ответе передаётся [Rc](../../../../types/types.md#rc).
-
-* **[Пример добавления записи RcChem](examples/RcChem/add.md)**
-* **[Пример добавления записи RcDz](examples/RcDz/add.md)**
-* **[Пример добавления записи RcHorm](examples/RcHorm/add.md)**
-* **[Пример добавления записи RcOper](examples/RcOper/add.md)**
-* **[Пример добавления записи RcRay](examples/RcRay/add.md)**
+#### Примеры
+* **Пример добавления записи RcDz [http](examples/RcDz/add.md) [java](examples/RcDz/addJava.md)**
+* **Пример добавления записи RcOper [html](examples/RcOper/add.md)[java](examples/RcOper/addJava.md)**
+* **Пример добавления записи RcRay [html](examples/RcRay/add.md) [java](examples/RcRay/addJava.md)**
+* **Пример добавления записи RcChem [html](examples/RcChem/add.md) [java](examples/RcChem/addJava.md)**
+* **Пример добавления записи RcHorm [html](examples/RcHorm/add.md) [java](examples/RcHorm/addJava.md)**

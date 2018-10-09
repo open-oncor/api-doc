@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../../../index.md)
-=================================
+### Пример добавления записи RcDz (http)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
-
-### Пример добавления записи [RcDz](../../../../../../types/types.md#rcrcdz)
 
 **Request**
 
@@ -200,5 +197,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
     }
 }
 ```
-
-**[Java пример](addJava.md)**

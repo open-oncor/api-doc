@@ -1,9 +1,6 @@
-[Работа с заболеваниями пациента](../../../../index.md)
-=================================
+### Пример добавления записи RcDz (java)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
-
-### Java пример
 
 ```java
 public class AddRcDz {
@@ -53,5 +50,3 @@ public class AddRcDz {
 }
 
 ```
-
-**[HTTP пример](add.md)**

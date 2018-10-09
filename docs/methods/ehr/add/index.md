@@ -1,4 +1,4 @@
-## Регистрация заболевания пациента
+### Регистрация заболевания пациента
 
 ### ![POST](../../../img/post.png) /ehr/add
 * **Request:** [EHR](../../../types/types.md#ehr) **ehr** <patient_id>

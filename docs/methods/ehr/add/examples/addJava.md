@@ -1,8 +1,6 @@
-## Регистрация заболевания пациента (java)
+### Регистрация заболевания пациента (java)
 
 ### ![POST](../../../../img/post.png) [/ehr/add](../index.md)
-
-### Java пример
 
 ```java
 public class AddEhr {

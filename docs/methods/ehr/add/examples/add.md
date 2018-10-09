@@ -1,4 +1,4 @@
-## Регистрация заболевания пациента (http)
+### Регистрация заболевания пациента (http)
 
 ### ![POST](../../../../img/post.png) [/ehr/add](../index.md)
 
@@ -37,5 +37,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/add HTTP/1.1`
     }
 }
 ```
-
-**[Java пример](addJava.md)**
