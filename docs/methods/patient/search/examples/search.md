@@ -1,9 +1,8 @@
-[Работа с пациентами](../../index.md)
-=====================================
+Работа с пациентами (http)
+===
+
 
 ### ![POST](../../../../img/post.png) [/patient/search](../../search/index.md)
-
-### HTTP примеры
 
 **Request**
 
@@ -71,4 +70,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/search HTTP/1.1`
 }
 ```
 
-**[Java пример](searchJava.md)**

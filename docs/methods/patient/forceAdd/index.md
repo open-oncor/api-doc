@@ -11,6 +11,6 @@
 В случае успешного добавления, в ответе будет массив с единственным объектом - [Patient](../../../types/types.md#Patient) 
 с заполненым полем id.
 
-### Примеры
+#### Примеры
 **[http](examples/forceAdd.md)**
 **[java](examples/forceAddJava.md)**

@@ -1,9 +1,7 @@
 [Работа с пациентами](../index.md)
 ==================================
-**[http](examples/forceAdd.md)**
-**java**
 
-### ![GET](../../../../img/get.png) [/patient/forceAdd](../index.md)
+### ![POST](../../../../img/post.png) [/patient/forceAdd](../index.md)
 
 ```java
 class AddPatient {

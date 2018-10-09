@@ -1,5 +1,5 @@
-[Работа с пациентами](../../index.md)
-=====================================
+Работа с пациентами (java)
+===
 
 ### ![POST](../../../../img/post.png) [/patient/search](../../search/index.md)
 
@@ -43,5 +43,3 @@ class SearchPatient {
     }
 }
 ```
-
-**[HTTP примеры](search.md)**
