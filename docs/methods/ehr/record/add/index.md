@@ -8,7 +8,7 @@
 
 #### Примеры
 * **Пример добавления записи RcDz [http](examples/RcDz/add.md) [java](examples/RcDz/addJava.md)**
-* **Пример добавления записи RcOper [html](examples/RcOper/add.md)[java](examples/RcOper/addJava.md)**
-* **Пример добавления записи RcRay [html](examples/RcRay/add.md) [java](examples/RcRay/addJava.md)**
-* **Пример добавления записи RcChem [html](examples/RcChem/add.md) [java](examples/RcChem/addJava.md)**
-* **Пример добавления записи RcHorm [html](examples/RcHorm/add.md) [java](examples/RcHorm/addJava.md)**
+* **Пример добавления записи RcOper [http](examples/RcOper/add.md) [java](examples/RcOper/addJava.md)**
+* **Пример добавления записи RcRay [http](examples/RcRay/add.md) [java](examples/RcRay/addJava.md)**
+* **Пример добавления записи RcChem [http](examples/RcChem/add.md) [java](examples/RcChem/addJava.md)**
+* **Пример добавления записи RcHorm [http](examples/RcHorm/add.md) [java](examples/RcHorm/addJava.md)**
