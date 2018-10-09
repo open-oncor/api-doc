@@ -1,5 +1,5 @@
-[Работа с пациентами](../index.md)
-=====================================
+Изменение данных пациента (java)
+=
 
 ### ![POST](../../../../img/post.png) [/patient/update](../index.md)
 
@@ -24,4 +24,3 @@ public class UpdatePatient {
 }
 ```
 
-**[HTTP примеры](update.md)**

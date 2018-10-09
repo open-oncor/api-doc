@@ -1,5 +1,5 @@
-[Работа с пациентами](../index.md)
-==================================
+Добавление пациента
+=
 
 ### ![POST](../../../img/post.png) /patient/add
 * **Request:** [Patient](../../../types/types.md#Patient) **patient** <first_name, last_name, middle_name, birth_day>
@@ -8,16 +8,6 @@
 
 Добавляет пациента с проверкой дублей. В случае наличия пациента с такими данными возвращается ошибка.
 
-В запросе передаётся объект:
-
-[Patient](../../../types/types.md#Patient)
-* first_name
-* last_name
-* middle_name
-* birth_day
- 
-В случае успешного добавления, в ответе будет массив с единственным объектом - [Patient](../../../types/types.md#Patient) 
-с заполненым полем [id](../../../types/types.md#Patient).
-
-**[Примеры](examples/add.md)**
-**[Java пример](examples/addJava.md)**
+#### Примеры
+**[http](examples/add.md)**
+**[java](examples/addJava.md)**

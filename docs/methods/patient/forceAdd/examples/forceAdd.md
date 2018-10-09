@@ -1,5 +1,5 @@
-[Работа с пациентами](../index.md)
-==================================
+Добавление пациента без анализа 'двойников' (http)
+=
 
 ### ![GET](../../../../img/get.png) [/patient/forceAdd](../index.md)
 
@@ -36,4 +36,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/forceAdd HTTP/1.1`
 }
 ```
 
-**[Java пример](forceAddJava.md)**

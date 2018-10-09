@@ -1,9 +1,7 @@
-[Работа с пациентами](../../index.md)
-=====================================
+Добавление пациента (http)
+=
 
 ### ![POST](../../../../img/post.png) [/patient/add](../index.md)
-
-### HTTP примеры
 
 **Request**
 
@@ -62,4 +60,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
 }
 ```
 
-**[Java пример](addJava.md)**

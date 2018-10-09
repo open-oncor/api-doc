@@ -1,9 +1,7 @@
-[Работа с пациентами](../index.md)
-==================================
+Получение данных пациента по его ключу (http)
+=
 
 ### ![GET](../../../../img/get.png) [/patient/get`?id={patient_id}`](../index.md)
-
-### HTTP примеры
 
 **Request:** GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`
 
@@ -31,5 +29,3 @@
     ]
 }
 ```
-
-**[Java пример](getJava.md)**

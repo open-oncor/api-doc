@@ -1,5 +1,5 @@
 Поиск пациентов (java)
-===
+=
 
 ### ![POST](../../../../img/post.png) [/patient/search](../../search/index.md)
 

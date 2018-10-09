@@ -1,5 +1,5 @@
-[Работа с пациентами](../index.md)
-=====================================
+Изменение данных пациента (http)
+=
 
 ### ![POST](../../../../img/post.png) [/patient/update](../index.md)
 
@@ -40,4 +40,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/update HTTP/1.1`
 }
 ```
 
-**[Java пример](updateJava.md)**
