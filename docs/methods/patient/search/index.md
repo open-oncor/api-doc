@@ -1,5 +1,5 @@
-[Работа с пациентами](../index.md)
-==================================
+Поиск пациентов
+===
 
 ### ![POST](../../../img/post.png) /patient/search
 * **Request:** [PatientQuery](../../../types/types.md#PatientQuery) **patient_query** <first_name, last_name, middle_name, birth_day>
