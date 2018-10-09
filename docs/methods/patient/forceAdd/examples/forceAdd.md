@@ -1,7 +1,7 @@
 Добавление пациента без анализа 'двойников' (http)
 =
 
-### ![GET](../../../../img/get.png) [/patient/forceAdd](../index.md)
+### ![POST](../../../../img/post.png) [/patient/forceAdd](../index.md)
 
 **Request**
 

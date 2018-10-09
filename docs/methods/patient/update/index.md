@@ -1,4 +1,4 @@
-## Изменение данных пациента
+### Изменение данных пациента
 
 ### ![POST](../../../img/post.png) /patient/update
 * **Request:** [PatientUpdate](../../../types/types.md#patientupdate) **patient <id, code>**
