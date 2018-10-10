@@ -30,7 +30,7 @@
 * [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление медицинской записи в указанное заболевание` 
 * [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
 * [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`
-* [/ehr/record/add(RcOper)](methods/ehr/record/add/RcDz/index.md) ![done](img/done.png) - `добавление записи о хирургическом лечении в указанное заболевание` 
+* [/ehr/record/add(RcOper)](methods/ehr/record/add/RcOper/index.md) ![done](img/done.png) - `добавление записи о хирургическом лечении в указанное заболевание` 
 
 ---
 
