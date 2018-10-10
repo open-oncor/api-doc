@@ -5,7 +5,7 @@
 * **Response ```200```:** [[EHR](../../../types/types.md#ehr)]
 * **Response ```422```:** [ErrorResult](../../../types/types.md#errorresult)
 
-Регистрирует новое заболевание для пациента. 
+Регистрирует новое заболевание для пациента.  
 
 #### Примеры
 **[http](examples/add.md)**
