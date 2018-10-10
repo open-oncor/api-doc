@@ -73,6 +73,8 @@
 ### Работа со справочниками
 
 `Хранение и выдача содержимого справочников комплекса`
+<!-- todo а МКБ-10? -->
+<!-- todo а МКБ-О-2? -->
 
 * [/directory/get/DrPrsG](methods/directory/get/DrPrsG/index.md) ![done](img/done.png) - `справочник половой принадлежности` 
 * [/directory/get/BloodType](methods/directory/get/BloodType/index.md) ![done](img/done.png) - `справочник групп крови`
