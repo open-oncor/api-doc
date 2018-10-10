@@ -1,9 +1,6 @@
-[Работа с пациентами](../../../../index.md)
-=====================================
+### Добавление статистической записи 'Установка клинической группы' (RcClinicalGroup) указанному пациенту (java)
 
 ### ![POST](../../../../../../img/post.png) [/patient/record/add](../../index.md)
-
-### Java пример
 
 ```java
 public class AddRcClinicalGroup {
@@ -25,5 +22,3 @@ public class AddRcClinicalGroup {
 }
 
 ```
-
-**[HTTP примеры](add.md)**

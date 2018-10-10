@@ -1,9 +1,6 @@
-[Работа с пациентами](../../../../index.md)
-=====================================
+### Добавление статистической записи 'Установка клинической группы' (RcClinicalGroup) указанному пациенту (http) 
 
 ### ![POST](../../../../../../img/post.png) [/patient/record/add](../../index.md)
-
-### HTTP примеры
 
 **Request**
 
@@ -47,5 +44,3 @@ POST http://dev.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1
     ]
 }
 ```
-
-**[Java пример](addJava.md)**
