@@ -1,4 +1,4 @@
-### Пример добавления записи RcOper (http)
+### Пример добавления записи RcOper (java)
 
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
 
