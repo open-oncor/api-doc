@@ -27,10 +27,12 @@
 * [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей общих для пациента (не привязанных к конретному заболеванию)`
 * [/rc/get](methods/rc/get/index.md) ![done](img/done.png) - `получение медицинской записи пациента по ключу`
 * [/patient/record/add](methods/patient/record/add/index.md) - `добавление медицинской записи пациенту`
-* [/ehr/record/add](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление медицинской записи в указанное заболевание` 
 * [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
 * [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`
-* [/ehr/record/add(RcOper)](methods/ehr/record/add/RcOper/index.md) ![done](img/done.png) - `добавление записи о хирургическом лечении в указанное заболевание` 
+* [/ehr/record/add(RcOper)](methods/ehr/record/add/RcOper/index.md) ![done](img/done.png) - `добавление статистического документа 'Хирургическое лечение' в указанное заболевание` 
+* [/ehr/record/add(RcRay)](methods/ehr/record/add/RcRay/index.md) ![done](img/done.png) - `добавление статистического документа 'Лучевая терапия' в указанное заболевание` 
+* [/ehr/record/add(RcChem)](methods/ehr/record/add/RcChem/index.md) ![done](img/done.png) - `добавление статистического документа 'Химиотерапия' в указанное заболевание` 
+* [/ehr/record/add(RcHorm)](methods/ehr/record/add/RcHorm/index.md) ![done](img/done.png) - `добавление статистического документа 'Гормонотерапия' в указанное заболевание` 
 
 ---
 
