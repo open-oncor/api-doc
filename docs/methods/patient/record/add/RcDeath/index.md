@@ -6,7 +6,6 @@
 
 Статистическая запись 'Регистрация смерти' добавляется как запись Rc указанному пациенту.
 
-<!-- #### Примеры
-**[http](../examples/RcDeath/add.md) [java](../examples/RcDeath/addJava.md)** -->
+#### Примеры
+**[http](../examples/RcDeath/add.md) [java](../examples/RcDeath/addJava.md)**
 
-<!-- todo Добавить примеры -->
