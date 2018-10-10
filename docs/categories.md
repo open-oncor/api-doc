@@ -15,7 +15,7 @@
 
 * [/ehr/getList](methods/ehr/getList/index.md) ![done](img/done.png) - `получение списка заболеваний пациента`
 * [/ehr/add](methods/ehr/add/index.md) ![done](img/done.png) - `регистрация заболевания пациента`
-* [/ehr/record/add(RcDz)](methods/ehr/record/add/index.md) ![done](img/done.png) - `добавление диагноза в указанное заболевание` 
+* [/ehr/record/add(RcDz)](methods/ehr/record/add/RcDz/index.md) ![done](img/done.png) - `добавление диагноза в указанное заболевание` 
 
 ---
 
