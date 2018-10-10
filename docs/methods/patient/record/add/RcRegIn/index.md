@@ -1,4 +1,4 @@
-### Добавление статистической записи 'Постановка на учёт' указаннму пациенту (RcRegIn)
+### Добавление статистической записи 'Постановка на учёт' (RcRegIn) указанному пациенту 
 
 ### ![POST](../../../../../img/post.png) /patient/record/add
 * **Request:** [RcRegIn](../../../../../types/types.md#Rc.RcRegIn) **record** <patient_id, RcRegIn>

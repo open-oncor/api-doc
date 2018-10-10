@@ -32,10 +32,10 @@
 * [/ehr/record/add(RcHorm)](methods/ehr/record/add/RcHorm/index.md) ![done](img/done.png) - `добавление статистической записи 'Гормонотерапия' в указанное заболевание` 
 <!--- todo добавить описание как создать спецлечение? -->
 * [/patient/record/add](methods/patient/record/add/index.md) - `добавление медицинской записи пациенту`
-* [/patient/record/add(RcRegIn)](methods/patient/record/add/RcRegIn/index.md) - `добавление статистической записи 'Постановка на учёт' указаннму пациенту`
-* [/patient/record/add(RcRegOut)](methods/patient/record/add/RcRegOut/index.md) - `добавление статистической записи 'Снятие с учёта' указаннму пациенту`
-* [/patient/record/add(RcDeath)](methods/patient/record/add/RcDeath/index.md) - `добавление статистической записи 'Регистрация смерти' указаннму пациенту`
-* [/patient/record/add(RcClinicalGroup)](methods/patient/record/add/RcClinicalGroup/index.md) - `добавление статистической записи 'Установка клинической группы' указаннму пациенту`
+* [/patient/record/add(RcRegIn)](methods/patient/record/add/RcRegIn/index.md) - `добавление статистической записи 'Постановка на учёт' указанному пациенту`
+* [/patient/record/add(RcRegOut)](methods/patient/record/add/RcRegOut/index.md) - `добавление статистической записи 'Снятие с учёта' указанному пациенту`
+* [/patient/record/add(RcDeath)](methods/patient/record/add/RcDeath/index.md) - `добавление статистической записи 'Регистрация смерти' указанному пациенту`
+* [/patient/record/add(RcClinicalGroup)](methods/patient/record/add/RcClinicalGroup/index.md) - `добавление статистической записи 'Установка клинической группы' указанному пациенту`
 * [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
 * [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`
 

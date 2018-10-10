@@ -1,4 +1,4 @@
-### Добавление статистической записи 'Снятие с учёта' указаннму пациенту (RcRegOut)
+### Добавление статистической записи 'Снятие с учёта' (RcRegOut) указанному пациенту 
 
 ### ![POST](../../../../../img/post.png) /patient/record/add
 * **Request:** [RcRegOut](../../../../../types/types.md#Rc.RcRegOut) **record** <patient_id, RcRegOut>
