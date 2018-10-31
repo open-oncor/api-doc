@@ -1,8 +1,8 @@
 ### Добавление пациента без анализа 'двойников'
 
 ### ![POST](../../../img/post.png) /patient/forceAdd
-* **Request:** [Patient](../../../types/types.md#Patient) patient
-* **Response:** [[Patient](../../../types/types.md#Patient)]
+* **Request:** [Patient](../../../types/types.md#com.siams.med.api.Patient) patient
+* **Response:** [[Patient](../../../types/types.md#com.siams.med.api.Patient)]
 
 #### Примеры
 **[http](examples/forceAdd.md)**

@@ -1,8 +1,8 @@
 ### Добавление медицинской записи в указанное заболевание
 
 ### ![POST](../../../../img/post.png) /ehr/record/add
-* **Request:** [Rc](../../../../types/types.md#rc) **record** <patient_id, ehr_id, rc>
-* **Response:** [[Rc](../../../../types/types.md#rc)]
+* **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) **record** <patient_id, ehr_id, rc>
+* **Response:** [[Rc](../../../../types/types.md#com.siams.med.api.Rc)]
 
 Добавляет запись в указанное заболевание.
 

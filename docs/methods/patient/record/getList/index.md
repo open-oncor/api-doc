@@ -2,12 +2,12 @@
 ====================================
 
 ### ![GET](../../../../img/get.png) /patient/record/getList`?patient_id={patient_id}`
-* **URL parameter:** [patient_id](../../../../types/types.md#rc)
-* **Response:** [[Rc](../../../../types/types.md#rc)]
+* **URL parameter:** [patient_id](../../../../types/types.md#com.siams.med.api.Rc)
+* **Response:** [[Rc](../../../../types/types.md#com.siams.med.api.Rc)]
 
-Возвращает список записей для пациента с идентификатором [patient_id](../../../../types/types.md#rc).
+Возвращает список записей для пациента с идентификатором [patient_id](../../../../types/types.md#com.siams.med.api.Rc).
 
-В ответе передаётся массив объектов [Rc](../../../../types/types.md#rc).
+В ответе передаётся массив объектов [Rc](../../../../types/types.md#com.siams.med.api.Rc).
 
 **[Примеры](examples/getList.md)**
 **[Примеры](examples/getListJava.md)**

@@ -5,11 +5,11 @@
 
 ### ![GET](../../../img/get.png) /attachment/get`?id={id}`
 * **URL parameter:** [id](../../../types/types.md#attachmentmeta)
-* **Response:** [[Attachment](../../../types/types.md#attachment)]
+* **Response:** [[Attachment](../../../types/types.md#com.siams.med.api.Attachment)]
 
-Возвращает объект типа [Attachment](../../../types/types.md#attachment) с идентификатором [id](../../../types/types.md#attachmentmeta)
+Возвращает объект типа [Attachment](../../../types/types.md#com.siams.med.api.Attachment) с идентификатором [id](../../../types/types.md#attachmentmeta)
 
-Поле [Attachment.data](../../../types/types.md#attachment) представляет собой [ByteString](../../../types/types.md#scalar-value-types)
+Поле [Attachment.data](../../../types/types.md#com.siams.med.api.Attachment) представляет собой [ByteString](../../../types/types.md#scalar-value-types)
 
 **[HTTP примеры](examples/get.md)**
 **[Java пример](examples/getJava.md)**
