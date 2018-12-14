@@ -9,10 +9,10 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/search HTTP/1.1`
 ```json
 {
     "patient_query":{
-        "first_name":"Иванов",
-        "middle_name":"Иван",
-        "last_name":"Иванович",
-        "birth_day":"1944-06-14"
+        "last_name":"Иванов",
+        "first_name":"Иван",
+        "middle_name":"Иванович",
+        "birth_day":"1967-12-03"
     }
 }
 ```
@@ -23,16 +23,16 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/search HTTP/1.1`
     "result":[
         {
             "id":"#70:33669",
-            "first_name":"Иванов",
-            "middle_name":"Иван",
-            "last_name":"Иванович",
-            "birth_day":"1944-06-14",
+            "last_name":"Иванов",
+            "first_name":"Иван",
+            "middle_name":"Иванович",
+            "birth_day":"1967-12-03",
             "gender":{
                 "orid":"#721:0",
                 "id":"1",
                 "caption":"М"
             },
-            "code":"ИИИ140644М",
+            "code":"ИИИ031267М",
             "ehr_count":1,
             "company_name":"",
             "snils":"",
