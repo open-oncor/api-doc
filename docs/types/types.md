@@ -93,6 +93,7 @@
   
 
 - [oncor.proto](#oncor.proto)
+    - [Locality](#com.siams.med.api.Locality)
     - [MedOrg](#com.siams.med.api.MedOrg)
     - [MedTerr](#com.siams.med.api.MedTerr)
     - [User](#com.siams.med.api.User)
@@ -1598,6 +1599,23 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
+<a name="com.siams.med.api.Locality"/>
+
+### Locality
+Населенный Пункт
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional | Онкор id: #123:456 |
+| name | [string](#string) | optional | Название населенного пункта: Екатерингбург, Владивосток,... |
+| type | [string](#string) | optional | Тип населенного пункта: город, село, пгт,... |
+
+
+
+
+
+
 <a name="com.siams.med.api.MedOrg"/>
 
 ### MedOrg
@@ -1705,6 +1723,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 | kladr | [string](#string) | optional |  |
 | okato | [string](#string) | optional |  |
 | med_terr | [MedTerr](#com.siams.med.api.MedTerr) | optional |  |
+| locality | [Locality](#com.siams.med.api.Locality) | optional |  |
 | type | [AddressType](#com.siams.med.api.AddressType) | optional |  |
 | living_area_type | [RBiPRK438](#com.siams.med.api.RBiPRK438) | optional |  |
 
@@ -1866,6 +1885,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
+| orid | [string](#string) | optional |  |
 | name | [string](#string) | optional |  |
 | type | [DrugType](#com.siams.med.api.DrugType) | optional |  |
 | code | [string](#string) | optional |  |
@@ -1884,7 +1904,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| drug | [Drug](#com.siams.med.api.Drug) | required |  |
+| drug | [Drug](#com.siams.med.api.Drug) | optional |  |
 | dose | [double](#double) | optional |  |
 | unit | [DoseUnit](#com.siams.med.api.DoseUnit) | optional |  |
 
