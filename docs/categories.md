@@ -26,6 +26,7 @@
 * [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей пациента для указанного заболевания`
 * [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей общих для пациента (не привязанных к конретному заболеванию)`
 * [/rc/get](methods/rc/get/index.md) ![done](img/done.png) - `получение медицинской записи пациента по ключу`
+* [/ehr/record/add(RcReferral)](methods/ehr/record/add/RcReferral/index.md) ![done](img/done.png) - `добавление направления в указанное заболевание`
 * [/ehr/record/add(RcOper)](methods/ehr/record/add/RcOper/index.md) ![done](img/done.png) - `добавление статистической записи 'Хирургическое лечение' в указанное заболевание` 
 * [/ehr/record/add(RcRay)](methods/ehr/record/add/RcRay/index.md) ![done](img/done.png) - `добавление статистической записи 'Лучевая терапия' в указанное заболевание` 
 * [/ehr/record/add(RcChem)](methods/ehr/record/add/RcChem/index.md) ![done](img/done.png) - `добавление статистической записи 'Химиотерапия' в указанное заболевание` 
@@ -36,7 +37,7 @@
 * [/patient/record/add(RcRegOut)](methods/patient/record/add/RcRegOut/index.md) - `добавление статистической записи 'Снятие с учёта' указанному пациенту`
 * [/patient/record/add(RcDeath)](methods/patient/record/add/RcDeath/index.md) - `добавление статистической записи 'Регистрация смерти' указанному пациенту`
 * [/patient/record/add(RcClinicalGroup)](methods/patient/record/add/RcClinicalGroup/index.md) - `добавление статистической записи 'Установка клинической группы' указанному пациенту`
-* [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `добавление направления пациенту по его заболеванию`
+* [/patient/RcReferralRl/getList](methods/patient/RcReferralRl/getList/index.md) ![done](img/done.png) - `получение списка направлений пациента`
 * [/patient/RcAppointment/add](methods/patient/RcAppointment/add/index.md) ![done](img/done.png) - `добавление предварительной записи пациента на приём`
 
 ---
