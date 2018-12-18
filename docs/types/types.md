@@ -108,6 +108,7 @@
     - [Insurance](#com.siams.med.api.Insurance)
     - [Patient](#com.siams.med.api.Patient)
     - [PatientQuery](#com.siams.med.api.PatientQuery)
+    - [PatientSearchResult](#com.siams.med.api.PatientSearchResult)
     - [PatientUpdate](#com.siams.med.api.PatientUpdate)
     - [PatientUpdate.Entry](#com.siams.med.api.PatientUpdate.Entry)
   
@@ -1811,6 +1812,27 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 | code | [string](#string) | optional |  |
 | snils | [string](#string) | optional |  |
 | insurance | [Insurance](#com.siams.med.api.Insurance) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.PatientSearchResult"/>
+
+### PatientSearchResult
+Результат, возвращаемый по запросу
+```
+GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=311288&amp;gender=M&amp;limit=20
+```
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| patients | [Patient](#com.siams.med.api.Patient) | repeated |  |
+| warnings | [string](#string) | repeated |  |
+| invalid_query_format | [bool](#bool) | optional |  |
+| out_of_limit | [bool](#bool) | optional |  |
 
 
 
