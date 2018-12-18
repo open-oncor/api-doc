@@ -3,7 +3,7 @@
 ### ![POST](../../../../../../img/post.png) [/ehr/record/add](../../index.md)
 
 ```java
-public class AddRcChem {
+public class AddRcReferral {
     public static void main(String[] args) throws IOException {
         final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -36,8 +36,6 @@ public class AddRcChem {
                 .build()
         );
 
-        String id = newEhrRecord.getId();
-        Records.Rc.RcChem rcChem = newEhrRecord.getRcChem();
     }
 }
 

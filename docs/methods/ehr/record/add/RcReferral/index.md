@@ -1,8 +1,8 @@
 ### Добавление направления в указанное заболевание (RcReferral)
 
 ### ![POST](../../../../../img/post.png) /ehr/record/add
-* **Request:** [RcReferral](../../../../../types/types.md#Rc.RcChem) **record** <patient_id, ehr_id, RcChem>
-* **Response:** [[RcReferral](../../../../../types/types.md#Rc.RcChem)]
+* **Request:** [RcReferral](../../../../../types/types.md#Rc.RcReferral) **record** <patient_id, ehr_id, RcChem>
+* **Response:** [[RcReferral](../../../../../types/types.md#Rc.RcReferral)]
 
 Направление добавляется как запись Rc в указанное заболевание.
 
