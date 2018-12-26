@@ -2015,9 +2015,9 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| time_rc_in | [string](#string) | optional | [дата](../types/date_time.md) начала курса |
-| time_rc_out | [string](#string) | optional | [дата](../types/date_time.md) окончания курса |
-| org_unit_id | [string](#string) | optional | место проведения, [ссылка на справочник организаций](../types/urg_unit_ref.md) |
+| time_rc_in | [string](#string) | optional | [дата](date_time.md) начала курса |
+| time_rc_out | [string](#string) | optional | [дата](date_time.md) окончания курса |
+| org_unit_id | [string](#string) | optional | место проведения, [ссылка на справочник организаций](#com.siams.med.api.MedOrg) |
 | aim | [TherapyAim](#com.siams.med.api.TherapyAim) | optional | применение на этапах лечения |
 | kind | [ChemKind](#com.siams.med.api.ChemKind) | optional | вид |
 | condition | [TherapyCond](#com.siams.med.api.TherapyCond) | optional | условия проведения |
@@ -2100,9 +2100,9 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| time_rc_in | [string](#string) | optional | [дата](../types/date_time.md) начала курса |
-| time_rc_out | [string](#string) | optional | [дата](../types/date_time.md) окончания курса |
-| org_unit_id | [string](#string) | optional | место проведения, [ссылка на справочник организаций](../types/urg_unit_ref.md) |
+| time_rc_in | [string](#string) | optional | [дата](date_time.md) начала курса |
+| time_rc_out | [string](#string) | optional | [дата](date_time.md) окончания курса |
+| org_unit_id | [string](#string) | optional | место проведения, [ссылка на справочник организаций](#com.siams.med.api.MedOrg) |
 | kind | [Rc.RcHorm.Kind](#com.siams.med.api.Rc.RcHorm.Kind) | optional | вид |
 | aim | [TherapyAim](#com.siams.med.api.TherapyAim) | optional | применение на этапах лечения |
 | condition | [TherapyCond](#com.siams.med.api.TherapyCond) | optional | условия проведения |
@@ -2142,9 +2142,9 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| time_rc_in | [string](#string) | optional | [дата](../types/date_time.md) начала курса |
-| time_rc_out | [string](#string) | optional | [дата](../types/date_time.md) окончания курса |
-| org_unit_id | [string](#string) | optional | место проведения, [ссылка на справочник организаций](../types/urg_unit_ref.md) |
+| time_rc_in | [string](#string) | optional | [дата](date_time.md) начала курса |
+| time_rc_out | [string](#string) | optional | [дата](date_time.md) окончания курса |
+| org_unit_id | [string](#string) | optional | место проведения, [ссылка на справочник организаций](#com.siams.med.api.MedOrg) |
 | aim | [TherapyAim](#com.siams.med.api.TherapyAim) | optional | применение на этапах лечения |
 | kind | [RayKind](#com.siams.med.api.RayKind) | optional | вид |
 | method | [RayMethod](#com.siams.med.api.RayMethod) | optional | метод |
