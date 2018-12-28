@@ -1,9 +1,8 @@
-[Работа со справочниками](../../index.md)
-=========================================
+### Получение списка медицинских территорий
 
 ### ![GET](../../../../img/get.png) /medTerr/getList
 * **Response:** [[MedTerr](../../../../types/types.md#com.siams.med.api.MedTerr)]
 
-Возвращает список медицинских территорий [{MedTerr}](../../../../types/types.md#com.siams.med.api.MedTerr).
+#### Примеры
+**[http]((examples/getList.md))
 
-**[Примеры](examples/getList.md)**
