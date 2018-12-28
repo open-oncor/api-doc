@@ -14,8 +14,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1`
       "html": "<body><h1>Протокол химиотерапии</h1>Данные протокола находятся здесь</body>",
       "category": "лечение"
     },
-    "time_rc": "2018-06-01",
-    "meta": []
+    "time_rc": "2018-06-01"
   }
 }
 ```
