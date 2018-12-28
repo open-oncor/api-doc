@@ -32,7 +32,7 @@
 * [/ehr/record/add(RcChem)](methods/ehr/record/add/RcChem/index.md) ![done](img/done.png) - `добавление статистической записи 'Химиотерапия' в указанное заболевание` 
 * [/ehr/record/add(RcHorm)](methods/ehr/record/add/RcHorm/index.md) ![done](img/done.png) - `добавление статистической записи 'Гормонотерапия' в указанное заболевание` 
 <!--- todo добавить описание как создать спецлечение? -->
-* [/patient/record/add](methods/patient/record/add/index.md) - `добавление медицинской записи пациенту`
+* [/patient/record/add(RcDoc)](methods/patient/record/add/index.md) - `добавление медицинской записи пациенту`
 * [/patient/record/add(RcRegIn)](methods/patient/record/add/RcRegIn/index.md) - `добавление статистической записи 'Постановка на учёт' указанному пациенту`
 * [/patient/record/add(RcRegOut)](methods/patient/record/add/RcRegOut/index.md) - `добавление статистической записи 'Снятие с учёта' указанному пациенту`
 * [/patient/record/add(RcDeath)](methods/patient/record/add/RcDeath/index.md) - `добавление статистической записи 'Регистрация смерти' указанному пациенту`

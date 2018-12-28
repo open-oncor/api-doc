@@ -1,10 +1,10 @@
-### Добавление медицинской записи пациенту (записи общие для пациента, не относящиеся ни к одному из заболеваний)
+### Добавление медицинской записи пациенту (RcDoc)
 
 ### ![POST](../../../../img/post.png) /patient/record/add
-* **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) record
-* **Response:** [Rc](../../../../types/types.md#com.siams.med.api.Rc)
+* **Request:** [RcDoc](../../../../types/types.md#com.siams.med.api.Rc.RcDoc) record
+* **Response:** [RcDoc](../../../../types/types.md#com.siams.med.api.Rc.RcDoc)
 
-Добавляет запись пациенту. В запросе передаётся объект - [Rc](../../../../types/types.md#com.siams.med.api.Rc).
+Добавляет запись пациенту. В запросе передаётся объект - [RcDoc](../../../../types/types.md#com.siams.med.api.Rc.RcDoc).
 
 #### Примеры
- **[http](examples/RcRegIn/add.md) [java](examples/RcRegIn/addJava.md)**
+ **[http](examples/RcDoc/add.md) [java](examples/RcDoc/addJava.md)**
