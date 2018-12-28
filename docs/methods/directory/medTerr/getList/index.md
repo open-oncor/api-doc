@@ -4,5 +4,5 @@
 * **Response:** [[MedTerr](../../../../types/types.md#com.siams.med.api.MedTerr)]
 
 #### Примеры
-**[http]((examples/getList.md))
+**[http](examples/getList.md)**
 

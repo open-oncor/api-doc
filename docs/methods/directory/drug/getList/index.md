@@ -4,4 +4,4 @@
 * **Response:** [[DrugRecord](../../../../types/types.md#com.siams.med.api.DrugRecord)]
 
 #### Примеры
-**[http]((examples/getList.md))
+**[http](examples/getList.md)**
