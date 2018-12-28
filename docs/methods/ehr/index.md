@@ -43,7 +43,7 @@
 [Rc](../../types/types.md#com.siams.med.api.Rc):
 * required patient_id
 * required ehr_id
-* one of ([RcDoc](../../types/types.md#rcrcdoc), [RcReferral](../../types/types.md),  [RcOper](../../types/types.md#rcrcoper))
+* one of ([RcDoc](../../types/types.md#com.siams.med.api.Rc.Rcdoc), [RcReferral](../../types/types.md),  [RcOper](../../types/types.md#com.siams.med.api.Rc.Rcoper))
 
 В ответе передаётся [Rc](../../types/types.md#com.siams.med.api.Rc).
 

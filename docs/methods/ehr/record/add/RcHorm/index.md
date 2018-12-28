@@ -1,8 +1,8 @@
 ### Добавление статистической записи 'Гормонотерапия' в указанное заболевание (RcHorm)
 
 ### ![POST](../../../../../img/post.png) /ehr/record/add
-* **Request:** [RcHorm](../../../../../types/types.md#RcRcHorm) **record** <patient_id, ehr_id, RcHorm>
-* **Response:** [[RcHorm](../../../../../types/types.md#RcRcHorm)]
+* **Request:** [RcHorm](../../../../../types/types.md#com.siams.med.api.Rc.RcHorm) **record** <patient_id, ehr_id, RcHorm>
+* **Response:** [[RcHorm](../../../../../types/types.md#com.siams.med.api.Rc.RcHorm)]
 
 Статистическая запись 'Гормонотерапия' добавляется как запись Rc в указанное заболевание.
 
