@@ -95,4 +95,5 @@
 * [/directory/get/Srv59oper](methods/directory/get/Srv59oper/index.md) ![done](img/done.png) - `справочник услуг при лечении онкологического заболевания (приказ ФФОМС от 30.03.2018 № 59)`
 * [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png) - `получение списка медицинских орагнизаций региона` 
 * [/medTerr/getList](methods/directory/medTerr/getList/index.md) - `получение списка территорий региона`
+* [/drug/getList](methods/directory/drug/getList/index.md) - `получение перечня препаратов`
 * [/user/getList](methods/directory/user/getList/index.md) ![done](img/done.png) - `получение списка пользователей`
