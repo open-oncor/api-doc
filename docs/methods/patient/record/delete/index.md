@@ -1,7 +1,7 @@
 ### Удаление записи из указанного пациента
 
 ### ![POST](../../../../img/post.png) /patient/record/delete
-* **Request:** [RcDoc](../../../../types/types.md#com.siams.med.api.Rc) 
+* **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) 
 ```json
 {
     "record":{

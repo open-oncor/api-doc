@@ -1,6 +1,6 @@
 ### Удаление записи указанного пациента
 
-### ![POST](../../../../../../img/post.png) [/patient/record/delete](../index.md)
+### ![POST](../../../../../img/post.png) [/patient/record/delete](../index.md)
 
 **Request**
 

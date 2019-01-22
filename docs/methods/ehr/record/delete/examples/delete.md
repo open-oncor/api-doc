@@ -1,6 +1,6 @@
 ### Удаление записи из указанного заболевания
 
-### ![POST](../../../../../../img/post.png) [/ehr/record/delete](../index.md)
+### ![POST](../../../../../img/post.png) [/ehr/record/delete](../index.md)
 
 **Request**
 

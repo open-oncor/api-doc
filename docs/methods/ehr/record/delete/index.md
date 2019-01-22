@@ -1,7 +1,7 @@
 ### Удаление записи из указанного заболевания
 
 ### ![POST](../../../../img/post.png) /ehr/record/delete
-* **Request:** [RcDoc](../../../../types/types.md#com.siams.med.api.Rc) 
+* **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) 
 ```json
 {
     "record":{
