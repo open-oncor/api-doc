@@ -1,4 +1,4 @@
-### Регистрация заболевания пациента
+## Регистрация заболевания пациента
 
 ### ![POST](../../../img/post.png) /ehr/add
 * **Request:** [EHR](../../../types/types.md#com.siams.med.api.EHR) **ehr** <patient_id>
@@ -7,6 +7,6 @@
 
 Регистрирует новое заболевание для пациента.  
 
-#### Примеры
+### Примеры
 **[http](examples/add.md)**
 **[java](examples/addJava.md)**

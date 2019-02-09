@@ -1,4 +1,4 @@
-### Добавление статистической записи 'Хирургическое лечение' в указанное заболевание (RcOper)
+## Добавление статистической записи 'Хирургическое лечение' в указанное заболевание (RcOper)
 
 ### ![POST](../../../../../img/post.png) /ehr/record/add
 * **Request:** [Rc](../../../../../types/types.md#com.siams.med.api.Rc) **record** <patient_id> <ehr_id> <[rc_oper](../../../../../types/types.md#com.siams.med.api.Rc.RcOper)>
@@ -6,5 +6,5 @@
 
 Статистическая запись 'Хирургическое лечение' добавляется как запись Rc в указанное заболевание.
 
-#### Примеры
+### Примеры
 **[http](../examples/RcOper/add.md) [java](../examples/RcOper/addJava.md)**

@@ -1,4 +1,4 @@
-### Удаление записи из указанного заболевания
+## Удаление записи из указанного заболевания
 
 ### ![POST](../../../../img/post.png) /ehr/record/delete
 * **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) 
@@ -20,5 +20,5 @@
 ```
 
 
-#### Примеры
+### Примеры
  **[http](examples/delete.md) [java](examples/deleteJava.md)**

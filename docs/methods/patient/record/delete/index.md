@@ -1,4 +1,4 @@
-### Удаление записи из указанного пациента
+## Удаление записи из указанного пациента
 
 ### ![POST](../../../../img/post.png) /patient/record/delete
 * **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) 
@@ -20,5 +20,5 @@
 ```
 
 
-#### Примеры
+### Примеры
  **[http](examples/delete.md) [java](examples/deleteJava.md)**
