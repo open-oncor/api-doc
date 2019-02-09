@@ -1,10 +1,10 @@
-[Работа со справочниками](../../index.md)
-=========================================
+### Справочник операций
 
 ### ![GET](../../../../img/get.png) /directory/get/DrNK0465
 * **Response: [[DrNK0465](../../../../types/types.md#com.siams.med.api.DrNK0465)]**
 
 В ответе передаётся массив записей из справочника [DrNK0465](../../../../types/types.md#com.siams.med.api.DrNK0465).
 
-**[Примеры](examples/get.md)**
-**[Java пример](examples/getJava.md)**
+#### Примеры
+**[http](examples/get.md)**
+**[java](examples/getJava.md)**

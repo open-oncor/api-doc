@@ -1,10 +1,10 @@
-[Работа со справочниками](../../index.md)
-=========================================
+### Справочник типов адресов
 
-### ![GET](../../../../img/get.png) /directory/get/Gender
-* **Response: [[DrPrsG](../../../../types/types.md#com.siams.med.api.DrPrsG)]**
+### ![GET](../../../../img/get.png) /directory/get/AddressType
+* **Response: [[AddressType](../../../../types/types.md#com.siams.med.api.AddressType)]**
 
-В ответе передаётся массив записей из справочника [DrPrsG](../../../../types/types.md#com.siams.med.api.DrPrsG).
+В ответе передаётся массив записей из справочника [AddressType](../../../../types/types.md#com.siams.med.api.AddressType).
 
-**[Примеры](examples/get.md)**
-**[Пример кода](examples/getJava.md)**
+#### Примеры
+**[http](examples/get.md)**
+**[java](examples/getJava.md)**
