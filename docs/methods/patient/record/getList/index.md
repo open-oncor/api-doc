@@ -1,5 +1,5 @@
-[Работа с пациентами](../../index.md)
-====================================
+##Получение списка медицинских записей общих для пациента (не привязанных к конретному заболеванию)
+
 
 ### ![GET](../../../../img/get.png) /patient/record/getList`?patient_id={patient_id}`
 * **URL parameter:** [patient_id](../../../../types/types.md#com.siams.med.api.Rc)
