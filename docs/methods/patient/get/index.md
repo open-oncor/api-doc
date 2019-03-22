@@ -7,7 +7,53 @@
 В ответе передаётся массив с единственным объектом - [Patient](../../../types/types.md#com.siams.med.api.Patient).
 
 
-### Примеры
-**[http](examples/get.md)**
-**[java](examples/getJava.md)**
 
+### Пример http
+
+**Request:** 
+
+GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`
+
+**Response**
+```json
+{
+    "result":[
+        {
+            "id":"#70:33669",
+            "first_name":"Иван",
+            "middle_name":"Иванович",
+            "last_name":"Иванов",
+            "birth_day":"1901-01-01",
+            "gender":{
+                "orid":"#721:0",
+                "id":"1",
+                "caption":"М"
+            },
+            "code":"ИИИ010101М",
+            "ehr_count":0,
+            "company_name":"",
+            "snils":"",
+            "phones":"+7 911"
+        }
+    ]
+}
+
+
+
+
+```
+
+
+### Пример java
+
+```java
+class GetPatient {
+    public static void main(String[] args) throws IOException {
+        final ProtoBuffClient client = newProtoBuffClient();
+        Patients.Patient patient = client.getPatient("70:33669");
+        
+        String id = patient.getId();
+        String code = patient.getCode();
+    }
+}
+```
