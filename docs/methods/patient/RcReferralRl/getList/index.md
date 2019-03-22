@@ -1,5 +1,5 @@
-[Работа с пациентами](../../index.md)
-=====================================
+##Получение списка направлений пациента
+
 
 ### ![GET](../../../../img/get.png) /patient/RcReferralRL/getList`?patient_id={patient_id}`
 * **URL parameter:** [patient_id](../../../../types/types.md#com.siams.med.api.Rc)
