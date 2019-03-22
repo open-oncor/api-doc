@@ -1,5 +1,5 @@
-[Работа с пациентами](../../index.md)
-=====================================
+##Добавление предварительной записи пациента на приём
+
 
 ### ![POST](../../../../img/post.png) /patient/RcAppointment/add
 * **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) record
