@@ -1,5 +1,4 @@
-[Работа с поиском](../../index.md)
-==================================
+##Поиск предварительных записей на приём для пациента по набору условий
 
 ### ![POST](../../../../img/post.png) /search/start/RcAppointmentQuery
 * **Request:** [RcAppointmentQuery](../../../../types/types.md#com.siams.med.api.RcAppointmentQuery) **query**
