@@ -1,5 +1,4 @@
-[Работа с поиском](../../index.md)
-==================================
+##Поиск направлений по набору условий
 
 ### ![POST](../../../../img/post.png) /search/start/RcReferralQuery
 * **Request:** [RcReferralQuery](../../../../types/types.md#com.siams.med.api.RcReferralQuery) **query**
