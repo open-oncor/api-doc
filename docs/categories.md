@@ -21,10 +21,10 @@
 
 ### Работа с медицинскими записями
 
-`Приём, хранение и добавление медицинских записей пациента. Медицинские записи пациента могут находится на одном из двух уровней иерархии: привязаны непсредственно к данным пациента (записи общие для пациента) или привязаны к одному из заболеваний пациента. Записи условно можно разделить на статистические записи и медицинские документы. Статистические записи предназначены для формировния онкологической статистики. Медицинские документы формируют электронную историю болезни. При добавлении медицинских записей пациента необходимо соблюдать требования к их расположению в иерархии данных пациента.`
+`Приём, хранение и добавление медицинских записей пациента. Медицинские записи пациента могут находится на одном из двух уровней иерархии: привязаны непосредственно к данным пациента (записи общие для пациента) или привязаны к одному из заболеваний пациента. Записи условно можно разделить на статистические записи и медицинские документы. Статистические записи предназначены для формирования онкологической статистики. Медицинские документы формируют электронную историю болезни. При добавлении медицинских записей пациента необходимо соблюдать требования к их расположению в иерархии данных пациента.`
 
 * [/rc/getList](methods/rc/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей пациента для указанного заболевания`
-* [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей общих для пациента (не привязанных к конретному заболеванию)`
+* [/patient/record/getList](methods/patient/record/getList/index.md) ![done](img/done.png) - `получение списка медицинских записей общих для пациента (не привязанных к конкретному заболеванию)`
 * [/rc/get](methods/rc/get/index.md) ![done](img/done.png) - `получение медицинской записи пациента по ключу`
 * [/ehr/record/add(RcReferral)](methods/ehr/record/add/RcReferral/index.md) ![done](img/done.png) - `добавление направления в указанное заболевание`
 * [/ehr/record/add(RcOper)](methods/ehr/record/add/RcOper/index.md) ![done](img/done.png) - `добавление статистической записи 'Хирургическое лечение' в указанное заболевание`
@@ -49,7 +49,7 @@
 * [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md) ![done](img/done.png) - `поиск направлений по набору условий`
 * [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md) ![done](img/done.png) - `поиск предварительных записей на приём для пациента по набору условий`
 * [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md) ![done](img/done.png) - `поиск медицинских документов пациента`
-* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png) - `постраниченое получение найденных ранее в поисковом запросе записей`
+* [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md) ![done](img/done.png) - `постраничное получение найденных ранее в поисковом запросе записей`
 
 ---
 
@@ -95,7 +95,7 @@
 * [/directory/get/TherapyCond](methods/directory/get/TherapyCond/index.md) ![done](img/done.png) - `справочник условий проведения лечения`
 * [/directory/get/LocMetType](methods/directory/get/LocMetType/index.md) ![done](img/done.png) - `справочник типов отдаленных метастаз`
 * [/directory/get/Srv59oper](methods/directory/get/Srv59oper/index.md) ![done](img/done.png) - `справочник услуг при лечении онкологического заболевания (приказ ФФОМС от 30.03.2018 № 59)`
-* [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png) - `список медицинских орагнизаций региона` 
+* [/medOrg/getList](methods/directory/medOrg/getList/index.md) ![done](img/done.png) - `список медицинских организаций региона` 
 * [/medTerr/getList](methods/directory/medTerr/getList/index.md) - `список территорий региона`
 * [/locality/getList](methods/directory/locality/getList/index.md) - `список населённых пунктов региона`
 * [/drug/getList](methods/directory/drug/getList/index.md) - `список препаратов`
