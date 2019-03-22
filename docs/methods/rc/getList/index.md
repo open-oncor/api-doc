@@ -4,7 +4,7 @@
 * **URL parameter:** [ehr_id](../../../types/types.md#com.siams.med.api.Rc)
 * **Response:** [[Rc](../../../types/types.md#com.siams.med.api.Rc)]
 
-Возвращает список записей [{Rc}](../../../types/types.md#com.siams.med.api.Rc) для указанного заболевания c идентификатором [ehr_id](../../../types/types.md#com.siams.med.api.Rc)
+Возвращает список записей [Rc](../../../types/types.md#com.siams.med.api.Rc) для указанного заболевания c идентификатором [ehr_id](../../../types/types.md#com.siams.med.api.Rc)
 
 ### Пример http
 
