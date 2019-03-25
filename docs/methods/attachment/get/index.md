@@ -31,8 +31,8 @@
 ```
 
 
-### Пример java
 
+### Пример java
 ```java
 public class GetAttachment {
     public static void main(String[] args) throws IOException {
