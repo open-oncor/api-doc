@@ -5,6 +5,77 @@
 
 В ответе передаётся массив записей из справочника [DrNK0465](../../../../types/types.md#com.siams.med.api.DrNK0465).
 
-### Примеры
-**[http](examples/get.md)**
-**[java](examples/getJava.md)**
+
+
+### Пример http
+
+**Request:** 
+
+GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrNK0465 HTTP/1.1`
+
+**Response**
+
+```json
+{
+    "result":[
+        {
+            "orid":"#673:0",
+            "id":"1",
+            "caption":"А. СПИСОК ОСНОВНЫХ ТИПОВЫХ ХИРУРГИЧЕСКИХ ВМЕШАТЕЛЬСТВ"
+        },
+        {
+            "orid":"#673:1",
+            "id":"113",
+            "caption":"А05.06. Двусторонняя резекция щитовидной железы"
+        },
+        {
+            "orid":"#673:2",
+            "id":"122",
+            "caption":"А05.14. Тиреоидэктомия с резекцией пищевода и удалением  лимфатических узлов"
+        },
+        {
+            "orid":"#673:3",
+            "id":"905",
+            "caption":"А05.22. Операция на эндокринных железах БДУ"
+        },
+        {
+            "orid":"#673:4",
+            "id":"135",
+            "caption":"А06.07. Операция на органах зрения другая"
+        },
+        {
+            "orid":"#673:5",
+            "id":"15",
+            "caption":"А14.01. Ампутация пальцев руки"
+        },
+        {
+            "orid":"#673:6",
+            "id":"22",
+            "caption":"А14.08. Ампутация плеча, верхней трети"
+        },
+        {
+            "orid":"#673:7",
+            "id":"30",
+            "caption":"А14.17. Ампутация нижней конечности"
+        },
+        ...
+    ]
+}
+```
+
+### Пример java
+
+```java
+public class GetDrNK0439 {
+    public static void main(String[] args) throws IOException {
+        ProtoBuffClient client = newProtoBuffClient();
+
+        List<Directories.DrNK0465> drNK0465Directory = client.getDrNK0465Directory();
+        Directories.DrNK0465 drNK0465 = drNK0465Directory.get(0);
+
+        String id = drNK0465.getId();
+        String caption = drNK0465.getCaption();
+    }
+}
+
+```
