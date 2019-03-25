@@ -59,7 +59,7 @@
 
 * [/attachment/query](methods/attachment/query/index.md)  - `получение списка вложений по набору их ключей`
 * [/attachment/get](methods/attachment/get/index.md)  - `получение описания вложения`
-* [/attachment/file](methods/attachment/index.md) ![info](img/info.png) - `получение содержимого вложения`
+* [/attachment/file](methods/attachment/file/index.md) ![info](img/info.png) - `получение содержимого вложения`
 * [/attachment/create](methods/attachment/create/index.md)  - `добавление вложения`
 
 ---
