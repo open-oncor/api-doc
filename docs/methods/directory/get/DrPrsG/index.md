@@ -2,13 +2,14 @@
 
 ### ![GET](../../../../img/get.png) /directory/get/Gender
 
-* **URL Parametr: Добавить URL parameter**
 * **Response: [[DrPrsG](../../../../types/types.md#com.siams.med.api.DrPrsG)]**
 
 В ответе передаётся массив записей из справочника [DrPrsG](../../../../types/types.md#com.siams.med.api.DrPrsG).
 
 ### Пример http
-**Request** GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrPrsG HTTP/1.1`
+**Request** 
+
+GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrPrsG HTTP/1.1`
 
 **Response**
 

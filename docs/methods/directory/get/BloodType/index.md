@@ -1,13 +1,15 @@
 ## Справочник групп крови
 
 ### ![GET](../../../../img/get.png) /directory/get/BloodType
-* **URL Parametr: Добавить URL parameter**
+
 * **Response: [[BloodType](../../../../types/types.md#com.siams.med.api.BloodType)]**
 
 В ответе передаётся массив записей из справочника
 
 ### Пример http
-**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/BloodType HTTP/1.1`
+**Request:** 
+
+GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/BloodType HTTP/1.1`
 
 **Response**
 
