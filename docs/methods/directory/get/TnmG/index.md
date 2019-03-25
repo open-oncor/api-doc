@@ -5,7 +5,7 @@
 
 В ответе передаётся массив записей из справочника [TnmG](../../../../types/types.md#com.siams.med.api.TnmG).
 
-## Пример (http)
+## Пример http
 
 **Request**
 
