@@ -5,5 +5,7 @@
 
 В ответе передаётся массив записей из справочника [DrDzHD](../../../../types/types.md#com.siams.med.api.DrDzHD).
 
-### Примеры
-**[http](examples/get.md)**
+### Пример http
+
+
+### Пример java
