@@ -1,4 +1,4 @@
-##Получение описания вложения
+## Получение описания вложения
 
 ### ![GET](../../../img/get.png) /attachment/get`?id={id}`
 * **URL parameter:** [id](../../../types/types.md#attachmentmeta)

@@ -1,4 +1,4 @@
-##Постраниченое получение найденных ранее в поисковом запросе записей
+## Постраниченое получение найденных ранее в поисковом запросе записей
 
 
 ### ![POST](../../../../img/post.png) /search/get/RecordsPage
@@ -15,7 +15,7 @@
 В ответ передаётся:
  * [RecordsPage](../../../../types/types.md#com.siams.med.api.RecordsPage)
 
-###Пример http
+### Пример http
 
 **Request**
 
@@ -50,7 +50,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
 }
 ```
 
-###Пример java
+### Пример java
 
 ```java
 public class GetRecordsPage {

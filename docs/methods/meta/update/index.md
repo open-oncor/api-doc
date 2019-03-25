@@ -1,4 +1,4 @@
-##Изменение метаданных для медицинской записи
+## Изменение метаданных для медицинской записи
 
 ### ![POST](../../../img/post.png) /meta/update
 * **Request:** [Update](../../../types/types.md#com.siams.med.api.Update) 

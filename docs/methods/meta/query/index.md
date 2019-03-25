@@ -1,4 +1,4 @@
-##Получение массива метаданных
+## Получение массива метаданных
 
 ### ![POST](../../../img/post.png) /meta/query
 * **Request:** [Query](../../../types/types.md#com.siams.med.api.Query) query

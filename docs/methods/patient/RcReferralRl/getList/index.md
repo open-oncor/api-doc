@@ -1,4 +1,4 @@
-##Получение списка направлений пациента
+## Получение списка направлений пациента
 
 
 ### ![GET](../../../../img/get.png) /patient/RcReferralRL/getList`?patient_id={patient_id}`
@@ -9,7 +9,7 @@
 
 В ответе передаётся массив объектов [Rc](../../../../types/types.md#com.siams.med.api.Rc).
 
-###Пример http
+### Пример http
 
 **Request:** GET `http://dev.onco-reg.ru/api/1.0/json/patient/RcReferralRL/getList?patient_id=70:33669 HTTP/1.1`
 
@@ -212,7 +212,7 @@
 ```
 
 
-###Пример java
+### Пример java
 
 ```java
 public class GetList {
