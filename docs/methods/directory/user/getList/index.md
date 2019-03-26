@@ -5,9 +5,7 @@
 
 Возвращает список пользователей [User](../../../../types/types.md#com.siams.med.api.User).
 
-### Примеры
-**[http](examples/getList.md)**
-**[java](examples/getListJava.md)**
+
 
 ### Пример http
 **Request** 

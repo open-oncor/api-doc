@@ -1,7 +1,7 @@
 ## Регистрация заболевания пациента
 
 ### ![POST](../../../img/post.png) /ehr/add
-* **Request:** [EHR](../../../types/types.md#com.siams.med.api.EHR) **ehr** <patient_id>
+* **Request:** [EHR](../../../types/types.md#com.siams.med.api.EHR) 
 * **Response:** [[EHR](../../../types/types.md#com.siams.med.api.EHR)]
 * **Response ```422```:** [ErrorResult](../../../types/types.md#com.siams.med.api.ErrorResult)
 

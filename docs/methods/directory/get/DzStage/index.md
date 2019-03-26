@@ -5,5 +5,7 @@
 
 В ответе передаётся массив записей из справочника [DzStage](../../../../types/types.md#com.siams.med.api.DzStage).
 
-### Примеры
-**[http](examples/get.md)**
+### Пример http
+
+
+### Пример java

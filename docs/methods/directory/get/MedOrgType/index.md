@@ -5,5 +5,7 @@
 
 В ответе передаётся массив записей из справочника [MedOrgType](../../../../types/types.md#medorgtype).
 
-### Примеры 
-**[http](examples/get.md)**
+### Пример http
+
+
+### Пример java
