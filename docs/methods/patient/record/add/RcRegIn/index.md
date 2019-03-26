@@ -4,7 +4,7 @@
 * **Request:** [RcRegIn](../../../../../types/types.md#com.siams.med.api.Rc.RcRegIn) **record** <patient_id, RcRegIn>
 * **Response:** [[RcRegIn](../../../../../types/types.md#com.siams.med.api.Rc.RcRegIn)]
 
-Статистическая запись 'Постановка на учёт' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) указанному пациенту.
+Статистическая запись 'Постановка на учёт' добавляется как запись [Rc](../../../../../types/types.md#com.siams.med.api.Rc) указанному пациенту.
 
 ### Пример http
 

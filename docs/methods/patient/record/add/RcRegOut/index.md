@@ -4,7 +4,7 @@
 * **Request:** [RcRegOut](../../../../../types/types.md#com.siams.med.api.Rc.RcRegOut) **record** <patient_id, RcRegOut>
 * **Response:** [[RcRegOut](../../../../../types/types.md#com.siams.med.api.Rc.RcRegOut)]
 
-Статистическая запись 'Снятие с учёта' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) в указанному пациенту.
+Статистическая запись 'Снятие с учёта' добавляется как запись [Rc](../../../../../types/types.md#com.siams.med.api.Rc) в указанному пациенту.
 
 ### Пример http
 

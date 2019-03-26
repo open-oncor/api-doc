@@ -4,7 +4,7 @@
 * **Request:** [Rc](../../../../../types/types.md#com.siams.med.api.Rc) **record** <patient_id> <ehr_id> <[rc_oper](../../../../../types/types.md#com.siams.med.api.Rc.RcOper)>
 * **Response:** [[Rc](../../../../../types/types.md#com.siams.med.api.Rc). [rc_oper](../../../../../types/types.md#com.siams.med.api.Rc.RcOper)]
 
-Статистическая запись 'Хирургическое лечение' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
+Статистическая запись 'Хирургическое лечение' добавляется как запись [Rc](../../../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
 
 ### Пример http
 

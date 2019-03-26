@@ -4,7 +4,7 @@
 * **Request:** [RcClinicalGroup](../../../../../types/types.md#com.siams.med.api.Rc.RcClinicalGroup) **record** <patient_id, RcClinicalGroup>
 * **Response:** [[RcClinicalGroup](../../../../../types/types.md#com.siams.med.api.Rc.RcClinicalGroup)]
 
-Статистическая запись 'Установка клинической группы' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) указанному пациенту.
+Статистическая запись 'Установка клинической группы' добавляется как запись [Rc](../../../../../types/types.md#com.siams.med.api.Rc) указанному пациенту.
 
 ### Пример http
 

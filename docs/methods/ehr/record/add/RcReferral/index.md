@@ -4,7 +4,7 @@
 * **Request:** [RcReferral](../../../../../types/types.md#com.siams.med.api.Rc.RcReferral) **record** <patient_id, ehr_id, RcReferral>
 * **Response:** [[RcReferral](../../../../../types/types.md#com.siams.med.api.Rc.RcReferral)]
 
-Направление добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
+Направление добавляется как запись [Rc](../../../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
 
 ### Пример http
 
