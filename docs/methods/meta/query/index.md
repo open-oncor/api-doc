@@ -1,7 +1,7 @@
 ## Получение массива метаданных
 
 ### ![POST](../../../img/post.png) /meta/query
-* **Request:** [Query](../../../types/types.md#com.siams.med.api.Query) query
+* **Request:** [Query](../../../types/types.md#com.siams.med.api.Query) 
 * **Response:** [[Meta.proto](../../../types/types.md#metaproto)]
 
 Возвращает список метаданных [Meta.proto](../../../types/types.md#metaproto) 

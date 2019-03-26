@@ -4,7 +4,7 @@
 * **Request:** [RcRay](../../../../../types/types.md#com.siams.med.api.Rc.RcRay) **record** <patient_id, ehr_id, RcRay>
 * **Response:** [[RcRay](../../../../../types/types.md#com.siams.med.api.Rc.RcRay)]
 
-Статистическая запись 'Лучевая терапия' добавляется как запись Rc в указанное заболевание.
+Статистическая запись 'Лучевая терапия' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
 
 ### Пример http
 

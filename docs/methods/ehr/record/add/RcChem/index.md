@@ -4,7 +4,7 @@
 * **Request:** [RcChem](../../../../../types/types.md#com.siams.med.api.Rc.RcChem) **record** <patient_id, ehr_id, RcChem>
 * **Response:** [[RcChem](../../../../../types/types.md#com.siams.med.api.Rc.RcChem)]
 
-Статистическая запись 'Химиотерапия' добавляется как запись Rc в указанное заболевание.
+Статистическая запись 'Химиотерапия' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
 
 ### Пример http
 

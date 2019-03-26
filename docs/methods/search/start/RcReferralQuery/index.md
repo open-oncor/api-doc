@@ -1,7 +1,7 @@
 ## Поиск направлений по набору условий
 
 ### ![POST](../../../../img/post.png) /search/start/RcReferralQuery
-* **Request:** [RcReferralQuery](../../../../types/types.md#com.siams.med.api.RcReferralQuery) **query**
+* **Request:** [RcReferralQuery](../../../../types/types.md#com.siams.med.api.RcReferralQuery) 
 * **Response:** [[SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
 В запросе передаётся [RcReferralQuery](../../../../types/types.md#com.siams.med.api.RcReferralQuery).

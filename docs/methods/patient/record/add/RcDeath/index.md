@@ -4,7 +4,7 @@
 * **Request:** [RcDeath](../../../../../types/types.md#com.siams.med.api.Rc.RcDeath) **record** <patient_id, RcDeath>
 * **Response:** [[RcDeath](../../../../../types/types.md#com.siams.med.api.Rc.RcDeath)]
 
-Статистическая запись 'Регистрация смерти' добавляется как запись Rc указанному пациенту.
+Статистическая запись 'Регистрация смерти' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) указанному пациенту.
 
 ### Пример http 
 

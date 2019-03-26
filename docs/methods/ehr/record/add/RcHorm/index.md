@@ -4,7 +4,7 @@
 * **Request:** [RcHorm](../../../../../types/types.md#com.siams.med.api.Rc.RcHorm) **record** <patient_id, ehr_id, RcHorm>
 * **Response:** [[RcHorm](../../../../../types/types.md#com.siams.med.api.Rc.RcHorm)]
 
-Статистическая запись 'Гормонотерапия' добавляется как запись Rc в указанное заболевание.
+Статистическая запись 'Гормонотерапия' добавляется как запись [Rc](../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание.
 
 ### Пример http
 

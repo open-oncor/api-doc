@@ -1,7 +1,7 @@
 ## Поиск медицинских документов пациента
 
 ### ![POST](../../../../img/post.png) /search/start/RcDocQuery
-* **Request:** [RcDocQuery](../../../../types/types.md#com.siams.med.api.RcDocQuery) **query**
+* **Request:** [RcDocQuery](../../../../types/types.md#com.siams.med.api.RcDocQuery) 
 * **Response:** [[SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
 В запросе передаётся [RcDocQuery](../../../../types/types.md#com.siams.med.api.RcDocQuery).

@@ -1,7 +1,7 @@
 ## Поиск предварительных записей на приём для пациента по набору условий
 
 ### ![POST](../../../../img/post.png) /search/start/RcAppointmentQuery
-* **Request:** [RcAppointmentQuery](../../../../types/types.md#com.siams.med.api.RcAppointmentQuery) **query**
+* **Request:** [RcAppointmentQuery](../../../../types/types.md#com.siams.med.api.RcAppointmentQuery) 
 * **Response:** [[SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
 В запросе передаётся [RcAppointmentQuery](../../../../types/types.md#com.siams.med.api.RcAppointmentQuery). 
