@@ -1,6 +1,6 @@
 ### Работа с пациентами
 `Приём, изменение и выдача по поисковым запросам данных о лицах (пациентах), обращавшихся в медицинские организации региона за медицинской помощью по профилю 'онкология'`
-* [GET/patient/search(new)](methods/patient/search/indexGET.md) -`поиск пациентов`
+* [GET/patient/search(new)](methods/patient/search/indexGET.md) ![info](img/info.png) -`поиск пациентов`
 * [POST/patient/search(dated)](methods/patient/search/index.md) - `поиск пациентов`
 * [/patient/get](methods/patient/get/index.md)  - `получение данных пациента по его ключу`
 * [/patient/update](methods/patient/update/index.md)  - `изменение данных пациента` 
