@@ -5,10 +5,6 @@
 * **Request:** [Rc](../../../../types/types.md#com.siams.med.api.Rc) record
 * **Response:** [Rc](../../../../types/types.md#com.siams.med.api.Rc)
 
-Добавляет предварительную запись. В запросе передаётся объект - [Rc](../../../../types/types.md#com.siams.med.api.Rc). 
-
-В ответе - [Rc](../../../../types/types.md#com.siams.med.api.Rc).
-
 ### Пример http
 
 **Request**

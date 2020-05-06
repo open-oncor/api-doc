@@ -4,8 +4,6 @@
 * **Request:** [RcDoc](../../../../types/types.md#com.siams.med.api.Rc.RcDoc) record
 * **Response:** [RcDoc](../../../../types/types.md#com.siams.med.api.Rc.RcDoc)
 
-Добавляет запись пациенту. В запросе передаётся объект - [RcDoc](../../../../types/types.md#com.siams.med.api.Rc.RcDoc).
-
 ### Пример http
  
  **Request**

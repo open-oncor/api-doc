@@ -4,10 +4,6 @@
 * **Request:** [RcAppointmentQuery](../../../../types/types.md#com.siams.med.api.RcAppointmentQuery) 
 * **Response:** [[SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
-В запросе передаётся [RcAppointmentQuery](../../../../types/types.md#com.siams.med.api.RcAppointmentQuery). 
-
-В ответе передаётся [SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)
-
 ### Пример http
 
 **Request**

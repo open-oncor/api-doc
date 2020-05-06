@@ -4,10 +4,6 @@
 * **Request:** [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery) 
 * **Response:** [[SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
-В запросе передаётся [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery).
-
-В ответе передаётся [SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob).
-
 ### Пример http
 
 **Request**
