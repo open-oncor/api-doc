@@ -49,7 +49,6 @@
 * [/search/start/RcReferralQuery](methods/search/start/RcReferralQuery/index.md)  - `поиск направлений по набору условий`
 * [/search/start/RcAppointmentQuery](methods/search/start/RcAppointmentQuery/index.md)  - `поиск предварительных записей на приём для пациента по набору условий`
 * [/search/start/RcDocQuery](methods/search/start/RcDocQuery/index.md)  - `поиск медицинских документов пациента`
-* [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
 * [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md)  - `постраничное получение найденных ранее в поисковом запросе записей`
 
 ---

@@ -4,8 +4,6 @@
 * **URL parameter:** [id](../../../types/types.md#com.siams.med.api.Rc)
 * **Response:** [[Rc](../../../types/types.md#com.siams.med.api.InstanceStatus)]
 
-Возвращает объект типа [Rc](../../../types/types.md#com.siams.med.api.Rc) с идентификатором [id](../../../types/types.md#com.siams.med.api.Rc).
-
 ### Пример http
 
 **Request**

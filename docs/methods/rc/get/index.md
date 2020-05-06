@@ -4,8 +4,6 @@
 * **URL parameter:** [id](../../../types/types.md#com.siams.med.api.Rc)
 * **Response:** [[Rc](../../../types/types.md#com.siams.med.api.Rc)]
 
-Возвращает объект типа [Rc](../../../types/types.md#com.siams.med.api.Rc) с идентификатором [id](../../../types/types.md#com.siams.med.api.Rc).
-
 ### Пример http
 
 **Request:** GET `http://dev.onco-reg.ru/api/1.0/json/rc/get?id=1577:16819 HTTP/1.1`
