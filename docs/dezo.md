@@ -1,3 +1,5 @@
+## Методы API для ДЭЗО
+
 ### Поисковые функции для медицинских записей
 
 * [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
