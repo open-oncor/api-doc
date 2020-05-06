@@ -52,9 +52,18 @@ class SearchRcDoc {
 
 ```
 
-### Структура сообщения ProtoBuffer
+### Структура сообщений ProtoBuffer
 
 ```proto
+
+message SearchJob {
+    required string id = 1;
+    oneof status {
+        bool ready = 2;
+        ErrorResult error = 3;
+    }
+}
+
 message RcTm66OrderQuery {
     optional string from_date = 1;
     optional string to_date = 2;

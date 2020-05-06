@@ -10,7 +10,7 @@
 
 **Request**
 
-GET `http://dev.onco-reg.ru/api/1.0/json/rc/getInstanceStatus HTTP/1.1`
+GET `http://dev.onco-reg.ru/api/1.0/json/rc/getInstanceStatus?id=1929:1 HTTP/1.1`
 
 
 **Response**

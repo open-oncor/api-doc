@@ -7,13 +7,6 @@
 
 Постранично ищет записи. 
 
-В запрос передаётся: 
-
-[Page](../../../../types/types.md#com.siams.med.api.Page)
-* required [job](../../../../types/types.md#com.siams.med.api.SearchJob)
-
-В ответ передаётся:
- * [RecordsPage](../../../../types/types.md#com.siams.med.api.RecordsPage)
 
 ### Пример http
 
@@ -72,4 +65,22 @@ public class GetRecordsPage {
         Search.Page page = recordsPage.getPage();
     }
 }
+```
+
+### Структура сообщений ProtoBuffer
+
+```proto
+
+message Page {
+    required SearchJob job = 1;
+    optional int32 offset = 2;
+    optional int32 size = 3;
+}
+
+message RecordsPage {
+    required Page page = 1;
+    repeated Rc rc = 2;
+    optional int32 size = 3;
+}
+
 ```
