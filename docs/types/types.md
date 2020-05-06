@@ -2341,9 +2341,24 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | from_date | [string](#string) | optional |  |
 | to_date | [string](#string) | optional |  |
 | org_unit_id | [string](#string) | optional |  |
-| status | [string](#string) | optional |  |
+| status_is_null | [bool](#bool) | optional |  |
+| status_value | [string](#string) | optional |  |
+| status_value_with_history | [string](#string) | optional |  |
 
 
+<a name="com.siams.med.api.InstanceStatus"/>
+
+### InstanceStatus
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| json | [string](#string) | optional |  |
+| rc_id | [string](#string) | optional |  |
+| user_id | [string](#string) | optional |  |
+| time | [string](#string) | optional |  |
+| history | InstanceStatus | optional |  |
 
 
 
