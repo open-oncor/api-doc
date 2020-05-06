@@ -2,7 +2,7 @@
 
 ### ![POST](../../../../img/post.png) /search/start/RcTm66OrderQuery
 * **Request:** [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery) 
-* **Response:** [SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
+* **Response:** [[SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
 В запросе передаётся [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery).
 
@@ -51,3 +51,19 @@ class SearchRcDoc {
 }
 
 ```
+
+### Структура сообщения ProtoBuffer
+
+```proto
+message RcTm66OrderQuery {
+    optional string from_date = 1;
+    optional string to_date = 2;
+    oneof status {
+        bool status_is_null = 3;
+        string status_value = 4;
+        string status_value_with_history = 5;
+    }
+}
+
+```
+
