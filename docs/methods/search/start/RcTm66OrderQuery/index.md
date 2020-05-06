@@ -1,10 +1,10 @@
-## Поиск медицинских документов пациента
+## Поиск поиск заявок на ДЭЗО
 
-### ![POST](../../../../img/post.png) /search/start/RcDocQuery
-* **Request:** [RcDocQuery](../../../../types/types.md#com.siams.med.api.RcDocQuery) 
+### ![POST](../../../../img/post.png) /search/start/RcTm66OrderQuery
+* **Request:** [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery) 
 * **Response:** [SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob)]
 
-В запросе передаётся [RcDocQuery](../../../../types/types.md#com.siams.med.api.RcDocQuery).
+В запросе передаётся [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery).
 
 В ответе передаётся [SearchJob](../../../../types/types.md#com.siams.med.api.SearchJob).
 
@@ -16,7 +16,8 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcDocQuery HTTP/1.1`
 ```json
 {
     "query":{
-        "from_date":"2018-01-01"
+        "from_date":"2018-01-01",
+        "status_is_null": true
     }
 }
 ```
@@ -40,8 +41,9 @@ class SearchRcDoc {
     public static void main(String[] args) throws IOException, InterruptedException {
         final ProtoBuffClient client = newProtoBuffClient();
 
-        final Search.SearchJob job = client.startSearchRcDoc(Search.RcDocQuery.newBuilder()
+        final Search.SearchJob job = client.startSearchRcDoc(Search.RcTm66OrderQuery.newBuilder()
                 .setFromDate("2018-01-01")
+                .setStatusIsNull(true)
                 .build());
 
         SearchUtils.waitForJob(client, job);

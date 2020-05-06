@@ -151,6 +151,7 @@
     - [Page](#com.siams.med.api.Page)
     - [RcAppointmentQuery](#com.siams.med.api.RcAppointmentQuery)
     - [RcDocQuery](#com.siams.med.api.RcDocQuery)
+    - [RcTm66OrderQuery](#com.siams.med.api.RcTm66OrderQuery)
     - [RcReferralQuery](#com.siams.med.api.RcReferralQuery)
     - [RecordsPage](#com.siams.med.api.RecordsPage)
     - [SearchJob](#com.siams.med.api.SearchJob)
@@ -2323,6 +2324,24 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | to_date | [string](#string) | optional |  |
 | org_unit_id | [string](#string) | optional |  |
 | category | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.RcTm66OrderQuery"/>
+
+### RcTm66OrderQuery
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| from_date | [string](#string) | optional |  |
+| to_date | [string](#string) | optional |  |
+| org_unit_id | [string](#string) | optional |  |
+| status | [string](#string) | optional |  |
 
 
 
