@@ -1,5 +1,5 @@
 # Protocol Documentation
-<a name="top"/>
+<a name="top"></a>
 
 ## Table of Contents
 
@@ -26,6 +26,15 @@
     - [LocMet](#com.siams.med.api.LocMet)
     - [ShortDz](#com.siams.med.api.ShortDz)
     - [TNM](#com.siams.med.api.TNM)
+  
+  
+  
+  
+
+- [directories-ext.proto](#directories-ext.proto)
+    - [MO](#com.siams.med.api.MO)
+    - [MedDepart](#com.siams.med.api.MedDepart)
+    - [MedResource](#com.siams.med.api.MedResource)
   
   
   
@@ -71,6 +80,10 @@
     - [Srv59Ray](#com.siams.med.api.Srv59Ray)
     - [TherapyAim](#com.siams.med.api.TherapyAim)
     - [TherapyCond](#com.siams.med.api.TherapyCond)
+    - [Tm66ConclusionType](#com.siams.med.api.Tm66ConclusionType)
+    - [Tm66DiagnosticsType](#com.siams.med.api.Tm66DiagnosticsType)
+    - [Tm66OrderPurpose](#com.siams.med.api.Tm66OrderPurpose)
+    - [Tm66OrderRejectReason](#com.siams.med.api.Tm66OrderRejectReason)
     - [TnmG](#com.siams.med.api.TnmG)
     - [TnmM](#com.siams.med.api.TnmM)
     - [TnmN](#com.siams.med.api.TnmN)
@@ -94,11 +107,16 @@
   
 
 - [oncor.proto](#oncor.proto)
+    - [Department](#com.siams.med.api.Department)
+    - [DepartmentUpdate](#com.siams.med.api.DepartmentUpdate)
+    - [DepartmentUpdate.Entry](#com.siams.med.api.DepartmentUpdate.Entry)
+    - [IdSetActions](#com.siams.med.api.IdSetActions)
     - [Locality](#com.siams.med.api.Locality)
     - [MedOrg](#com.siams.med.api.MedOrg)
     - [MedTerr](#com.siams.med.api.MedTerr)
     - [User](#com.siams.med.api.User)
   
+    - [ContingentInclude](#com.siams.med.api.ContingentInclude)
   
   
   
@@ -120,6 +138,7 @@
 - [records.proto](#records.proto)
     - [Drug](#com.siams.med.api.Drug)
     - [DrugRecord](#com.siams.med.api.DrugRecord)
+    - [InstanceStatus](#com.siams.med.api.InstanceStatus)
     - [Rc](#com.siams.med.api.Rc)
     - [Rc.Published](#com.siams.med.api.Rc.Published)
     - [Rc.RcAppointment](#com.siams.med.api.Rc.RcAppointment)
@@ -129,12 +148,18 @@
     - [Rc.RcDoc](#com.siams.med.api.Rc.RcDoc)
     - [Rc.RcDz](#com.siams.med.api.Rc.RcDz)
     - [Rc.RcHorm](#com.siams.med.api.Rc.RcHorm)
+    - [Rc.RcHorm.Kind](#com.siams.med.api.Rc.RcHorm.Kind)
     - [Rc.RcOper](#com.siams.med.api.Rc.RcOper)
     - [Rc.RcRay](#com.siams.med.api.Rc.RcRay)
     - [Rc.RcReferral](#com.siams.med.api.Rc.RcReferral)
     - [Rc.RcRegIn](#com.siams.med.api.Rc.RcRegIn)
     - [Rc.RcRegOut](#com.siams.med.api.Rc.RcRegOut)
+    - [Rc.RcTm66Order](#com.siams.med.api.Rc.RcTm66Order)
+    - [Rc.RcTm66OrderConclusion](#com.siams.med.api.Rc.RcTm66OrderConclusion)
+    - [Rc.RcTm66OrderReject](#com.siams.med.api.Rc.RcTm66OrderReject)
+    - [RcDocJson](#com.siams.med.api.RcDocJson)
   
+    - [Rc.DeletedAt](#com.siams.med.api.Rc.DeletedAt)
   
   
   
@@ -151,8 +176,8 @@
     - [Page](#com.siams.med.api.Page)
     - [RcAppointmentQuery](#com.siams.med.api.RcAppointmentQuery)
     - [RcDocQuery](#com.siams.med.api.RcDocQuery)
-    - [RcTm66OrderQuery](#com.siams.med.api.RcTm66OrderQuery)
     - [RcReferralQuery](#com.siams.med.api.RcReferralQuery)
+    - [RcTm66OrderQuery](#com.siams.med.api.RcTm66OrderQuery)
     - [RecordsPage](#com.siams.med.api.RecordsPage)
     - [SearchJob](#com.siams.med.api.SearchJob)
   
@@ -164,14 +189,14 @@
 
 
 
-<a name="api.proto"/>
+<a name="api.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## api.proto
 
 
 
-<a name="com.siams.med.api.ErrorResult"/>
+<a name="com.siams.med.api.ErrorResult"></a>
 
 ### ErrorResult
 
@@ -188,7 +213,7 @@
 
 
 
-<a name="com.siams.med.api.Response"/>
+<a name="com.siams.med.api.Response"></a>
 
 ### Response
 
@@ -204,7 +229,7 @@
 
 
 
-<a name="com.siams.med.api.SuccessResult"/>
+<a name="com.siams.med.api.SuccessResult"></a>
 
 ### SuccessResult
 
@@ -223,14 +248,14 @@
 
 
 
-<a name="attachments.proto"/>
+<a name="attachments.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## attachments.proto
 
 
 
-<a name="com.siams.med.api.Attachment"/>
+<a name="com.siams.med.api.Attachment"></a>
 
 ### Attachment
 
@@ -246,7 +271,7 @@
 
 
 
-<a name="com.siams.med.api.Attachment.Meta"/>
+<a name="com.siams.med.api.Attachment.Meta"></a>
 
 ### Attachment.Meta
 
@@ -266,7 +291,7 @@
 
 
 
-<a name="com.siams.med.api.Attachment.Query"/>
+<a name="com.siams.med.api.Attachment.Query"></a>
 
 ### Attachment.Query
 
@@ -290,14 +315,14 @@
 
 
 
-<a name="diagnosis.proto"/>
+<a name="diagnosis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## diagnosis.proto
 
 
 
-<a name="com.siams.med.api.Dz"/>
+<a name="com.siams.med.api.Dz"></a>
 
 ### Dz
 
@@ -326,10 +351,9 @@
 
 
 
-<a name="com.siams.med.api.LocMet"/>
+<a name="com.siams.med.api.LocMet"></a>
 
 ### LocMet
-
 Локализация отдаленных метастазов
 
 
@@ -342,7 +366,7 @@
 
 
 
-<a name="com.siams.med.api.ShortDz"/>
+<a name="com.siams.med.api.ShortDz"></a>
 
 ### ShortDz
 
@@ -367,7 +391,7 @@
 
 
 
-<a name="com.siams.med.api.TNM"/>
+<a name="com.siams.med.api.TNM"></a>
 
 ### TNM
 
@@ -394,14 +418,100 @@
 
 
 
-<a name="directories.proto"/>
+<a name="directories-ext.proto"></a>
+<p align="right"><a href="#top">Top</a></p>
+
+## directories-ext.proto
+
+
+
+<a name="com.siams.med.api.MO"></a>
+
+### MO
+Запись справочника &#34;МО&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| dateRange | [string](#string) | repeated |  |
+| name | [string](#string) | optional |  |
+| longName | [string](#string) | optional |  |
+| medCode | [string](#string) | optional |  |
+| terrCode | [string](#string) | optional |  |
+| address | [string](#string) | optional |  |
+| phone | [string](#string) | optional |  |
+| ogrn | [string](#string) | optional |  |
+| chiefLastName | [string](#string) | optional |  |
+| chiefFirstName | [string](#string) | optional |  |
+| chiefPatronymic | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.MedDepart"></a>
+
+### MedDepart
+Запись справочника &#34;Отделение&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| dateRange | [string](#string) | repeated |  |
+| departCode | [string](#string) | optional |  |
+| medOrgCode | [string](#string) | optional |  |
+| nameFull | [string](#string) | optional |  |
+| nameShort | [string](#string) | optional |  |
+| typeHelp | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.MedResource"></a>
+
+### MedResource
+Запись справочника &#34;Врач&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| dateRange | [string](#string) | repeated |  |
+| doctorCode | [string](#string) | optional |  |
+| doctorName | [string](#string) | optional |  |
+| medOrgCode | [string](#string) | optional |  |
+| medSpecCode | [string](#string) | optional |  |
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+<a name="directories.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## directories.proto
 
 
 
-<a name="com.siams.med.api.AddressType"/>
+<a name="com.siams.med.api.AddressType"></a>
 
 ### AddressType
 Запись справочника &#34;Тип адреса&#34;
@@ -426,7 +536,7 @@
 
 
 
-<a name="com.siams.med.api.BloodType"/>
+<a name="com.siams.med.api.BloodType"></a>
 
 ### BloodType
 Запись справочника &#34;Группа крови&#34;
@@ -450,7 +560,7 @@
 
 
 
-<a name="com.siams.med.api.ChemKind"/>
+<a name="com.siams.med.api.ChemKind"></a>
 
 ### ChemKind
 Запись справочника &#34;Вид химиотерапии&#34;
@@ -471,110 +581,7 @@
 
 
 
-<a name="com.siams.med.api.Tm66OrderPurpose"/>
-
-### Tm66OrderPurpose
-Запись справочника "Цель дистанционного экспертного заключения"
-* ПОДТВЕРЖДЕНИЕ_ДИАГНОЗА("Определение (подтверждение) диагноза", 1),
-* ПОДТВЕРЖДЕНИЕ_ТАКТИКИ("Определение (подтверждение) тактики лечения", 2),
-* СОГЛАСОВАНИЕ_ГОСПИТАЛИЗАЦИИ("Согласование условий и срока госпитализации в ФГБУ", 3),
-* НЕОБХОДИМОСТЬ_ВМЕШАТЕЛЬСТВА("Необходимость выполнение нового и/или редкого вида оперативного вмешательства, процедуры и т.д.", 4),
-* ФОРМИРОВАНИЕ_ЭКСПЕРТНОГО_МНЕНИЯ("Формирование экспертного мнения по результатам диагностических исследований (МСКТ, МРТ, ПЭТ-КТ и т.п.)", 5),
-* РАЗБОР_КЛИНИЧЕСКИХ_СЛУЧАЕВ("Разбор клинических случаев", 6),
-* ДРУГОЕ("Другое", 7)
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| id | [string](#string) | optional |  |
-| code | [string](#string) | optional |  |
-| caption | [string](#string) | optional |  |
-
-
-
-
-
-<a name="com.siams.med.api.Tm66OrderRejectReason"/>
-
-### Tm66OrderRejectReason
-Запись справочника "Причины отказа проведения ДЭЗО"
-* ДАННЫЕ_ПАЦИЕНТА("Недостаточно данных о пациенте", 1),
-* КАЧЕСТВО_СНИМКА("Снимок выполнен некачественно", 2),
-* ОБЛАСТЬ_СНИМКА("Не совпадают локализации ДЭЗО и область снимка", 3),
-* НЕВОЗМОЖНО_АССОЦИИРОВАТЬ("Невозможно ассоциировать снимок и ДЭЗО", 4)
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| id | [string](#string) | optional |  |
-| code | [string](#string) | optional |  |
-| caption | [string](#string) | optional |  |
-
-
-
-
-
-<a name="com.siams.med.api.Tm66DiagnosticsType"/>
-
-### Tm66DiagnosticsType
-Запись справочника "Предопределенные типы инструментальной диагностики"
-* РГ_ГРУДНОЙ_КЛЕТКИ("Рентгенография органов грудной клетки"),
-* РГ_ЖЕЛУДКА_ПИЩЕВОДА("Рентгенография желудка/пищевода"),
-* КТ_ГОЛОВЫ("Компьютерная томография головы"),
-* КТ_ШЕИ("Компьютерная томография шеи"),
-* КТ_ГРУДНОЙ_КЛЕТКИ("Компьютерная томография грудной клетки"),
-* КТ_БРЮШНОЙ_ПОЛОСТИ("Компьютерная томография брюшной полости"),
-* КТ_ТАЗА("Компьютерная томография таза"),
-* КТ_КОСТЕЙ_И_СУСТАВОВ("Компьютерная томография костей и суставов"),
-* КТ_СЕРДЦА("Компьютерная томография сердца"),
-* МРТ_ГОЛОВЫ("Магниторезонансная томография головы"),
-* МРТ_ШЕИ("Магниторезонансная томография шеи"),
-* МРТ_ГРУДНОЙ_КЛЕТКИ("Магниторезонансная томография грудной клетки"),
-* МРТ_БРЮШНОЙ_ПОЛОСТИ("Магниторезонансная томография брюшной полости"),
-* МРТ_ТАЗА("Магниторезонансная томография таза"),
-* МРТ_КОСТЕЙ_И_СУСТАВОВ("Магниторезонансная томография костей и суставов"),
-* МРТ_СЕРДЦА("Магниторезонансная томография сердца"),
-* МРТ_СОСУДОВ("Магниторезонансная томография сосудов"),
-* УЗИ_БРЮШНОЙ_ПОЛОСТИ("Ультразвуковое исследование брюшной полости"),
-* УЗИ_МАЛОГО_ТАЗА("Ультразвуковое исследование малого таза"),
-* УЗИ_МОЛОЧНЫХ_ЖЕЛЕЗ("Ультразвуковое исследование молочных желез")
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| code | [string](#string) | optional |  |
-| caption | [string](#string) | optional |  |
-
-
-
-
-<a name="com.siams.med.api.Tm66ConclusionType"/>
-
-### Tm66ConclusionType
-Запись справочника "Тип заключения ДЭЗО"
-* ЗАКЛЮЧЕНИЕ_СОВПАДАЕТ("Заключение эксперта совпадает с направленным заключением"),
-* ЗАКЛЮЧЕНИЕ_НЕ_СОВПАДАЕТ("Заключение эксперта не совпадает с направленным заключением"),
-* ЗАКЛЮЧЕНИЕ_НЕ_СОВПАДАЕТ_КАРДИНАЛЬНО("Заключение эксперта кардинально не совпадает с направленным заключением"),
-* ДИАГНОЗ_ПОДТВЕРЖДЕН("Диагноз подтвержден"),
-* ДИАГНОЗ_УТОЧНЕН("Уточнение диагноза"),
-* ДИАГНОЗ_НЕ_ПОДТВЕРЖДЕН("Диагноз не подтвержден"),
-* ИЗМЕНЕНИЕ_ТАКТИКИ_НЕ_ТРЕБУЕТСЯ("Изменение тактики лечения не требуется"),
-* ИЗМЕНЕНИЕ_ТАКТИКИ_ТРЕБУЕТСЯ("Требуется изменение тактики лечения"),
-* ВМЕШАТЕЛЬСТВО_ТРЕБУЕТСЯ("Требуется проведение оперативного вмешательства и/или процедуры"),
-* ДРУГОЕ("Другое")
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| code | [string](#string) | optional |  |
-| caption | [string](#string) | optional |  |
-
-
-
-
-
-
-<a name="com.siams.med.api.ClinicalGroupType"/>
+<a name="com.siams.med.api.ClinicalGroupType"></a>
 
 ### ClinicalGroupType
 Запись справочника &#34;Клиническая группа&#34;
@@ -599,7 +606,7 @@
 
 
 
-<a name="com.siams.med.api.DiagnosticsType"/>
+<a name="com.siams.med.api.DiagnosticsType"></a>
 
 ### DiagnosticsType
 Запись справочника &#34;Тип диагностики&#34;
@@ -642,7 +649,7 @@
 
 
 
-<a name="com.siams.med.api.DoseUnit"/>
+<a name="com.siams.med.api.DoseUnit"></a>
 
 ### DoseUnit
 Запись справочника &#34;Единица измерения дозы&#34;
@@ -667,7 +674,7 @@
 
 
 
-<a name="com.siams.med.api.DrAutopsy"/>
+<a name="com.siams.med.api.DrAutopsy"></a>
 
 ### DrAutopsy
 Запись справочника &#34;Аутопсия&#34;
@@ -688,7 +695,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzHD"/>
+<a name="com.siams.med.api.DrDzHD"></a>
 
 ### DrDzHD
 Запись справочника &#34;Обстоятельства выявления&#34;
@@ -712,7 +719,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzMthd"/>
+<a name="com.siams.med.api.DrDzMthd"></a>
 
 ### DrDzMthd
 Запись справочника &#34;Метод подтверждения диагноза&#34;
@@ -735,7 +742,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzPl"/>
+<a name="com.siams.med.api.DrDzPl"></a>
 
 ### DrDzPl
 Запись справочника &#34;Наличие первично-множественной опухоли&#34;
@@ -757,7 +764,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzPr"/>
+<a name="com.siams.med.api.DrDzPr"></a>
 
 ### DrDzPr
 Запись справочника первичности установки диагноза
@@ -778,7 +785,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzRA"/>
+<a name="com.siams.med.api.DrDzRA"></a>
 
 ### DrDzRA
 Запись справочника &#34;Результат аутопсии&#34;
@@ -802,7 +809,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzSt"/>
+<a name="com.siams.med.api.DrDzSt"></a>
 
 ### DrDzSt
 Запись справочника типа диагноза
@@ -821,7 +828,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzTM"/>
+<a name="com.siams.med.api.DrDzTM"></a>
 
 ### DrDzTM
 Запись справочника &#34;Варианты значений основной опухоли диагноза&#34;
@@ -841,7 +848,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzTS"/>
+<a name="com.siams.med.api.DrDzTS"></a>
 
 ### DrDzTS
 Запись справочника &#34;Варианты значений стороны опухоли диагноза&#34;
@@ -862,7 +869,7 @@
 
 
 
-<a name="com.siams.med.api.DrDzWO"/>
+<a name="com.siams.med.api.DrDzWO"></a>
 
 ### DrDzWO
 Запись справочника &#34;Причина поздней диагностики&#34;
@@ -890,7 +897,7 @@
 
 
 
-<a name="com.siams.med.api.DrNK0439"/>
+<a name="com.siams.med.api.DrNK0439"></a>
 
 ### DrNK0439
 Запись справочника &#34;Классификатор осложнений лечения злокачественного новообразования&#34;
@@ -907,7 +914,7 @@
 
 
 
-<a name="com.siams.med.api.DrNK0465"/>
+<a name="com.siams.med.api.DrNK0465"></a>
 
 ### DrNK0465
 справочник операций
@@ -924,7 +931,7 @@
 
 
 
-<a name="com.siams.med.api.DrPrsG"/>
+<a name="com.siams.med.api.DrPrsG"></a>
 
 ### DrPrsG
 Запись справочника вариантов значений пола человека
@@ -944,7 +951,7 @@
 
 
 
-<a name="com.siams.med.api.DrugType"/>
+<a name="com.siams.med.api.DrugType"></a>
 
 ### DrugType
 Запись справочника &#34;Тип препарата&#34;
@@ -965,7 +972,7 @@
 
 
 
-<a name="com.siams.med.api.DzStage"/>
+<a name="com.siams.med.api.DzStage"></a>
 
 ### DzStage
 Запись справочника &#34;Стадия опухолевого процесса&#34;
@@ -1001,7 +1008,7 @@
 
 
 
-<a name="com.siams.med.api.LocMetType"/>
+<a name="com.siams.med.api.LocMetType"></a>
 
 ### LocMetType
 Запись справочника &#34;Локализация отдаленных метастазов&#34;
@@ -1017,7 +1024,7 @@
 
 
 
-<a name="com.siams.med.api.RBiFRV442"/>
+<a name="com.siams.med.api.RBiFRV442"></a>
 
 ### RBiFRV442
 Запись справочника &#34;Классификатор социальных групп населения (для заполнения талона на оказание высокотехнологичной медицинской помощи)&#34; (1.2.643.5.1.13.2.1.1.439)
@@ -1034,7 +1041,7 @@
 
 
 
-<a name="com.siams.med.api.RBiMKB308"/>
+<a name="com.siams.med.api.RBiMKB308"></a>
 
 ### RBiMKB308
 Запись справочника &#34;Международная классификация болезней и состояний,
@@ -1053,7 +1060,7 @@
 
 
 
-<a name="com.siams.med.api.RBiNK0366"/>
+<a name="com.siams.med.api.RBiNK0366"></a>
 
 ### RBiNK0366
 Запись справочника &#34;Морфологическая классификация новообразований&#34; (1.2.643.5.1.13.2.1.1.495)
@@ -1070,7 +1077,7 @@
 
 
 
-<a name="com.siams.med.api.RBiPRK438"/>
+<a name="com.siams.med.api.RBiPRK438"></a>
 
 ### RBiPRK438
 Запись справочника &#34;Классификатор жителя города или села&#34; (1.2.643.5.1.13.2.1.1.573)
@@ -1087,7 +1094,7 @@
 
 
 
-<a name="com.siams.med.api.RBiPRP365"/>
+<a name="com.siams.med.api.RBiPRP365"></a>
 
 ### RBiPRP365
 Запись справочника &#34;Классификатор профессий рабочих и должностей служащих&#34; (1.2.643.5.1.13.2.1.1.658)
@@ -1104,7 +1111,7 @@
 
 
 
-<a name="com.siams.med.api.RayKind"/>
+<a name="com.siams.med.api.RayKind"></a>
 
 ### RayKind
 Запись справочника &#34;Вид облучения&#34;
@@ -1134,7 +1141,7 @@
 
 
 
-<a name="com.siams.med.api.RayMethod"/>
+<a name="com.siams.med.api.RayMethod"></a>
 
 ### RayMethod
 Запись справочника &#34;Метод облучения&#34;
@@ -1166,7 +1173,7 @@
 
 
 
-<a name="com.siams.med.api.RayRadio"/>
+<a name="com.siams.med.api.RayRadio"></a>
 
 ### RayRadio
 Запись справочника &#34;Радиомодификаторы&#34;
@@ -1196,7 +1203,7 @@
 
 
 
-<a name="com.siams.med.api.RayWay"/>
+<a name="com.siams.med.api.RayWay"></a>
 
 ### RayWay
 Запись справочника &#34;Cпособ облучения&#34;
@@ -1223,7 +1230,7 @@
 
 
 
-<a name="com.siams.med.api.ReferralInitiality"/>
+<a name="com.siams.med.api.ReferralInitiality"></a>
 
 ### ReferralInitiality
 Запись справочника &#34;Первичность направлений&#34;
@@ -1241,7 +1248,7 @@ REPEATED(&#34;Повторное направление&#34;);
 
 
 
-<a name="com.siams.med.api.RegInClause"/>
+<a name="com.siams.med.api.RegInClause"></a>
 
 ### RegInClause
 Запись справочника &#34;Условия взятия на учет&#34;
@@ -1263,7 +1270,7 @@ REPEATED(&#34;Повторное направление&#34;);
 
 
 
-<a name="com.siams.med.api.RegOutReason"/>
+<a name="com.siams.med.api.RegOutReason"></a>
 
 ### RegOutReason
 Запись справочника &#34;Условия взятия на учет&#34;
@@ -1287,7 +1294,7 @@ REPEATED(&#34;Повторное направление&#34;);
 
 
 
-<a name="com.siams.med.api.Srv59Chem"/>
+<a name="com.siams.med.api.Srv59Chem"></a>
 
 ### Srv59Chem
 SPONKUSL	Справочник услуг при лечении онкологического заболевания
@@ -1321,7 +1328,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
-<a name="com.siams.med.api.Srv59Oper"/>
+<a name="com.siams.med.api.Srv59Oper"></a>
 
 ### Srv59Oper
 SPONKUSL	Справочник услуг при лечении онкологического заболевания
@@ -1354,7 +1361,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
-<a name="com.siams.med.api.Srv59Ray"/>
+<a name="com.siams.med.api.Srv59Ray"></a>
 
 ### Srv59Ray
 SPONKUSL	Справочник услуг при лечении онкологического заболевания
@@ -1382,7 +1389,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
-<a name="com.siams.med.api.TherapyAim"/>
+<a name="com.siams.med.api.TherapyAim"></a>
 
 ### TherapyAim
 Запись справочника &#34;Применение терапии на этапах лечения&#34;
@@ -1404,7 +1411,7 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
-<a name="com.siams.med.api.TherapyCond"/>
+<a name="com.siams.med.api.TherapyCond"></a>
 
 ### TherapyCond
 Запись справочника &#34;Условия проведения лечения&#34;
@@ -1424,7 +1431,114 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
-<a name="com.siams.med.api.TnmG"/>
+<a name="com.siams.med.api.Tm66ConclusionType"></a>
+
+### Tm66ConclusionType
+Запись справочника &#34;Тип заключения ДЭЗО&#34;
+* ЗАКЛЮЧЕНИЕ_СОВПАДАЕТ(&#34;Заключение эксперта совпадает с направленным заключением&#34;),
+* ЗАКЛЮЧЕНИЕ_НЕ_СОВПАДАЕТ(&#34;Заключение эксперта не совпадает с направленным заключением&#34;),
+* ЗАКЛЮЧЕНИЕ_НЕ_СОВПАДАЕТ_КАРДИНАЛЬНО(&#34;Заключение эксперта кардинально не совпадает с направленным заключением&#34;),
+* ДИАГНОЗ_ПОДТВЕРЖДЕН(&#34;Диагноз подтвержден&#34;),
+* ДИАГНОЗ_УТОЧНЕН(&#34;Уточнение диагноза&#34;),
+* ДИАГНОЗ_НЕ_ПОДТВЕРЖДЕН(&#34;Диагноз не подтвержден&#34;),
+* ИЗМЕНЕНИЕ_ТАКТИКИ_НЕ_ТРЕБУЕТСЯ(&#34;Изменение тактики лечения не требуется&#34;),
+* ИЗМЕНЕНИЕ_ТАКТИКИ_ТРЕБУЕТСЯ(&#34;Требуется изменение тактики лечения&#34;),
+* ВМЕШАТЕЛЬСТВО_ТРЕБУЕТСЯ(&#34;Требуется проведение оперативного вмешательства и/или процедуры&#34;),
+* ДРУГОЕ(&#34;Другое&#34;)
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Tm66DiagnosticsType"></a>
+
+### Tm66DiagnosticsType
+Запись справочника &#34;Предопределенные типы инструментальной диагностики&#34;
+* РГ_ГРУДНОЙ_КЛЕТКИ(&#34;Рентгенография органов грудной клетки&#34;),
+* РГ_ЖЕЛУДКА_ПИЩЕВОДА(&#34;Рентгенография желудка/пищевода&#34;),
+* КТ_ГОЛОВЫ(&#34;Компьютерная томография головы&#34;),
+* КТ_ШЕИ(&#34;Компьютерная томография шеи&#34;),
+* КТ_ГРУДНОЙ_КЛЕТКИ(&#34;Компьютерная томография грудной клетки&#34;),
+* КТ_БРЮШНОЙ_ПОЛОСТИ(&#34;Компьютерная томография брюшной полости&#34;),
+* КТ_ТАЗА(&#34;Компьютерная томография таза&#34;),
+* КТ_КОСТЕЙ_И_СУСТАВОВ(&#34;Компьютерная томография костей и суставов&#34;),
+* КТ_СЕРДЦА(&#34;Компьютерная томография сердца&#34;),
+* МРТ_ГОЛОВЫ(&#34;Магниторезонансная томография головы&#34;),
+* МРТ_ШЕИ(&#34;Магниторезонансная томография шеи&#34;),
+* МРТ_ГРУДНОЙ_КЛЕТКИ(&#34;Магниторезонансная томография грудной клетки&#34;),
+* МРТ_БРЮШНОЙ_ПОЛОСТИ(&#34;Магниторезонансная томография брюшной полости&#34;),
+* МРТ_ТАЗА(&#34;Магниторезонансная томография таза&#34;),
+* МРТ_КОСТЕЙ_И_СУСТАВОВ(&#34;Магниторезонансная томография костей и суставов&#34;),
+* МРТ_СЕРДЦА(&#34;Магниторезонансная томография сердца&#34;),
+* МРТ_СОСУДОВ(&#34;Магниторезонансная томография сосудов&#34;),
+* УЗИ_БРЮШНОЙ_ПОЛОСТИ(&#34;Ультразвуковое исследование брюшной полости&#34;),
+* УЗИ_МАЛОГО_ТАЗА(&#34;Ультразвуковое исследование малого таза&#34;),
+* УЗИ_МОЛОЧНЫХ_ЖЕЛЕЗ(&#34;Ультразвуковое исследование молочных желез&#34;)
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Tm66OrderPurpose"></a>
+
+### Tm66OrderPurpose
+Запись справочника &#34;Цель дистанционного экспертного заключения&#34;
+* ПОДТВЕРЖДЕНИЕ_ДИАГНОЗА(&#34;Определение (подтверждение) диагноза&#34;, 1),
+* ПОДТВЕРЖДЕНИЕ_ТАКТИКИ(&#34;Определение (подтверждение) тактики лечения&#34;, 2),
+* СОГЛАСОВАНИЕ_ГОСПИТАЛИЗАЦИИ(&#34;Согласование условий и срока госпитализации в ФГБУ&#34;, 3),
+* НЕОБХОДИМОСТЬ_ВМЕШАТЕЛЬСТВА(&#34;Необходимость выполнение нового и/или редкого вида оперативного вмешательства, процедуры и т.д.&#34;, 4),
+* ФОРМИРОВАНИЕ_ЭКСПЕРТНОГО_МНЕНИЯ(&#34;Формирование экспертного мнения по результатам диагностических исследований (МСКТ, МРТ, ПЭТ-КТ и т.п.)&#34;, 5),
+* РАЗБОР_КЛИНИЧЕСКИХ_СЛУЧАЕВ(&#34;Разбор клинических случаев&#34;, 6),
+* ДРУГОЕ(&#34;Другое&#34;, 7)
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Tm66OrderRejectReason"></a>
+
+### Tm66OrderRejectReason
+Запись справочника &#34;Причины отказа проведения ДЭЗО&#34;
+* ДАННЫЕ_ПАЦИЕНТА(&#34;Недостаточно данных о пациенте&#34;, 1),
+* КАЧЕСТВО_СНИМКА(&#34;Снимок выполнен некачественно&#34;, 2),
+* ОБЛАСТЬ_СНИМКА(&#34;Не совпадают локализации ДЭЗО и область снимка&#34;, 3),
+* НЕВОЗМОЖНО_АССОЦИИРОВАТЬ(&#34;Невозможно ассоциировать снимок и ДЭЗО&#34;, 4)
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.TnmG"></a>
 
 ### TnmG
 NONE(&#34;&#34;),
@@ -1446,7 +1560,7 @@ NONE(&#34;&#34;),
 
 
 
-<a name="com.siams.med.api.TnmM"/>
+<a name="com.siams.med.api.TnmM"></a>
 
 ### TnmM
 NONE(&#34;&#34;, null),
@@ -1468,7 +1582,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.TnmN"/>
+<a name="com.siams.med.api.TnmN"></a>
 
 ### TnmN
 NONE(&#34;&#34;, null),
@@ -1499,7 +1613,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.TnmT"/>
+<a name="com.siams.med.api.TnmT"></a>
 
 ### TnmT
 NONE(&#34;&#34;, null),
@@ -1541,7 +1655,7 @@ NONE(&#34;&#34;, null),
  
 
 
-<a name="com.siams.med.api.LocMetType.Code"/>
+<a name="com.siams.med.api.LocMetType.Code"></a>
 
 ### LocMetType.Code
 
@@ -1571,14 +1685,14 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="meta.proto"/>
+<a name="meta.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## meta.proto
 
 
 
-<a name="com.siams.med.api.Object"/>
+<a name="com.siams.med.api.Object"></a>
 
 ### Object
 
@@ -1595,7 +1709,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.Object.Entry"/>
+<a name="com.siams.med.api.Object.Entry"></a>
 
 ### Object.Entry
 
@@ -1617,7 +1731,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.Query"/>
+<a name="com.siams.med.api.Query"></a>
 
 ### Query
 
@@ -1632,7 +1746,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.Update"/>
+<a name="com.siams.med.api.Update"></a>
 
 ### Update
 
@@ -1647,7 +1761,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.Update.Statment"/>
+<a name="com.siams.med.api.Update.Statment"></a>
 
 ### Update.Statment
 
@@ -1666,7 +1780,7 @@ NONE(&#34;&#34;, null),
  
 
 
-<a name="com.siams.med.api.Update.Action"/>
+<a name="com.siams.med.api.Update.Action"></a>
 
 ### Update.Action
 
@@ -1685,14 +1799,81 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="oncor.proto"/>
+<a name="oncor.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## oncor.proto
 
 
 
-<a name="com.siams.med.api.Locality"/>
+<a name="com.siams.med.api.Department"></a>
+
+### Department
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| name | [string](#string) | optional |  |
+| cont_inc | [ContingentInclude](#com.siams.med.api.ContingentInclude) | optional |  |
+| mo_id | [string](#string) | repeated |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.DepartmentUpdate"></a>
+
+### DepartmentUpdate
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| entry | [DepartmentUpdate.Entry](#com.siams.med.api.DepartmentUpdate.Entry) | repeated |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.DepartmentUpdate.Entry"></a>
+
+### DepartmentUpdate.Entry
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| name | [string](#string) | optional |  |
+| cont_inc | [ContingentInclude](#com.siams.med.api.ContingentInclude) | optional |  |
+| mo | [IdSetActions](#com.siams.med.api.IdSetActions) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.IdSetActions"></a>
+
+### IdSetActions
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| put_id | [string](#string) | repeated |  |
+| del_id | [string](#string) | repeated |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Locality"></a>
 
 ### Locality
 Населенный Пункт
@@ -1709,7 +1890,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.MedOrg"/>
+<a name="com.siams.med.api.MedOrg"></a>
 
 ### MedOrg
 
@@ -1730,13 +1911,14 @@ NONE(&#34;&#34;, null),
 | med_terr | [MedTerr](#com.siams.med.api.MedTerr) | optional |  |
 | head_med_org_unq | [string](#string) | optional |  |
 | org_unit_id | [string](#string) | optional |  |
+| department_id | [string](#string) | optional |  |
 
 
 
 
 
 
-<a name="com.siams.med.api.MedTerr"/>
+<a name="com.siams.med.api.MedTerr"></a>
 
 ### MedTerr
 
@@ -1756,7 +1938,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.User"/>
+<a name="com.siams.med.api.User"></a>
 
 ### User
 
@@ -1781,22 +1963,35 @@ NONE(&#34;&#34;, null),
 
  
 
- 
+
+<a name="com.siams.med.api.ContingentInclude"></a>
+
+### ContingentInclude
+
+
+| Name | Number | Description |
+| ---- | ------ | ----------- |
+| DENIED | 0 |  |
+| AUTO | 1 |  |
+| ASK_CONTINGENT_MANAGER | 2 |  |
+
 
  
 
  
 
+ 
 
 
-<a name="patients.proto"/>
+
+<a name="patients.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## patients.proto
 
 
 
-<a name="com.siams.med.api.Address"/>
+<a name="com.siams.med.api.Address"></a>
 
 ### Address
 
@@ -1825,7 +2020,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.EHR"/>
+<a name="com.siams.med.api.EHR"></a>
 
 ### EHR
 
@@ -1843,7 +2038,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.Insurance"/>
+<a name="com.siams.med.api.Insurance"></a>
 
 ### Insurance
 
@@ -1858,7 +2053,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.Patient"/>
+<a name="com.siams.med.api.Patient"></a>
 
 ### Patient
 
@@ -1872,6 +2067,8 @@ NONE(&#34;&#34;, null),
 | last_name | [string](#string) | optional |  |
 | birth_day | [string](#string) | optional |  |
 | gender | [DrPrsG](#com.siams.med.api.DrPrsG) | optional |  |
+| contingent_of_dept | [string](#string) | repeated |  |
+| contingent_of_mo | [string](#string) | repeated |  |
 | code | [string](#string) | optional |  |
 | ehr_count | [int32](#int32) | optional |  |
 | blood_type | [BloodType](#com.siams.med.api.BloodType) | optional |  |
@@ -1888,7 +2085,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.PatientQuery"/>
+<a name="com.siams.med.api.PatientQuery"></a>
 
 ### PatientQuery
 
@@ -1910,7 +2107,7 @@ NONE(&#34;&#34;, null),
 
 
 
-<a name="com.siams.med.api.PatientSearchResult"/>
+<a name="com.siams.med.api.PatientSearchResult"></a>
 
 ### PatientSearchResult
 Результат, возвращаемый по запросу
@@ -1931,7 +2128,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.PatientUpdate"/>
+<a name="com.siams.med.api.PatientUpdate"></a>
 
 ### PatientUpdate
 
@@ -1947,7 +2144,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.PatientUpdate.Entry"/>
+<a name="com.siams.med.api.PatientUpdate.Entry"></a>
 
 ### PatientUpdate.Entry
 
@@ -1960,6 +2157,8 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | last_name | [string](#string) | optional |  |
 | birth_day | [string](#string) | optional |  |
 | gender | [DrPrsG](#com.siams.med.api.DrPrsG) | optional |  |
+| contingent_of_dept | [IdSetActions](#com.siams.med.api.IdSetActions) | optional |  |
+| contingent_of_mo | [IdSetActions](#com.siams.med.api.IdSetActions) | optional |  |
 | blood_type | [BloodType](#com.siams.med.api.BloodType) | optional |  |
 | social_status | [RBiFRV442](#com.siams.med.api.RBiFRV442) | optional |  |
 | company_name | [string](#string) | optional |  |
@@ -1983,17 +2182,16 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="records.proto"/>
+<a name="records.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## records.proto
 
 
 
-<a name="com.siams.med.api.Drug"/>
+<a name="com.siams.med.api.Drug"></a>
 
 ### Drug
-
 Запись справочника &#34;Препарат&#34;
 
 
@@ -2010,7 +2208,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.DrugRecord"/>
+<a name="com.siams.med.api.DrugRecord"></a>
 
 ### DrugRecord
 
@@ -2027,7 +2225,26 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc"/>
+<a name="com.siams.med.api.InstanceStatus"></a>
+
+### InstanceStatus
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| json | [string](#string) | optional |  |
+| rc_id | [string](#string) | optional |  |
+| user_id | [string](#string) | optional |  |
+| time | [string](#string) | optional |  |
+| history | [InstanceStatus](#com.siams.med.api.InstanceStatus) | repeated |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc"></a>
 
 ### Rc
 
@@ -2043,7 +2260,9 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | org_unit_id | [string](#string) | optional |  |
 | summary | [string](#string) | optional |  |
 | time_rc | [string](#string) | optional |  |
+| deleted_status | [Rc.DeletedAt](#com.siams.med.api.Rc.DeletedAt) | repeated |  |
 | attachment_id | [string](#string) | repeated |  |
+| instance_status | [string](#string) | optional |  |
 | rc_doc | [Rc.RcDoc](#com.siams.med.api.Rc.RcDoc) | optional |  |
 | rc_referral | [Rc.RcReferral](#com.siams.med.api.Rc.RcReferral) | optional |  |
 | rc_appointment | [Rc.RcAppointment](#com.siams.med.api.Rc.RcAppointment) | optional |  |
@@ -2056,13 +2275,16 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | rc_reg_out | [Rc.RcRegOut](#com.siams.med.api.Rc.RcRegOut) | optional |  |
 | rc_death | [Rc.RcDeath](#com.siams.med.api.Rc.RcDeath) | optional |  |
 | rc_clinical_group | [Rc.RcClinicalGroup](#com.siams.med.api.Rc.RcClinicalGroup) | optional |  |
+| rc_tm66_order | [Rc.RcTm66Order](#com.siams.med.api.Rc.RcTm66Order) | optional |  |
+| rc_tm66_order_reject | [Rc.RcTm66OrderReject](#com.siams.med.api.Rc.RcTm66OrderReject) | optional |  |
+| rc_tm66_order_conclusion | [Rc.RcTm66OrderConclusion](#com.siams.med.api.Rc.RcTm66OrderConclusion) | optional |  |
 
 
 
 
 
 
-<a name="com.siams.med.api.Rc.Published"/>
+<a name="com.siams.med.api.Rc.Published"></a>
 
 ### Rc.Published
 
@@ -2078,7 +2300,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcAppointment"/>
+<a name="com.siams.med.api.Rc.RcAppointment"></a>
 
 ### Rc.RcAppointment
 
@@ -2099,7 +2321,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcChem"/>
+<a name="com.siams.med.api.Rc.RcChem"></a>
 
 ### Rc.RcChem
 
@@ -2122,7 +2344,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcClinicalGroup"/>
+<a name="com.siams.med.api.Rc.RcClinicalGroup"></a>
 
 ### Rc.RcClinicalGroup
 запись &#34;Клиническая группа&#34;
@@ -2137,7 +2359,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcDeath"/>
+<a name="com.siams.med.api.Rc.RcDeath"></a>
 
 ### Rc.RcDeath
 запись &#34;Регистрация смерти&#34;
@@ -2153,7 +2375,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcDoc"/>
+<a name="com.siams.med.api.Rc.RcDoc"></a>
 
 ### Rc.RcDoc
 
@@ -2163,13 +2385,14 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | ----- | ---- | ----- | ----------- |
 | category | [string](#string) | optional |  |
 | html | [string](#string) | optional |  |
+| json | [string](#string) | optional |  |
 
 
 
 
 
 
-<a name="com.siams.med.api.Rc.RcDz"/>
+<a name="com.siams.med.api.Rc.RcDz"></a>
 
 ### Rc.RcDz
 
@@ -2184,7 +2407,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcHorm"/>
+<a name="com.siams.med.api.Rc.RcHorm"></a>
 
 ### Rc.RcHorm
 
@@ -2206,7 +2429,24 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcOper"/>
+<a name="com.siams.med.api.Rc.RcHorm.Kind"></a>
+
+### Rc.RcHorm.Kind
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| pharm | [bool](#bool) | optional |  |
+| surg | [bool](#bool) | optional |  |
+| xrt | [bool](#bool) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcOper"></a>
 
 ### Rc.RcOper
 
@@ -2226,7 +2466,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcRay"/>
+<a name="com.siams.med.api.Rc.RcRay"></a>
 
 ### Rc.RcRay
 
@@ -2254,7 +2494,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcReferral"/>
+<a name="com.siams.med.api.Rc.RcReferral"></a>
 
 ### Rc.RcReferral
 
@@ -2274,7 +2514,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcRegIn"/>
+<a name="com.siams.med.api.Rc.RcRegIn"></a>
 
 ### Rc.RcRegIn
 запись постановки на учет
@@ -2289,7 +2529,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.Rc.RcRegOut"/>
+<a name="com.siams.med.api.Rc.RcRegOut"></a>
 
 ### Rc.RcRegOut
 запись снятия с учета
@@ -2303,24 +2543,114 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
+
+<a name="com.siams.med.api.Rc.RcTm66Order"></a>
+
+### Rc.RcTm66Order
+запись &#34;Заявка на ДЭЗО&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| purpose | [Tm66OrderPurpose](#com.siams.med.api.Tm66OrderPurpose) | optional | Цель дистанционного экспертного заключения |
+| diagnostics_type | [Tm66DiagnosticsType](#com.siams.med.api.Tm66DiagnosticsType) | optional | Тип инструментальной диагностики |
+| client | [MedResource](#com.siams.med.api.MedResource) | optional | Заказчик |
+| client_mo | [MO](#com.siams.med.api.MO) | optional | МО заказчика |
+| expert_mo | [MO](#com.siams.med.api.MO) | optional | МО исполнителя |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcTm66OrderConclusion"></a>
+
+### Rc.RcTm66OrderConclusion
+запись &#34;Заключение ДЭЗО&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| order_id | [string](#string) | optional | id записи RcTm66Order Заявка на ДЭЗО |
+| conclusion_type | [Tm66ConclusionType](#com.siams.med.api.Tm66ConclusionType) | optional | Тип заключения |
+| conclusion | [string](#string) | optional | Заключение |
+| conclusion_pdf_id | [string](#string) | optional | Заключение в формате PDF (Attachment.id) |
+| conclusion_pdf_ds_id | [string](#string) | optional | Открепленная ЭЦП заключения PDF (Attachment.id) |
+| expert | [MedResource](#com.siams.med.api.MedResource) | optional | Исполнитель |
+| expert_d | [MedDepart](#com.siams.med.api.MedDepart) | optional | Отделение исполнителя |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcTm66OrderReject"></a>
+
+### Rc.RcTm66OrderReject
+запись &#34;Отказ в проведении ДЭЗО&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| order_id | [string](#string) | optional | id записи RcTm66Order Заявка на ДЭЗО |
+| reason | [Tm66OrderRejectReason](#com.siams.med.api.Tm66OrderRejectReason) | optional | Причины отказа проведения ДЭЗО |
+| text | [string](#string) | optional | Дополнительная информация |
+| expert | [MedResource](#com.siams.med.api.MedResource) | optional | Исполнитель |
+| expert_d | [MedDepart](#com.siams.med.api.MedDepart) | optional | Отделение исполнителя |
+
+
+
+
+
+
+<a name="com.siams.med.api.RcDocJson"></a>
+
+### RcDocJson
+Сообщение для передачи новых значений json
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| rc_id | [string](#string) | optional | обязательное поле @rid записи RcDoc |
+| patient_id | [string](#string) | optional | опциональное поле @rid Ptn |
+| ehr_id | [string](#string) | optional | опциональное поле @rid AnyEHR |
+| json | [string](#string) | optional |  |
+
+
+
+
+
+ 
+
+
+<a name="com.siams.med.api.Rc.DeletedAt"></a>
+
+### Rc.DeletedAt
+
+
+| Name | Number | Description |
+| ---- | ------ | ----------- |
+| RC | 1 |  |
+| EHR | 2 |  |
+| PTN | 3 |  |
+
+
  
 
  
 
  
 
- 
 
 
-
-<a name="routing.proto"/>
+<a name="routing.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## routing.proto
 
 
 
-<a name="com.siams.med.api.RoutingList"/>
+<a name="com.siams.med.api.RoutingList"></a>
 
 ### RoutingList
 
@@ -2348,7 +2678,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.RoutingList.Diagnostics"/>
+<a name="com.siams.med.api.RoutingList.Diagnostics"></a>
 
 ### RoutingList.Diagnostics
 
@@ -2374,14 +2704,14 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="search.proto"/>
+<a name="search.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
 ## search.proto
 
 
 
-<a name="com.siams.med.api.Page"/>
+<a name="com.siams.med.api.Page"></a>
 
 ### Page
 
@@ -2398,7 +2728,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.RcAppointmentQuery"/>
+<a name="com.siams.med.api.RcAppointmentQuery"></a>
 
 ### RcAppointmentQuery
 
@@ -2415,7 +2745,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.RcDocQuery"/>
+<a name="com.siams.med.api.RcDocQuery"></a>
 
 ### RcDocQuery
 
@@ -2433,40 +2763,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.RcTm66OrderQuery"/>
-
-### RcTm66OrderQuery
-
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| from_date | [string](#string) | optional |  |
-| to_date | [string](#string) | optional |  |
-| org_unit_id | [string](#string) | optional |  |
-| status_is_null | [bool](#bool) | optional |  |
-| status_value | [string](#string) | optional |  |
-| status_value_with_history | [string](#string) | optional |  |
-
-
-<a name="com.siams.med.api.InstanceStatus"/>
-
-### InstanceStatus
-
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| json | [string](#string) | optional |  |
-| rc_id | [string](#string) | optional |  |
-| user_id | [string](#string) | optional |  |
-| time | [string](#string) | optional |  |
-| history | InstanceStatus | optional |  |
-
-
-
-
-<a name="com.siams.med.api.RcReferralQuery"/>
+<a name="com.siams.med.api.RcReferralQuery"></a>
 
 ### RcReferralQuery
 
@@ -2485,7 +2782,26 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.RecordsPage"/>
+<a name="com.siams.med.api.RcTm66OrderQuery"></a>
+
+### RcTm66OrderQuery
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| from_date | [string](#string) | optional |  |
+| to_date | [string](#string) | optional |  |
+| status_is_null | [bool](#bool) | optional |  |
+| status_value | [string](#string) | optional |  |
+| status_value_with_history | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.RecordsPage"></a>
 
 ### RecordsPage
 
@@ -2502,7 +2818,7 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 
 
-<a name="com.siams.med.api.SearchJob"/>
+<a name="com.siams.med.api.SearchJob"></a>
 
 ### SearchJob
 
@@ -2530,21 +2846,21 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 ## Scalar Value Types
 
-| .proto Type | Notes | C++ Type | Java Type | Python Type |
-| ----------- | ----- | -------- | --------- | ----------- |
-| <a name="double" /> double |  | double | double | float |
-| <a name="float" /> float |  | float | float | float |
-| <a name="int32" /> int32 | Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead. | int32 | int | int |
-| <a name="int64" /> int64 | Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead. | int64 | long | int/long |
-| <a name="uint32" /> uint32 | Uses variable-length encoding. | uint32 | int | int/long |
-| <a name="uint64" /> uint64 | Uses variable-length encoding. | uint64 | long | int/long |
-| <a name="sint32" /> sint32 | Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s. | int32 | int | int |
-| <a name="sint64" /> sint64 | Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s. | int64 | long | int/long |
-| <a name="fixed32" /> fixed32 | Always four bytes. More efficient than uint32 if values are often greater than 2^28. | uint32 | int | int |
-| <a name="fixed64" /> fixed64 | Always eight bytes. More efficient than uint64 if values are often greater than 2^56. | uint64 | long | int/long |
-| <a name="sfixed32" /> sfixed32 | Always four bytes. | int32 | int | int |
-| <a name="sfixed64" /> sfixed64 | Always eight bytes. | int64 | long | int/long |
-| <a name="bool" /> bool |  | bool | boolean | boolean |
-| <a name="string" /> string | A string must always contain UTF-8 encoded or 7-bit ASCII text. | string | String | str/unicode |
-| <a name="bytes" /> bytes | May contain any arbitrary sequence of bytes. | string | ByteString | str |
+| .proto Type | Notes | C++ | Java | Python | Go | C# | PHP | Ruby |
+| ----------- | ----- | --- | ---- | ------ | -- | -- | --- | ---- |
+| <a name="double" /> double |  | double | double | float | float64 | double | float | Float |
+| <a name="float" /> float |  | float | float | float | float32 | float | float | Float |
+| <a name="int32" /> int32 | Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead. | int32 | int | int | int32 | int | integer | Bignum or Fixnum (as required) |
+| <a name="int64" /> int64 | Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead. | int64 | long | int/long | int64 | long | integer/string | Bignum |
+| <a name="uint32" /> uint32 | Uses variable-length encoding. | uint32 | int | int/long | uint32 | uint | integer | Bignum or Fixnum (as required) |
+| <a name="uint64" /> uint64 | Uses variable-length encoding. | uint64 | long | int/long | uint64 | ulong | integer/string | Bignum or Fixnum (as required) |
+| <a name="sint32" /> sint32 | Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s. | int32 | int | int | int32 | int | integer | Bignum or Fixnum (as required) |
+| <a name="sint64" /> sint64 | Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s. | int64 | long | int/long | int64 | long | integer/string | Bignum |
+| <a name="fixed32" /> fixed32 | Always four bytes. More efficient than uint32 if values are often greater than 2^28. | uint32 | int | int | uint32 | uint | integer | Bignum or Fixnum (as required) |
+| <a name="fixed64" /> fixed64 | Always eight bytes. More efficient than uint64 if values are often greater than 2^56. | uint64 | long | int/long | uint64 | ulong | integer/string | Bignum |
+| <a name="sfixed32" /> sfixed32 | Always four bytes. | int32 | int | int | int32 | int | integer | Bignum or Fixnum (as required) |
+| <a name="sfixed64" /> sfixed64 | Always eight bytes. | int64 | long | int/long | int64 | long | integer/string | Bignum |
+| <a name="bool" /> bool |  | bool | boolean | boolean | bool | bool | boolean | TrueClass/FalseClass |
+| <a name="string" /> string | A string must always contain UTF-8 encoded or 7-bit ASCII text. | string | String | str/unicode | string | string | string | String (UTF-8) |
+| <a name="bytes" /> bytes | May contain any arbitrary sequence of bytes. | string | ByteString | str | []byte | ByteString | string | String (ASCII-8BIT) |
 
