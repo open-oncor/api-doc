@@ -1,6 +1,6 @@
 ## Получение статуса медицинской записи
 
-### ![GET](../../../img/get.png) /rc/getInstanceStatus`
+### ![GET](../../../img/get.png) /rc/getInstanceStatus
 * **URL parameter:** [id](../../../types/types.md#com.siams.med.api.Rc)
 * **Response:** [[Rc](../../../types/types.md#com.siams.med.api.InstanceStatus)]
 

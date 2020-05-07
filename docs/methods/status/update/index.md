@@ -1,6 +1,6 @@
 ## Установка статуса медицинской записи
 
-### ![POST](../../../img/post.png) /rc/updateInstanceStatus`
+### ![POST](../../../img/post.png) /rc/updateInstanceStatus
 * **Request:** [InstanceStatus](../../../types/types.md#com.siams.med.api.InstanceStatus)
 * **Response:** [InstanceStatus](../../../types/types.md#com.siams.med.api.InstanceStatus)
 

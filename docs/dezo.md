@@ -16,8 +16,11 @@
 
 ### Работа со справочниками
 
-* [/directory/get/Tm66OrderPurpose](methods/directory/get/DrPrsG/index.md)  - `справочник Цель ДЭЗО` 
-* [/directory/get/Tm66DiagnosticsType](methods/directory/get/BloodType/index.md)  - `справочник Тип диагностики ДЭЗО`
+* [/directory/get/Tm66OrderPurpose](methods/directory/get/Tm66OrderPurpose/index.md)  - `справочник Цель ДЭЗО` 
+* [/directory/get/Tm66DiagnosticsType](methods/directory/get/Tm66DiagnosticsType/index.md)  - `справочник Тип диагностики ДЭЗО`
+* [/directory/get/Tm66ConclusionType](methods/directory/get/Tm66ConclusionType/index.md)  - `справочник Предопределенные типы инструментальной диагностики`
+* [/directory/get/Tm66OrderRejectReason](methods/directory/get/Tm66OrderRejectReason/index.md)  - `справочник Причины отказа проведения ДЭЗО`
+
 
 ### Работа с пациентами
 * [/patient/get](methods/patient/get/index.md)  - `получение данных пациента по его ключу`
