@@ -1,5 +1,11 @@
-## Методы API для ДЭЗО
+## Базовый сценарий работы внешней системы с API для ДЭЗО
 
+1. [Поиск новых заявок на ДЭЗО](https://open-oncor.github.io/api-doc/methods/search/start/RcTm66OrderQuery/) с конкретной даты (или без нее) - по текущее время
+2. [Постраничное получение заявок](https://open-oncor.github.io/api-doc/methods/search/get/RecordsPage/), найденных в запросе (п.1)
+3. [Получение информации о пациенте](https://open-oncor.github.io/api-doc/methods/patient/get/)
+4. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "Обработка началась"
+
+## Методы API для ДЭЗО
 ### Поисковые функции для медицинских записей
 
 * [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
@@ -30,12 +36,4 @@
 ### Работа с медицинскими записями
 
 * [/rc/get](methods/rc/get/index.md)  - `получение медицинской записи пациента по ключу`
-
-
-### Базовый сценарий работы
-
-1. [Поиск новых заявок на ДЭЗО](https://open-oncor.github.io/api-doc/methods/search/start/RcTm66OrderQuery/) с конкретной даты (или без нее) - по текущее время
-2. [Постраничное получение заявок](https://open-oncor.github.io/api-doc/methods/search/get/RecordsPage/), найденных в запросе (п.1)
-3. [Получение информации о пациенте](https://open-oncor.github.io/api-doc/methods/patient/get/)
-4. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "Обработка началась"
 
