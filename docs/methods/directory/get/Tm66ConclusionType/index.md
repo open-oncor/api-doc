@@ -1,4 +1,4 @@
-## Справочник Предопределенные типы инструментальной диагностики
+## Справочник Тип заключения ДЭЗО
 
 ### ![GET](../../../../img/get.png) /directory/get/Tm66ConclusionType
 * **Response: [[Tm66ConclusionType](../../../../types/types.md#com.siams.med.api.Tm66ConclusionType)]**
