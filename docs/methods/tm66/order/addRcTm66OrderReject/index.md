@@ -2,6 +2,7 @@
 
 ### ![POST](../../../../img/post.png) /rc/updateInstanceStatus
 * **Request:** [RcTm66OrderReject](../../../../types/types.md#com.siams.med.api.Rc.RcTm66OrderReject)
+* **Response:** [RcTm66OrderReject](../../../../types/types.md#com.siams.med.api.Rc.RcTm66OrderReject)
 
 Создает запись "Отказ в проведении ДЭЗО" (RcTm66OrderReject)
 
