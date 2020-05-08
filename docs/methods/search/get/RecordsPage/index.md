@@ -25,7 +25,7 @@ message Page {
 message SearchJob {
     required string id = 1;
     oneof status {
-        bool ready = 2; //признак готовности SearchJob. Если не равно true, то необходимо вновь повторить запрос 
+        bool ready = 2; //признак готовности SearchJob. Если не true, то необходимо вновь повторить запрос 
         ErrorResult error = 3;
     }
 }
