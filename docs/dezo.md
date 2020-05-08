@@ -7,8 +7,8 @@
 5. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "DICOM ассоциирован с заказом"
 6. Выполнение ДЭЗО
    1. [Отказ в проведении ДЭЗО](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderReject/)
-   2. Сформировано заключение - `Сначала передается сформированный файл заключения и, по мере необходимости, файл открепленной ЭЦП к первому файлу. Полученные {{attachmentId}} файлов, изспользуются в запросе передачи заключения`
-       1. [Передача файла(-ов)](https://open-oncor.github.io/api-doc/methods/attachment/create/index.md) заключения (например, PDF)
+   2. Сформировано заключение - `Сначала передается сформированный файл заключения и, по мере необходимости, файл открепленной ЭЦП к первому файлу. Полученные {{attachmentId}} файлов, используются в запросе передачи заключения`
+       1. [Передача файла(-ов)](https://open-oncor.github.io/api-doc/methods/attachment/create/index.md) заключения (файл протокола заключения и открепленно ЭЦП)
        2. [Передача заключения](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderConclusion/index.md) со ссылкой на ранее переданные файлы заключения
 3. [Проведена экспертиза DICOM](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderExpertiseDicom/index.md) 
 4. [Проведена экспертиза первичного протокола исследования](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) 
@@ -17,11 +17,14 @@
 ## Методы API для ДЭЗО
 
 ### Получение документов ДЭЗО
+
 * [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `получение документа "Отказ в проведении ДЭЗО"` 
 * [/tm66/order/addRcTm66OrderConclusion](methods/tm66/order/addRcTm66OrderConclusion/index.md) - `получение документа "Заключение эксперта ДЭЗО"`
 * [/tm66/order/addRcTm66OrderExpertiseDicom](methods/tm66/tm66/order/addRcTm66OrderExpertiseDicom/index.md) - `получение документа "Экспертиза качества DICOM"`
 * [/tm66/order/addRcTm66OrderExpertiseProtocol](methods/tm66/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) - `получение документа "Экспертиза качества первичного протокола исследования"`
+
 ---
+
 ### Поисковые функции для медицинских записей
 
 * [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
