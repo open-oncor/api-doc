@@ -6,12 +6,16 @@
 4. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "Обработка началась"
 5. DICOM ассоциирован с заказом - `в разработке`
 6. Выполнение заказа
-   1. Отказ в выполнении `в разработке`
+   1. [Отказ в проведении ДЭЗО](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderReject/)
    2. Сформировано заключение `в разработке`
 3. Проведена экспертиза DICOM `в разработке`
 4. Проведена экспертиза первичного протокола исследования `в разработке`
 
 ## Методы API для ДЭЗО
+
+### Получение документов ДЭЗО
+* [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `получение документа "Отказ в проведении ДЭЗО""` 
+
 ### Поисковые функции для медицинских записей
 
 * [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
