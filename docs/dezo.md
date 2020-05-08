@@ -1,5 +1,5 @@
 ## Базовый сценарий работы внешней системы с API для ДЭЗО
-1. ***Посредством пользовательского интерфейса*** ОНКОР создается запись *Заявка на ДЭЗО* - [Rc.RcTm66Order](../../types/types.md#com.siams.med.api.Rc.RcTm66Order)  
+1. ***Посредством пользовательского интерфейса*** ОНКОР создается запись *Заявка на ДЭЗО* - [Rc.RcTm66Order](types/types.md#com.siams.med.api.Rc.RcTm66Order)  
 1. [Поиск новых заявок на ДЭЗО](https://open-oncor.github.io/api-doc/methods/search/start/RcTm66OrderQuery/) с конкретной даты (или без нее) - по текущее время
 2. [Постраничное получение заявок](https://open-oncor.github.io/api-doc/methods/search/get/RecordsPage/), найденных в запросе (п.1)
 3. [Получение информации о пациенте](https://open-oncor.github.io/api-doc/methods/patient/get/)
@@ -34,7 +34,7 @@
 
 ### Работа со статусами записей
 
-Работа со статусами записи *Заявки на ДЭЗО* ([Rc.RcTm66Order](../../types/types.md#com.siams.med.api.Rc.RcTm66Order)) в рамках ДЭЗО осуществляется приведенными ниже методами. Статус также обновляется при загрузке документов по этой заявке или по другим событиям
+Работа со статусами записи *Заявки на ДЭЗО* ([Rc.RcTm66Order](types/types.md#com.siams.med.api.Rc.RcTm66Order)) в рамках ДЭЗО осуществляется приведенными ниже методами. Статус также обновляется при загрузке документов по этой заявке или по другим событиям
 * [/rc/getInstanceStatus](methods/status/get/index.md)  - `получение статуса медицинской записи`
 * [/rc/updateInstanceStatus](methods/status/update/index.md)  - `установка статуса медицинской записи`
 
