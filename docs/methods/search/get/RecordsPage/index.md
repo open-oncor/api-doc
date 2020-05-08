@@ -5,6 +5,39 @@
 * **Request:** [Page](../../../../types/types.md#com.siams.med.api.Page) 
 * **Response:** [RecordsPage](../../../../types/types.md#com.siams.med.api.RecordsPage)
 
+Запрос выполняется после выполнения поискового запроса из группы `/search/start/*`.
+Выполнение поискового запроса занимает время, которое зависит от величины выборки. 
+Поэтому, при попытке получения записей нужно дождаться, чтобы поле `result.page.job.ready` установилось в `true`.
+При этом поле `result.size` будет содержать общее количество записей, которые попали в поисковый запрос.
+Для получения списка записей необходимо указать номер страницы (начиная с 0) в offset и
+количество записей на странице в size.
+
+### Структура сообщений ProtoBuffer
+
+```proto
+
+message Page {
+    required SearchJob job = 1; //идентификатор SearchJob, полученный из запроса группы `/search/start/*`
+    optional int32 offset = 2; //номер страницы, начиная с 0
+    optional int32 size = 3; //количество записей на странице
+}
+
+message SearchJob {
+    required string id = 1;
+    oneof status {
+        bool ready = 2; //признак готовности SearchJob. Если не равно true, то необходимо вновь повторить запрос 
+        ErrorResult error = 3;
+    }
+}
+
+message RecordsPage {
+    required Page page = 1;
+    repeated Rc rc = 2; //массив записей, полученных в ответе
+    optional int32 size = 3; //общее количество записей, которые попали в поисковый запрос
+}
+
+
+```
 ### Пример http
 
 **Request**
@@ -142,20 +175,3 @@ public class GetRecordsPage {
 }
 ```
 
-### Структура сообщений ProtoBuffer
-
-```proto
-
-message Page {
-    required SearchJob job = 1;
-    optional int32 offset = 2;
-    optional int32 size = 3;
-}
-
-message RecordsPage {
-    required Page page = 1;
-    repeated Rc rc = 2;
-    optional int32 size = 3;
-}
-
-```
