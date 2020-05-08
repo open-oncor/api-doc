@@ -82,6 +82,8 @@
     - [TherapyCond](#com.siams.med.api.TherapyCond)
     - [Tm66ConclusionType](#com.siams.med.api.Tm66ConclusionType)
     - [Tm66DiagnosticsType](#com.siams.med.api.Tm66DiagnosticsType)
+    - [Tm66ExpertDicomResult](#com.siams.med.api.Tm66ExpertDicomResult)
+    - [Tm66ExpertProtocolResult](#com.siams.med.api.Tm66ExpertProtocolResult)
     - [Tm66OrderPurpose](#com.siams.med.api.Tm66OrderPurpose)
     - [Tm66OrderRejectReason](#com.siams.med.api.Tm66OrderRejectReason)
     - [TnmG](#com.siams.med.api.TnmG)
@@ -156,6 +158,8 @@
     - [Rc.RcRegOut](#com.siams.med.api.Rc.RcRegOut)
     - [Rc.RcTm66Order](#com.siams.med.api.Rc.RcTm66Order)
     - [Rc.RcTm66OrderConclusion](#com.siams.med.api.Rc.RcTm66OrderConclusion)
+    - [Rc.RcTm66OrderExpertiseDicom](#com.siams.med.api.Rc.RcTm66OrderExpertiseDicom)
+    - [Rc.RcTm66OrderExpertiseProtocol](#com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol)
     - [Rc.RcTm66OrderReject](#com.siams.med.api.Rc.RcTm66OrderReject)
     - [RcDocJson](#com.siams.med.api.RcDocJson)
   
@@ -1493,6 +1497,44 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
+<a name="com.siams.med.api.Tm66ExpertDicomResult"></a>
+
+### Tm66ExpertDicomResult
+Запись справочника &#34;Тип результата экспертизы качества выполнения рентген-радиологического снимка&#34;
+* НАРУШЕНИЙ_НЕТ(&#34;Нарушений нет&#34;),
+* НЕЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ(&#34;Выявлены незначительные нарушения, обусловленные оборудованием, на котором проводилось исследование&#34;),
+* ЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ(&#34;Выявленные значительные нарушения, не позволяющие сделать достоверные заключения&#34;)
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.Tm66ExpertProtocolResult"></a>
+
+### Tm66ExpertProtocolResult
+Запись справочника &#34;Тип результата экспертизы качества описания рентген-радиологического снимка&#34;
+* НАРУШЕНИЙ_НЕТ(&#34;Нарушений нет&#34;),
+* НЕЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ(&#34;Выявлены незначительные нарушения, не влияющие на сформированное заключение&#34;),
+* ЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ(&#34;Выявленные значительные нарушения, кардинальным образом меняющие сформированное заключение&#34;),
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
 <a name="com.siams.med.api.Tm66OrderPurpose"></a>
 
 ### Tm66OrderPurpose
@@ -2278,6 +2320,8 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | rc_tm66_order | [Rc.RcTm66Order](#com.siams.med.api.Rc.RcTm66Order) | optional |  |
 | rc_tm66_order_reject | [Rc.RcTm66OrderReject](#com.siams.med.api.Rc.RcTm66OrderReject) | optional |  |
 | rc_tm66_order_conclusion | [Rc.RcTm66OrderConclusion](#com.siams.med.api.Rc.RcTm66OrderConclusion) | optional |  |
+| rc_tm66_order_expertise_protocol | [Rc.RcTm66OrderExpertiseProtocol](#com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol) | optional |  |
+| rc_tm66_order_expertise_dicom | [Rc.RcTm66OrderExpertiseDicom](#com.siams.med.api.Rc.RcTm66OrderExpertiseDicom) | optional |  |
 
 
 
@@ -2578,6 +2622,46 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | conclusion_pdf_ds_id | [string](#string) | optional | Открепленная ЭЦП заключения PDF (Attachment.id) |
 | expert | [MedResource](#com.siams.med.api.MedResource) | optional | Исполнитель |
 | expert_d | [MedDepart](#com.siams.med.api.MedDepart) | optional | Отделение исполнителя |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcTm66OrderExpertiseDicom"></a>
+
+### Rc.RcTm66OrderExpertiseDicom
+запись &#34;Экспертиза качества DICOM&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| order_id | [string](#string) | optional | id записи RcTm66Order Заявка на ДЭЗО |
+| result | [Tm66ExpertDicomResult](#com.siams.med.api.Tm66ExpertDicomResult) | optional | Тип результата экспертизы первичного протокола |
+| text | [string](#string) | optional | Дополнительная информация |
+| expert | [MedResource](#com.siams.med.api.MedResource) | optional | Исполнитель |
+| expert_d | [MedDepart](#com.siams.med.api.MedDepart) | optional | Отделение исполнителя |
+| expert_m_o | [MO](#com.siams.med.api.MO) | optional | МО исполнителя |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol"></a>
+
+### Rc.RcTm66OrderExpertiseProtocol
+запись &#34;Экспертиза качества протокола (первичного) рентген-радиологического исследования&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| order_id | [string](#string) | optional | id записи RcTm66Order Заявка на ДЭЗО |
+| result | [Tm66ExpertProtocolResult](#com.siams.med.api.Tm66ExpertProtocolResult) | optional | Тип результата экспертизы первичного протокола |
+| text | [string](#string) | optional | Дополнительная информация |
+| expert | [MedResource](#com.siams.med.api.MedResource) | optional | Исполнитель |
+| expert_d | [MedDepart](#com.siams.med.api.MedDepart) | optional | Отделение исполнителя |
+| expert_m_o | [MO](#com.siams.med.api.MO) | optional | МО исполнителя |
 
 
 
