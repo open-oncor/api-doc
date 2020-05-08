@@ -19,7 +19,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderReject HTTP/1
             "reason":{
                 "code":"ДАННЫЕ_ПАЦИЕНТА"
             },
-            "text":"Не указан возраст",
+            "description":"Не указан возраст",
             "expert":{
                 "id": "39115-661768-26(20190905)"
             }
@@ -49,7 +49,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderReject HTTP/1
          "code": "ДАННЫЕ_ПАЦИЕНТА",
          "caption": "Недостаточно данных о пациенте"
        },
-       "text": "Не указан возраст",
+       "description": "Не указан возраст",
        "expert": {
          "id": "39115-661768-26(20190905)",
          "code": "39115-661768-26",
