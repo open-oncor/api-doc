@@ -4,10 +4,12 @@
 2. [Постраничное получение заявок](https://open-oncor.github.io/api-doc/methods/search/get/RecordsPage/), найденных в запросе (п.1)
 3. [Получение информации о пациенте](https://open-oncor.github.io/api-doc/methods/patient/get/)
 4. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "Обработка началась"
-5. DICOM ассоциирован с заказом - `в разработке`
-6. Выполнение заказа
+5. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "DICOM ассоциирован с заказом"
+6. Выполнение ДЭЗО
    1. [Отказ в проведении ДЭЗО](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderReject/)
-   2. Сформировано заключение `в разработке`
+   2. Сформировано заключение
+       1. [Передача файла(-ов)](https://open-oncor.github.io/api-doc/methods/attachment/create/index.md) заключения (например, PDF)
+       2. [Передача заключения]() со ссылкой на ранее переданные файлы заключения
 3. Проведена экспертиза DICOM `в разработке`
 4. Проведена экспертиза первичного протокола исследования `в разработке`
 
