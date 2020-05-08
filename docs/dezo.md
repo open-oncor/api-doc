@@ -18,10 +18,10 @@
 
 ### Получение документов ДЭЗО
 
-* [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `получение документа "Отказ в проведении ДЭЗО"` 
-* [/tm66/order/addRcTm66OrderConclusion](methods/tm66/order/addRcTm66OrderConclusion/index.md) - `получение документа "Заключение эксперта ДЭЗО"`
-* [/tm66/order/addRcTm66OrderExpertiseDicom](methods/tm66/tm66/order/addRcTm66OrderExpertiseDicom/index.md) - `получение документа "Экспертиза качества DICOM"`
-* [/tm66/order/addRcTm66OrderExpertiseProtocol](methods/tm66/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) - `получение документа "Экспертиза качества первичного протокола исследования"`
+* [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `загрузка документа "Отказ в проведении ДЭЗО"` 
+* [/tm66/order/addRcTm66OrderConclusion](methods/tm66/order/addRcTm66OrderConclusion/index.md) - `загрузка документа "Заключение эксперта ДЭЗО"`
+* [/tm66/order/addRcTm66OrderExpertiseDicom](methods/tm66/tm66/order/addRcTm66OrderExpertiseDicom/index.md) - `загрузка документа "Экспертиза качества DICOM"`
+* [/tm66/order/addRcTm66OrderExpertiseProtocol](methods/tm66/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) - `загрузка документа "Экспертиза качества первичного протокола исследования"`
 
 ---
 
@@ -34,6 +34,7 @@
 
 ### Работа со статусами записей
 
+Работа со статусами записи *Заявки на ДЭЗО* ([Rc.RcTm66Order](../../types/types.md#com.siams.med.api.Rc.RcTm66Order)) в рамках ДЭЗО осуществляется приведенными ниже методами. Статус также обновляется при загрузке документов по этой заявке или по другим событиям
 * [/rc/getInstanceStatus](methods/status/get/index.md)  - `получение статуса медицинской записи`
 * [/rc/updateInstanceStatus](methods/status/update/index.md)  - `установка статуса медицинской записи`
 
