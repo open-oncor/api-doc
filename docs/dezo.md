@@ -1,17 +1,17 @@
 ## Базовый сценарий работы внешней системы с API для ДЭЗО
 1. ***Посредством пользовательского интерфейса*** ОНКОР создается запись *Заявка на ДЭЗО* - [Rc.RcTm66Order](types/types.md#com.siams.med.api.Rc.RcTm66Order)  
-1. [Поиск новых заявок на ДЭЗО](https://open-oncor.github.io/api-doc/methods/search/start/RcTm66OrderQuery/) с конкретной даты (или без нее) - по текущее время
-2. [Постраничное получение заявок](https://open-oncor.github.io/api-doc/methods/search/get/RecordsPage/), найденных в запросе (п.1)
-3. [Получение информации о пациенте](https://open-oncor.github.io/api-doc/methods/patient/get/)
-4. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "Обработка началась"
-5. [Установка статуса](https://open-oncor.github.io/api-doc/methods/status/update/) "DICOM ассоциирован с заказом"
+1. [Поиск новых заявок на ДЭЗО](methods/search/start/RcTm66OrderQuery/) с конкретной даты (или без нее) - по текущее время
+2. [Постраничное получение заявок](methods/search/get/RecordsPage/), найденных в запросе (п.1)
+3. [Получение информации о пациенте](methods/patient/get/)
+4. [Установка статуса](methods/status/update/) "Обработка началась"
+5. [Установка статуса](methods/status/update/) "DICOM ассоциирован с заказом"
 6. Выполнение ДЭЗО
-   1. [Отказ в проведении ДЭЗО](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderReject/)
+   1. [Отказ в проведении ДЭЗО](methods/tm66/order/addRcTm66OrderReject/)
    2. Сформировано заключение - `Сначала передается сформированный файл заключения и, по мере необходимости, файл открепленной ЭЦП к первому файлу. Полученные {{attachmentId}} файлов, используются в запросе передачи заключения`
-       1. [Передача файла(-ов)](https://open-oncor.github.io/api-doc/methods/attachment/create/index.md) заключения (файл протокола заключения и открепленно ЭЦП)
-       2. [Передача заключения](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderConclusion/index.md) со ссылкой на ранее переданные файлы заключения
-3. [Проведена экспертиза DICOM](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderExpertiseDicom/index.md) 
-4. [Проведена экспертиза первичного протокола исследования](https://open-oncor.github.io/api-doc/methods/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) 
+       1. [Передача файла(-ов)](methods/attachment/create/index.md) заключения (файл протокола заключения и открепленно ЭЦП)
+       2. [Передача заключения](methods/tm66/order/addRcTm66OrderConclusion/index.md) со ссылкой на ранее переданные файлы заключения
+3. [Проведена экспертиза DICOM](methods/tm66/order/addRcTm66OrderExpertiseDicom/index.md) 
+4. [Проведена экспертиза первичного протокола исследования](methods/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) 
 
 ---
 ## Методы API для ДЭЗО
@@ -20,8 +20,8 @@
 
 * [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `загрузка документа "Отказ в проведении ДЭЗО"` 
 * [/tm66/order/addRcTm66OrderConclusion](methods/tm66/order/addRcTm66OrderConclusion/index.md) - `загрузка документа "Заключение эксперта ДЭЗО"`
-* [/tm66/order/addRcTm66OrderExpertiseDicom](methods/tm66/tm66/order/addRcTm66OrderExpertiseDicom/index.md) - `загрузка документа "Экспертиза качества DICOM"`
-* [/tm66/order/addRcTm66OrderExpertiseProtocol](methods/tm66/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) - `загрузка документа "Экспертиза качества первичного протокола исследования"`
+* [/tm66/order/addRcTm66OrderExpertiseDicom](methods/tm66/order/addRcTm66OrderExpertiseDicom/index.md) - `загрузка документа "Экспертиза качества DICOM"`
+* [/tm66/order/addRcTm66OrderExpertiseProtocol](methods/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) - `загрузка документа "Экспертиза качества первичного протокола исследования"`
 
 ---
 
