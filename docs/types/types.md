@@ -81,6 +81,7 @@
     - [TherapyAim](#com.siams.med.api.TherapyAim)
     - [TherapyCond](#com.siams.med.api.TherapyCond)
     - [Tm66ConclusionType](#com.siams.med.api.Tm66ConclusionType)
+    - [Tm66DiagnosticsMethod](#com.siams.med.api.Tm66DiagnosticsMethod)
     - [Tm66DiagnosticsType](#com.siams.med.api.Tm66DiagnosticsType)
     - [Tm66ExpertDicomResult](#com.siams.med.api.Tm66ExpertDicomResult)
     - [Tm66ExpertProtocolResult](#com.siams.med.api.Tm66ExpertProtocolResult)
@@ -157,6 +158,8 @@
     - [Rc.RcRegIn](#com.siams.med.api.Rc.RcRegIn)
     - [Rc.RcRegOut](#com.siams.med.api.Rc.RcRegOut)
     - [Rc.RcTm66Order](#com.siams.med.api.Rc.RcTm66Order)
+    - [Rc.RcTm66Order.Tm66Doc](#com.siams.med.api.Rc.RcTm66Order.Tm66Doc)
+    - [Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc](#com.siams.med.api.Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc)
     - [Rc.RcTm66OrderConclusion](#com.siams.med.api.Rc.RcTm66OrderConclusion)
     - [Rc.RcTm66OrderExpertiseDicom](#com.siams.med.api.Rc.RcTm66OrderExpertiseDicom)
     - [Rc.RcTm66OrderExpertiseProtocol](#com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol)
@@ -1461,6 +1464,26 @@ SPONKUSL	Справочник услуг при лечении онкологи�
 
 
 
+<a name="com.siams.med.api.Tm66DiagnosticsMethod"></a>
+
+### Tm66DiagnosticsMethod
+Запись справочника &#34;Методы инструментальной диагностики&#34;
+* РГ(&#34;Рентгенография&#34;),
+* КТ(&#34;Компьютерная томография&#34;),
+* МРТ(&#34;Магниторезонансная томография&#34;),
+* УЗИ(&#34;Ультразвуковое исследование&#34;)
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| code | [string](#string) | optional |  |
+| caption | [string](#string) | optional |  |
+
+
+
+
+
+
 <a name="com.siams.med.api.Tm66DiagnosticsType"></a>
 
 ### Tm66DiagnosticsType
@@ -2599,9 +2622,49 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | purpose | [Tm66OrderPurpose](#com.siams.med.api.Tm66OrderPurpose) | optional | Цель дистанционного экспертного заключения |
 | diagnostics_type | [Tm66DiagnosticsType](#com.siams.med.api.Tm66DiagnosticsType) | optional | Тип инструментальной диагностики |
 | description | [string](#string) | optional | Краткое описание |
+| primary_diagnostics_doc | [Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc](#com.siams.med.api.Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc) | optional | Первичный протокол исследования |
+| docs | [Rc.RcTm66Order.Tm66Doc](#com.siams.med.api.Rc.RcTm66Order.Tm66Doc) | repeated | Медицинские документы |
 | client | [MedResource](#com.siams.med.api.MedResource) | optional | Заказчик |
 | client_mo | [MO](#com.siams.med.api.MO) | optional | МО заказчика |
 | expert_mo | [MO](#com.siams.med.api.MO) | optional | МО исполнителя |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcTm66Order.Tm66Doc"></a>
+
+### Rc.RcTm66Order.Tm66Doc
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| date_time | [string](#string) | optional | Дата и время проведения исследования |
+| device | [string](#string) | optional | Аппарат, на котором проводилось исследование |
+| text | [string](#string) | optional | Описание |
+| attachment_id | [string](#string) | repeated | Приложения |
+
+
+
+
+
+
+<a name="com.siams.med.api.Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc"></a>
+
+### Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| method | [Tm66DiagnosticsMethod](#com.siams.med.api.Tm66DiagnosticsMethod) | optional | Метод исследования |
+| date_time | [string](#string) | optional | Дата и время проведения исследования |
+| device | [string](#string) | optional | Аппарат, на котором проводилось исследование |
+| text | [string](#string) | optional | Описание |
+| dose_msv | [double](#double) | optional | Поглощенная доза (мЗв) |
+| attachment_id | [string](#string) | repeated | Приложения |
 
 
 
