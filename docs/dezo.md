@@ -21,7 +21,7 @@
 * [Поисковые функции для медицинских записей](#QueryRc) 
 * [Работа со статусами записей](#InstanceStatus) 
 * [Работа со справочниками](#Tm66Directory) 
-* [Работа с пациентами](#Patient) 
+* [Работа с пациентами](#Работа-с-пациентами) 
 * [Работа с медицинскими записями](#Rc) 
 
 ----
@@ -60,7 +60,6 @@
 * [/directory/get/MedDepart](methods/directory/get/MedDepart/index.md) - `cправочник подразделений медицинских организаций `  
 * [/directory/get/MedResource](methods/directory/get/MedResource/index.md) - `cправочник врачей медицинских организаций `
 
-<a name="Patient"></a>
 ### Работа с пациентами
 
 * [/patient/get](methods/patient/get/index.md)  - `получение данных пациента по его ключу`
