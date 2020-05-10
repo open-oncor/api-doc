@@ -47,9 +47,14 @@
 * [/directory/get/Tm66DiagnosticsType](methods/directory/get/Tm66DiagnosticsType/index.md)  - `справочник Тип диагностики ДЭЗО`
 * [/directory/get/Tm66ConclusionType](methods/directory/get/Tm66ConclusionType/index.md)  - `справочник Тип заключения ДЭЗО`
 * [/directory/get/Tm66OrderRejectReason](methods/directory/get/Tm66OrderRejectReason/index.md)  - `справочник Причины отказа проведения ДЭЗО`
-
+* [/directory/get/Tm66ExpertProtocolResult](methods/directory/get/Tm66ExpertProtocolResult/index.md) - `cправочник типа значимости замечаний эксперта к к первичному протоколу исследования`  
+* [/directory/get/Tm66ExpertDicomResult](methods/directory/get/Tm66ExpertDicomResult/index.md) - `cправочник типа значимости замечаний эксперта к DICOM `
+* [/directory/get/MO](methods/directory/get/MO/index.md) - `cправочник медицинских организаций `  
+* [/directory/get/MedDepart](methods/directory/get/MedDepart/index.md) - `cправочник подразделений медицинских организаций `  
+* [/directory/get/MedResource](methods/directory/get/MedResource/index.md) - `cправочник врачей медицинских организаций `
 
 ### Работа с пациентами
+
 * [/patient/get](methods/patient/get/index.md)  - `получение данных пациента по его ключу`
 
 

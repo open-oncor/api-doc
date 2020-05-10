@@ -6,6 +6,20 @@
 
 Создает запись "Отказ в проведении ДЭЗО"
 
+### Структура сообщения ProtoBuffer
+
+```proto
+message RcTm66OrderReject {
+        optional string order_id = 1; // id записи RcTm66Order Заявка на ДЭЗО
+        optional Tm66OrderRejectReason reason = 2; // Причины отказа проведения ДЭЗО
+        optional string description = 3; // Краткое описание
+        optional string pdf_id = 4; // Документ в формате PDF (Attachment.id)
+        optional string pdf_ds_id = 5; // Открепленная ЭЦП PDF документа (Attachment.id)
+        optional MedResource expert = 10; // Исполнитель
+        optional MedDepart expert_d = 11; // Отделение исполнителя
+    }
+```
+
 ### Пример http
 
 **Request**  
@@ -66,16 +80,4 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderReject HTTP/1
    }
  ]
 }
-```
-
-### Структура сообщения ProtoBuffer
-
-```proto
-    message RcTm66OrderReject {
-        optional string order_id = 1; // id записи RcTm66Order Заявка на ДЭЗО
-        optional Tm66OrderRejectReason reason = 2; // Причины отказа проведения ДЭЗО
-        optional string text = 3; // Дополнительная информация
-        optional MedResource expert = 10; // Исполнитель
-        optional MedDepart expert_d = 11; // Отделение исполнителя
-    }
 ```
