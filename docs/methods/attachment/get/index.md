@@ -28,18 +28,4 @@
 }
 ```
 
-
-
-### Пример java
-```java
-public class GetAttachment {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-        Attachments.Attachment attachment = client.getAttachment("1586:412");
-
-        ByteString data = attachment.getData();
-        Attachments.Attachment.Meta meta = attachment.getMeta();
-    }
-}
-
-```
+В json формате сообщений поле `result.data` кодируется **Base64*
