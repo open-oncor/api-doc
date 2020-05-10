@@ -35,8 +35,33 @@ message RecordsPage {
     repeated Rc rc = 2; //массив записей, полученных в ответе
     optional int32 size = 3; //общее количество записей, которые попали в поисковый запрос
 }
+ 
+ message RcTm66Order {
+        optional Tm66OrderPurpose purpose = 1; // Цель дистанционного экспертного заключения
+        optional Tm66DiagnosticsType diagnostics_type = 2; // Тип инструментальной диагностики
+        optional string description = 3; // Краткое описание
+        optional Tm66PrimaryDiagnosticsDoc primary_diagnostics_doc = 4; // Первичный протокол исследования
+        repeated Tm66Doc docs = 5; // Медицинские документы
+        optional MedResource client = 10; // Заказчик
+        optional MO client_mo = 11; // МО заказчика
+        optional MO expert_mo = 20; // МО исполнителя
 
+        message Tm66PrimaryDiagnosticsDoc {
+            optional Tm66DiagnosticsMethod method = 1; // Метод исследования
+            optional string date_time = 2; // Дата и время проведения исследования
+            optional string device = 3; // Аппарат, на котором проводилось исследование
+            optional string text = 4; // Описание
+            optional double dose_msv = 5; // Поглощенная доза (мЗв)
+            repeated string attachment_id = 15; // Приложения
+        }
 
+        message Tm66Doc {
+            optional string date_time = 2; // Дата и время проведения исследования
+            optional string device = 3; // Аппарат, на котором проводилось исследование
+            optional string text = 4; // Описание
+            repeated string attachment_id = 15; // Приложения
+        }
+    }
 ```
 ### Пример http
 

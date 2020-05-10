@@ -52,6 +52,7 @@
 
 * [/directory/get/Tm66OrderPurpose](methods/directory/get/Tm66OrderPurpose/index.md)  - `справочник Цель ДЭЗО` 
 * [/directory/get/Tm66DiagnosticsType](methods/directory/get/Tm66DiagnosticsType/index.md)  - `справочник Тип диагностики ДЭЗО`
+* [/directory/get/Tm66DiagnosticsMethod](methods/directory/get/Tm66DiagnosticsMethod/index.md)  - `справочник Тип инструментальной диагностики в первичном протоколе исследования`
 * [/directory/get/Tm66ConclusionType](methods/directory/get/Tm66ConclusionType/index.md)  - `справочник Тип заключения ДЭЗО`
 * [/directory/get/Tm66OrderRejectReason](methods/directory/get/Tm66OrderRejectReason/index.md)  - `справочник Причины отказа проведения ДЭЗО`
 * [/directory/get/Tm66ExpertProtocolResult](methods/directory/get/Tm66ExpertProtocolResult/index.md) - `cправочник типа значимости замечаний эксперта к к первичному протоколу исследования`  
