@@ -17,6 +17,16 @@
 ---
 ## Методы API для ДЭЗО
 
+* [Получение документов ДЭЗО](#order.addRcTm66Order) 
+* [Поисковые функции для медицинских записей](#QueryRc) 
+* [Работа со статусами записей](#InstanceStatus) 
+* [Работа со справочниками](#Tm66Directory) 
+* [Работа с пациентами](#Patient) 
+* [Работа с медицинскими записями](#Rc) 
+
+----
+
+<a name="order.addRcTm66Order"></a>
 ### Получение документов ДЭЗО
 
 * [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `загрузка документа "Отказ в проведении ДЭЗО"` 
@@ -24,23 +34,20 @@
 * [/tm66/order/addRcTm66OrderExpertiseDicom](methods/tm66/order/addRcTm66OrderExpertiseDicom/index.md) - `загрузка документа "Экспертиза качества DICOM"`
 * [/tm66/order/addRcTm66OrderExpertiseProtocol](methods/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) - `загрузка документа "Экспертиза качества первичного протокола исследования"`
 
----
-
+<a name="QueryRc"></a>
 ### Поисковые функции для медицинских записей
 
 * [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
 * [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md)  - `постраничное получение найденных ранее в поисковом запросе записей`
 
----
-
+<a name="InstanceStatus"></a>
 ### Работа со статусами записей
 
 Работа со статусами записи *Заявки на ДЭЗО* ([Rc.RcTm66Order](types/types.md#com.siams.med.api.Rc.RcTm66Order)) в рамках ДЭЗО осуществляется приведенными ниже методами. Статус также обновляется при загрузке документов по этой заявке или по другим событиям
 * [/rc/getInstanceStatus](methods/status/get/index.md)  - `получение статуса медицинской записи`
 * [/rc/updateInstanceStatus](methods/status/update/index.md)  - `установка статуса медицинской записи`
 
----
-
+<a name="Tm66Directory"></a>
 ### Работа со справочниками
 
 * [/directory/get/Tm66OrderPurpose](methods/directory/get/Tm66OrderPurpose/index.md)  - `справочник Цель ДЭЗО` 
@@ -53,11 +60,12 @@
 * [/directory/get/MedDepart](methods/directory/get/MedDepart/index.md) - `cправочник подразделений медицинских организаций `  
 * [/directory/get/MedResource](methods/directory/get/MedResource/index.md) - `cправочник врачей медицинских организаций `
 
+<a name="Patient"></a>
 ### Работа с пациентами
 
 * [/patient/get](methods/patient/get/index.md)  - `получение данных пациента по его ключу`
 
-
+<a name="Rc"></a>
 ### Работа с медицинскими записями
 
 * [/rc/get](methods/rc/get/index.md)  - `получение медицинской записи пациента по ключу`
