@@ -36,7 +36,7 @@ message RecordsPage {
     optional int32 size = 3; //общее количество записей, которые попали в поисковый запрос
 }
  
- message RcTm66Order {
+    message RcTm66Order {
         optional Tm66OrderPurpose purpose = 1; // Цель дистанционного экспертного заключения
         optional Tm66DiagnosticsType diagnostics_type = 2; // Тип инструментальной диагностики
         optional string description = 3; // Краткое описание
@@ -56,9 +56,9 @@ message RecordsPage {
         }
 
         message Tm66Doc {
-            optional string date_time = 2; // Дата и время проведения исследования
-            optional string device = 3; // Аппарат, на котором проводилось исследование
-            optional string text = 4; // Описание
+            optional string date_time = 2; // Дата и время документа
+            optional string name = 3; // Наименование документа
+            optional string description = 4; // Краткое описание
             repeated string attachment_id = 15; // Приложения
         }
     }
@@ -72,7 +72,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
 {
     "page":{
         "job":{
-            "id":"98a560e8-4c84-430e-8f7f-57c8c39d4c8e"
+            "id":"e3585aea-cf1c-4766-aa4b-afcf93c2d6d5"
         },
         "offset":0,
         "size":5
@@ -90,7 +90,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
     {
       "page": {
         "job": {
-          "id": "98a560e8-4c84-430e-8f7f-57c8c39d4c8e",
+          "id": "e3585aea-cf1c-4766-aa4b-afcf93c2d6d5",
           "ready": true
         },
         "offset": 0,
@@ -109,7 +109,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
     {
       "page": {
         "job": {
-          "id": "98a560e8-4c84-430e-8f7f-57c8c39d4c8e",
+          "id": "e3585aea-cf1c-4766-aa4b-afcf93c2d6d5",
           "ready": true
         },
         "offset": 0,
@@ -117,16 +117,16 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
       },
       "rc": [
         {
-          "id": "#1929:0",
+          "id": "#1929:2",
           "class_name": "RcTm66Order",
           "patient_id": "#71:16260",
           "ehr_id": "#1055:16260",
           "published": {
             "user_id": "#961:0",
-            "time": "2020-05-10 08:53:42"
+            "time": "2020-05-11 09:47:42"
           },
           "org_unit_id": "#999:28",
-          "time_rc": "2020-05-10 08:44:02",
+          "time_rc": "2020-05-11 09:23:16",
           "rc_tm66_order": {
             "purpose": {
               "id": "5",
@@ -134,28 +134,81 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
               "caption": "Формирование экспертного мнения по результатам диагностических исследований (МСКТ, МРТ, ПЭТ-КТ и т.п.)"
             },
             "diagnostics_type": {
-              "code": "РГ_ГРУДНОЙ_КЛЕТКИ",
-              "caption": "Рентгенография органов грудной клетки"
+              "code": "КТ_ГРУДНОЙ_КЛЕТКИ",
+              "caption": "Компьютерная томография грудной клетки"
             },
-            "description": "",
+            "description": "Краткое описание заявки на ДЭЗО",
             "primary_diagnostics_doc": {
               "method": {
-                "code": "РГ",
-                "caption": "Рентгенография"
+                "code": "КТ",
+                "caption": "Компьютерная томография"
               },
-              "date_time": "2020-05-05 08:44:00",
-              "device": "Philips CT",
-              "text": "Текст заключения первичного исследования",
-              "dose_msv": 15.0,
+              "date_time": "2020-05-01 09:24:00",
+              "device": "Аппарат первичного исследования",
+              "text": "Протокол первичного исследования (текст)",
+              "dose_msv": 3.1,
               "attachment_id": [
-                "#1585:4532"
+                "#1585:4535"
               ]
             },
             "docs": [
               {
-                "date_time": "2020-05-12 08:45:00"
+                "date_time": "2020-04-30 09:44:00",
+                "name": "Прием онколого",
+                "description": "Протокол приема онколога",
+                "attachment_id": [
+                  "#1586:4429"
+                ]
               }
-            ]
+            ],
+            "client": {
+              "id": "4058-660893-206(20190617)",
+              "code": "4058-660893-206",
+              "dateRange": [
+                "20190617",
+                "29991231"
+              ],
+              "doctorCode": "4058",
+              "doctorName": "ЛОБАРЕВ С В",
+              "medOrgCode": "660893",
+              "medSpecCode": "206"
+            },
+            "client_mo": {
+              "id": "893(20190101)(20190101)",
+              "code": "893(20190101)",
+              "dateRange": [
+                "20190101",
+                "29991231"
+              ],
+              "name": "ГП 4 Н.Тагил",
+              "longName": "Государственное бюджетное учреждение здравоохранения Свердловской области \"Городская поликлиника № 4 город Нижний Тагил\"",
+              "medCode": "893",
+              "terrCode": "1002",
+              "address": "Свердловская обл., г. Нижний Тагил, ул. Новострой, д. 24",
+              "phone": "8(3435)410412",
+              "ogrn": "1026601382686",
+              "chiefLastName": "Климова",
+              "chiefFirstName": "Жанна",
+              "chiefPatronymic": "Сергеевна"
+            },
+            "expert_mo": {
+              "id": "1768(20190823)(20190823)",
+              "code": "1768(20190823)",
+              "dateRange": [
+                "20190823",
+                "29991231"
+              ],
+              "name": "СООД Екатеринбург",
+              "longName": "Государственное автономное учреждение здравоохранения Свердловской области \"Свердловский областной онкологический диспансер\"",
+              "medCode": "1768",
+              "terrCode": "1502",
+              "address": "г. Екатеринбург, ул. Соболева, 29",
+              "phone": "8(343)3561505",
+              "ogrn": "1146658016614",
+              "chiefLastName": "Елишев",
+              "chiefFirstName": "Владимир",
+              "chiefPatronymic": "Геннадьевич"
+            }
           }
         }
       ],
@@ -164,28 +217,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
   ]
 }
 ```
-
-### Пример java
-
-```java
-public class GetRecordsPage {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        final Search.SearchJob job = client.startSearchRcReferral(Search.RcReferralQuery.newBuilder()
-                .setFromDate("2016-10-01")
-                .setToDate("2019-12-10")
-                .setHasAppointment(false)
-                .build());
-
-        final Search.RecordsPage recordsPage = client.getSearchRecordsPage(Search.Page.newBuilder()
-                .setJob(job)
-                .setOffset(0)
-                .setSize(5)
-                .build());
-
-        Search.Page page = recordsPage.getPage();
-    }
-}
-```
-

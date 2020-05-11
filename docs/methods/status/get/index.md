@@ -4,6 +4,18 @@
 * **URL parameter:** [id](../../../types/types.md#com.siams.med.api.Rc)
 * **Response:** [[Rc](../../../types/types.md#com.siams.med.api.InstanceStatus)]
 
+### Структура сообщения ProtoBuffer
+
+```proto
+message InstanceStatus {
+    optional string json = 1;
+    optional string rc_id = 2;
+    optional string user_id = 3;
+    optional string time = 4;
+    repeated InstanceStatus history = 5;
+}
+```
+
 ### Пример http
 
 **Request**
@@ -24,30 +36,4 @@ GET `http://dev.onco-reg.ru/api/1.0/json/rc/getInstanceStatus?id=1929:1 HTTP/1.1
    }
  ]
 }
-
-
-```
-
-### Пример java
-
-```java
-public class RcStatusTest {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-        client.getInstanceStatus("1929:1");
-    }
-}
-```
-
-### Структура сообщения ProtoBuffer
-
-```proto
-message InstanceStatus {
-    optional string json = 1;
-    optional string rc_id = 2;
-    optional string user_id = 3;
-    optional string time = 4;
-    repeated InstanceStatus history = 5;
-}
-
 ```

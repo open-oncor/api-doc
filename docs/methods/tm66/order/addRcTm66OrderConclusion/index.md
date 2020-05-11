@@ -70,21 +70,20 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderConclusion HT
         "description": "Заключение полностью совпадает",
         "pdf_id": "#1585:4533",
         "pdf_ds_id": "#1585:4533"
+      },
+      "expert": {
+        "id": "39115-661768-26(20190905)",
+        "code": "39115-661768-26",
+        "dateRange": [
+          "20190905",
+          "29991231"
+        ],
+        "doctorCode": "39115",
+        "doctorName": "НОВОСЕЛОВА О О",
+        "medOrgCode": "661768",
+        "medSpecCode": "26"
       }
-       "expert": {
-         "id": "39115-661768-26(20190905)",
-         "code": "39115-661768-26",
-         "dateRange": [
-           "20190905",
-           "29991231"
-         ],
-         "doctorCode": "39115",
-         "doctorName": "НОВОСЕЛОВА О О",
-         "medOrgCode": "661768",
-         "medSpecCode": "26"
-       }
-     }
-   }
- ]
+    }
+  ]
 }
 ```
