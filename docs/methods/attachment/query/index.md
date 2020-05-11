@@ -37,18 +37,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/attachment/query HTTP/1.1`
     ]
 }
 ```
-
-### Пример java
-
-```java
-public class AttachmentQuery {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Attachments.Attachment.Meta> metaList = client.queryAttachment(
-                Attachments.Attachment.Query.newBuilder().addIds("1586:412").build()
-        );
-    }
-}
-
-```

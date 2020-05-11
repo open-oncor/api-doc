@@ -43,26 +43,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/attachment/create HTTP/1.1`
     ]
 }
 ```
-
-### Пример java
-
-```java
-public class CreateAttachment {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        final ByteString textData = ByteString.copyFromUtf8("Текстовый файл");
-        final Attachments.Attachment.Meta attachment =
-                client.createAttachment(Attachments.Attachment
-                        .newBuilder()
-                        .setData(textData)
-                        .setMeta(Attachments.Attachment.Meta
-                                .newBuilder()
-                                .setName("проверка.txt")
-                                .setType("text/plain")
-                        )
-                        .build());
-
-    }
-}
-```
