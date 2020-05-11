@@ -36,6 +36,41 @@ message RecordsPage {
     optional int32 size = 3; //общее количество записей, которые попали в поисковый запрос
 }
  
+message Rc {
+    optional string id = 1;
+    optional string class_name = 2;
+    optional string patient_id = 3;
+    optional string ehr_id = 4;
+    optional Published published = 5;
+    optional string org_unit_id = 6;
+
+    optional string summary = 10;
+    optional string time_rc = 11;
+
+    repeated DeletedAt deleted_status = 14;
+    repeated string attachment_id = 15;
+
+    optional string instance_status = 16;
+
+    message Published {
+        optional string user_id = 1;
+        optional string time = 2;
+    }
+
+    enum DeletedAt {
+        RC = 1;
+        EHR = 2;
+        PTN = 3;
+    }
+
+    oneof rc {
+        // ....
+        RcTm66Order rc_tm66_order = 301;
+        // ....
+    }
+
+    // ....
+
     message RcTm66Order {
         optional Tm66OrderPurpose purpose = 1; // Цель дистанционного экспертного заключения
         optional Tm66DiagnosticsType diagnostics_type = 2; // Тип инструментальной диагностики
@@ -62,6 +97,9 @@ message RecordsPage {
             repeated string attachment_id = 15; // Приложения
         }
     }
+
+    // ....
+}
 ```
 ### Пример http
 

@@ -4,9 +4,9 @@
 * **Request:** [Query](../../../types/types.md#attachmentquery) 
 * **Response:** [[Attachment](../../../types/types.md#com.siams.med.api.Attachment)]
 
-Возвращает список вложений В запросе передаётся массив [id](../../../types/types.md#attachmentmeta).
+Возвращает список вложений В запросе передаётся массив [[Attachment.id](../../../types/types.md#attachmentmeta)].
 
-В ответе передаётся массив [Attachment](../../../types/types.md#com.siams.med.api.Attachment) c указанными [id](../../../types/types.md#attachmentmeta).
+В ответе передаётся массив [Attachment.Meta](../../../types/types.md#com.siams.med.api.Attachmentmeta) c указанными [id](../../../types/types.md#attachmentmeta).
 
 ### Пример http
 **Request**

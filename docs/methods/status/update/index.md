@@ -34,8 +34,8 @@ POST `http://{{ONCOR_API_HOST}}/api/1.0/json/rc/updateInstanceStatus HTTP/1.1`
 ```json
 {
     "updateInstanceStatus":{
-        "json":"{status: \"Ассоциация DICOM\", ris_dicom:\"http://ris_link_dicom\"}",
-        "rc_id":"{{rcId}}"
+        "json": "{status: \"Ассоциация DICOM\", ris_dicom:\"https://ris_link_dicom/?dicom=abc\"}",
+        "rc_id":"#1929:2"
     }
 }
 ```
