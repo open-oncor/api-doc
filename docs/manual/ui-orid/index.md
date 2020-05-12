@@ -14,4 +14,4 @@ id = id.substring(1) - значение id документа (без перво
 ```url
 https://demo.onco-reg.ru/ui-orid/72:27488
 ```
-https://demo.onco-reg.ru/ui-orid/72:27488
+[https://demo.onco-reg.ru/ui-orid/72:27488](https://demo.onco-reg.ru/ui-orid/72:27488)
