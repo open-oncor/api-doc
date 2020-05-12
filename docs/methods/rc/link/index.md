@@ -15,4 +15,4 @@ rc_id = Rc.id.substring(1) - значение [Rc.id]((../../../types/types.md#c
 
 ### Пример http
 
-`https://{{ONCOR_HOST}}/ui-orid/1937:3`
+`https://dev.onco-reg.ru/ui-orid/1937:3`
