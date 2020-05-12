@@ -2641,9 +2641,9 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| date_time | [string](#string) | optional | Дата и время проведения исследования |
-| device | [string](#string) | optional | Аппарат, на котором проводилось исследование |
-| text | [string](#string) | optional | Описание |
+| date_time | [string](#string) | optional | Дата и время документа |
+| name | [string](#string) | optional | Наименование документа |
+| description | [string](#string) | optional | Краткое описание |
 | attachment_id | [string](#string) | repeated | Приложения |
 
 
