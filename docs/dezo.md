@@ -15,15 +15,15 @@
 ---
 ## Сценарии работы внешней системы с API для ДЭЗО
 ### Базовый сценарий работы c записями
-1. ***Посредством пользовательского интерфейса*** ОНКОР создается запись [Заявка на ДЭЗО (Rc.RcTm66Order)](types/types.md#com.siams.med.api.Rc.RcTm66Order)  
-1. [Поиск новых заявок на ДЭЗО с конкретной даты (или без нее) - по текущее время](methods/search/start/RcTm66OrderQuery/) `Получаем ID задачи` ([SearchJob.id](types/types.html#com.siams.med.api.SearchJob)) `используя который отдельным запросом, можно постранично получать данные`
-2. [Постраничное получение заявок, найденных в запросе (п.2)](methods/search/get/RecordsPage/)
+1. [**Посредством пользовательского интерфейса ОНКОР**](manual/RcTm66Order/index.md) создается запись [Заявка на ДЭЗО (Rc.RcTm66Order)](types/types.md#com.siams.med.api.Rc.RcTm66Order)  
+1. [Поиск новых заявок на ДЭЗО с конкретной даты (или без нее) - по текущее время](methods/search/start/RcTm66OrderQuery/index.md) `Получаем ID задачи` ([SearchJob.id](types/types.html#com.siams.med.api.SearchJob)) `используя который отдельным запросом, можно постранично получать данные`
+2. [Постраничное получение заявок, найденных в запросе (п.2)](methods/search/get/RecordsPage/index.md)
     `Запрос: page.job.id - ID задачи; page.offset - смещение от 0 объекта содержимого задачи; page.size - количество требумых объектов. Ответ: result.page.job.ready=false - задача еще не закончила обрабатывать запрос, необходимо повторить этот метод через некоторое время; result.size=X - фактическое количество объектов в задаче без учета page.offset`
-3. [Получение информации о пациенте](methods/patient/get/)
-4. [Установка статуса "Обработка началась"](methods/status/update/)
-5. [Установка статуса "DICOM ассоциирован с заказом"](methods/status/update/)
+3. [Получение информации о пациенте](methods/patient/get/index.md)
+4. [Установка статуса "Обработка началась"](methods/status/update/index.md)
+5. [Установка статуса "DICOM ассоциирован с заказом"](methods/status/update/index.md)
 6. Выполнение ДЭЗО
-   1. [Отказ в проведении ДЭЗО](methods/tm66/order/addRcTm66OrderReject/)
+   1. [Отказ в проведении ДЭЗО](methods/tm66/order/addRcTm66OrderReject/index.md)
    2. Сформировано заключение - `Сначала передается сформированный файл заключения и, по мере необходимости, файл открепленной ЭЦП к первому файлу. Полученные {{attachmentId}} файлов, используются в запросе передачи заключения`
        1. [Передача файла(-ов) заключения (файл протокола заключения и открепленно ЭЦП)](methods/attachment/create/index.md)
        2. [Передача заключения со ссылкой на ранее переданные файлы заключения](methods/tm66/order/addRcTm66OrderConclusion/index.md)
@@ -31,14 +31,14 @@
 4. [Проведена экспертиза первичного протокола исследования](methods/tm66/order/addRcTm66OrderExpertiseProtocol/index.md) 
 
 ### Сценарий работы с вложениями
-1. [Загрузка файла](methods/attachment/create/) - `Загрузка файла для прикрепления к записи (документа) производится до момента непосредственного прикрепления`
+1. [Загрузка файла](methods/attachment/create//index.md) - `Загрузка файла для прикрепления к записи (документа) производится до момента непосредственного прикрепления`
 2. Прикрепление файла к записи - `При использовании метода [attachment/create] получаем значение {attachment.id}, его указываем для прикрепления в других API-методах` 
 3. Получение мета-информации о прикрепленных файлах
-    * [/attachment/get](methods/attachment/get) - `получаем и мета-информацию и сами данные файла в формате Base64 в поле Attachment.data`
-    * [/attachment/query](methods/attachment/query) - `получаем только мета-информацию о нескольких вложениях`
+    * [/attachment/get](methods/attachment/get/index.md) - `получаем и мета-информацию и сами данные файла в формате Base64 в поле Attachment.data`
+    * [/attachment/query](methods/attachment/query/index.md) - `получаем только мета-информацию о нескольких вложениях`
 4. Получение файла
-    * [/attachment/get](methods/attachment/get) - `получаем и мета-информацию о файле и сами данные файла`
-    * [/attachment/file](methods/attachment/file) - `получаем сам файл`
+    * [/attachment/get](methods/attachment/get/index.md) - `получаем и мета-информацию о файле и сами данные файла`
+    * [/attachment/file](methods/attachment/file/index.md) - `получаем сам файл`
 5. Прямая ссылка на файл - `зная мета-информацию о файле можно сформировать прямую ссылку на файл вида /attachment/${digest}:${id}"`
 ```
     Attachment.id :     "#1587:4384" // символ # в итоговом адресе нужно удалить  
@@ -88,10 +88,11 @@
 ### Работа с медицинскими записями
 
 * [/rc/get](methods/rc/get/index.md)  - `получение медицинской записи пациента по ключу`
+* [ссылка для просмотра документов в пользовательском интерфейсе](manual/ui-orid/index.md) 
 
 ### Работа с вложениями к записям
 
-* [/attachment/create](methods/attachment/create/) - `загружаем новый файл`
-* [/attachment/get](methods/attachment/get) - `получаем и мета-информацию и сам файл в формате ByteString в поле Attachment.data`
-* [/attachment/query](methods/attachment/query) - `получаем только мета-информацию о нескольких файлах`
-* [/attachment/file](methods/attachment/file) - `получаем сам файл`
+* [/attachment/create](methods/attachment/create/index.md) - `загружаем новый файл`
+* [/attachment/get](methods/attachment/get/index.md) - `получаем и мета-информацию и сам файл в формате ByteString в поле Attachment.data`
+* [/attachment/query](methods/attachment/query/index.md) - `получаем только мета-информацию о нескольких файлах`
+* [/attachment/file](methods/attachment/file/index.md) - `получаем сам файл`
