@@ -2622,6 +2622,8 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | purpose | [Tm66OrderPurpose](#com.siams.med.api.Tm66OrderPurpose) | optional | Цель дистанционного экспертного заключения |
 | diagnostics_type | [Tm66DiagnosticsType](#com.siams.med.api.Tm66DiagnosticsType) | optional | Тип инструментальной диагностики |
 | description | [string](#string) | optional | Краткое описание |
+| dz_icd10 | [RBiMKB308](#com.siams.med.api.RBiMKB308) | optional | Диагноз пациента (МКБ-10 код) |
+| dz_text | [string](#string) | optional | Расшифровка диагноза |
 | primary_diagnostics_doc | [Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc](#com.siams.med.api.Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc) | optional | Первичный протокол исследования |
 | docs | [Rc.RcTm66Order.Tm66Doc](#com.siams.med.api.Rc.RcTm66Order.Tm66Doc) | repeated | Медицинские документы |
 | client | [MedResource](#com.siams.med.api.MedResource) | optional | Заказчик |
