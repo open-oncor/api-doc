@@ -6,8 +6,8 @@
 В ответе передаётся массив записей из справочника [MedResource](../../../../types/types.md#com.siams.med.api.MedResource).
 
 Связанные справочники:
-* [MedOrganization](methods/directory/get/MedOrganization/index.md) - `cправочник медицинских организаций `  
-* [MedDepart](methods/directory/get/MedDepart/index.md) - `cправочник подразделений медицинских организаций ` 
+* [MedOrganization](../../../../methods/directory/get/MedOrganization/index.md) - `cправочник медицинских организаций `  
+* [MedDepart](../../../../methods/directory/get/MedDepart/index.md) - `cправочник подразделений медицинских организаций ` 
 ### Пример http
 **Request**  
 GET `http://{{ONCOR_API_HOST}}/api/1.0/json/directory/get/MedResource`

@@ -6,7 +6,7 @@
 В ответе передаётся массив записей из справочника [MedDepart](../../../../types/types.md#com.siams.med.api.MedDepart).
 
 Связанные справочники:
-* [MedOrganization](methods/directory/get/MedOrganization/index.md) - `cправочник медицинских организаций ` 
+* [MedOrganization](../../../../methods/directory/get/MedOrganization/index.md) - `cправочник медицинских организаций ` 
 ### Пример http
 
 **Request**  
