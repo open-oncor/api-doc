@@ -2,7 +2,7 @@
 
 ###  2020-05-18
 
-* Изменилось именование полей **lowerCamelCase -> SnakeCase** следующих структур:
+* Изменилось именование полей **lowerCamelCase -> snake_case** следующих структур:
    * [MedOrganization](../../types/types.md#com.siams.med.api.MedOrganization)
    * [MedDepart](../../types/types.md#com.siams.med.api.MedDepart)
    * [MedResource](../../types/types.md#com.siams.med.api.MedResource)
