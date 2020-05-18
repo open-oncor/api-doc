@@ -45,39 +45,40 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderReject HTTP/1
 ```json
 {
   "result": [
-    {
-      "id": "#1937:2",
-      "class_name": "RcTm66OrderReject",
-      "patient_id": "#71:16260",
-      "ehr_id": "#1055:16260",
-      "published": {
-        "user_id": "#961:97",
-        "time": "2020-05-11 10:07:35"
-      },
-      "org_unit_id": "#999:28",
-      "time_rc": "2020-05-11 10:07:35",
-      "rc_tm66_order_reject": {
-        "order_id": "#1929:2",
-        "reason": {
-          "id": "1",
-          "code": "ДАННЫЕ_ПАЦИЕНТА",
-          "caption": "Недостаточно данных о пациенте"
+      {
+        "id": "#1937:5",
+        "class_name": "RcTm66OrderReject",
+        "patient_id": "#69:111",
+        "ehr_id": "#1053:111",
+        "published": {
+          "user_id": "#962:222",
+          "time": "2020-05-18 20:40:23"
         },
-        "description": "Не указан возраст",
-        "expert": {
-          "id": "39115-661768-26(20190905)",
-          "code": "39115-661768-26",
-          "dateRange": [
-            "20190905",
-            "29991231"
-          ],
-          "doctorCode": "39115",
-          "doctorName": "НОВОСЕЛОВА О О",
-          "medOrgCode": "661768",
-          "medSpecCode": "26"
+        "org_unit_id": "#993:29",
+        "time_rc": "2020-05-18 20:40:23",
+        "rc_tm66_order_reject": {
+          "order_id": "#1930:0",
+          "reason": {
+            "id": "1",
+            "code": "ДАННЫЕ_ПАЦИЕНТА",
+            "caption": "Недостаточно данных о пациенте"
+          },
+          "description": "Не указан возраст",
+          "expert": {
+            "id": "39115-661768-26(20190905)",
+            "code": "39115-661768-26",
+            "date_range": [
+              "20190905",
+              "29991231"
+            ],
+            "name": "НОВОСЕЛОВА О О",
+            "doctor_code": "39115",
+            "doctor_name": "НОВОСЕЛОВА О О",
+            "med_org_code": "661768",
+            "med_spec_code": "26"
+          }
         }
       }
-    }
-  ]
+    ]
 }
 ```

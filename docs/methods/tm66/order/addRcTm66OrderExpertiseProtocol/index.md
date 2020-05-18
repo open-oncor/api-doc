@@ -1,4 +1,4 @@
-## Передача экспертизы качества ервичного протокола исследования
+## Передача экспертизы качества первичного протокола исследования
 
 ### ![POST](../../../../img/post.png) /rc/updateInstanceStatus
 * **Request:** [RcTm66OrderExpertiseProtocol](../../../../types/types.md##com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol)  
@@ -47,39 +47,40 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderExpertiseProt
 {
   "result": [
     {
-      "id": "#1969:0",
+      "id": "#1969:1",
       "class_name": "RcTm66OrderExpertiseProtocol",
-      "patient_id": "#71:16260",
-      "ehr_id": "#1055:16260",
+      "patient_id": "#69:111",
+      "ehr_id": "#1053:111",
       "published": {
-        "user_id": "#961:97",
-        "time": "2020-05-10 09:20:48"
+        "user_id": "#962:222",
+        "time": "2020-05-18 20:44:00"
       },
-      "org_unit_id": "#999:28",
-      "time_rc": "2020-05-10 09:20:48",
+      "org_unit_id": "#993:29",
+      "time_rc": "2020-05-18 20:44:00",
       "rc_tm66_order_expertise_protocol": {
-        "order_id": "#1929:0",
+        "order_id": "#1930:0",
         "result": {
           "code": "НЕЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ",
           "caption": "Выявлены незначительные нарушения, не влияющие на сформированное заключение"
         },
         "description": "не указан точный возраст пациента",
-        "pdf_id": "#1585:4533",
-        "pdf_ds_id": "#1585:4533",
+        "pdf_id": "#1587:4385",
+        "pdf_ds_id": "#1587:4385",
         "expert": {
-         "id": "39115-661768-26(20190905)",
-         "code": "39115-661768-26",
-         "dateRange": [
-           "20190905",
-           "29991231"
-         ],
-         "doctorCode": "39115",
-         "doctorName": "НОВОСЕЛОВА О О",
-         "medOrgCode": "661768",
-         "medSpecCode": "26"
-       }
-     }
-   }
- ]
+          "id": "39115-661768-26(20190905)",
+          "code": "39115-661768-26",
+          "date_range": [
+            "20190905",
+            "29991231"
+          ],
+          "name": "НОВОСЕЛОВА О О",
+          "doctor_code": "39115",
+          "doctor_name": "НОВОСЕЛОВА О О",
+          "med_org_code": "661768",
+          "med_spec_code": "26"
+        }
+      }
+    }
+  ]
 }
 ```

@@ -49,41 +49,42 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderConclusion HT
 **Response**
 ```json
 {
-  "result": [
-    {
-      "id": "#1953:0",
-      "class_name": "RcTm66OrderConclusion",
-      "patient_id": "#71:16260",
-      "ehr_id": "#1055:16260",
-      "published": {
-        "user_id": "#961:97",
-        "time": "2020-05-10 09:19:08"
-      },
-      "org_unit_id": "#999:28",
-      "time_rc": "2020-05-10 09:19:08",
-      "rc_tm66_order_conclusion": {
-        "order_id": "#1929:0",
-        "conclusion": {
-          "code": "ЗАКЛЮЧЕНИЕ_СОВПАДАЕТ",
-          "caption": "Заключение эксперта совпадает с направленным заключением"
+   "result": [
+      {
+        "id": "#1953:1",
+        "class_name": "RcTm66OrderConclusion",
+        "patient_id": "#69:111",
+        "ehr_id": "#1053:111",
+        "published": {
+          "user_id": "#962:222",
+          "time": "2020-05-18 20:42:45"
         },
-        "description": "Заключение полностью совпадает",
-        "pdf_id": "#1585:4533",
-        "pdf_ds_id": "#1585:4533"
-      },
-      "expert": {
-        "id": "39115-661768-26(20190905)",
-        "code": "39115-661768-26",
-        "dateRange": [
-          "20190905",
-          "29991231"
-        ],
-        "doctorCode": "39115",
-        "doctorName": "НОВОСЕЛОВА О О",
-        "medOrgCode": "661768",
-        "medSpecCode": "26"
+        "org_unit_id": "#993:29",
+        "time_rc": "2020-05-18 20:42:45",
+        "rc_tm66_order_conclusion": {
+          "order_id": "#1930:0",
+          "conclusion": {
+            "code": "ЗАКЛЮЧЕНИЕ_СОВПАДАЕТ",
+            "caption": "Заключение эксперта совпадает с направленным заключением"
+          },
+          "description": "Заключение полностью совпадает",
+          "pdf_id": "#1587:4385",
+          "pdf_ds_id": "#1587:4385",
+          "expert": {
+            "id": "39115-661768-26(20190905)",
+            "code": "39115-661768-26",
+            "date_range": [
+              "20190905",
+              "29991231"
+            ],
+            "name": "НОВОСЕЛОВА О О",
+            "doctor_code": "39115",
+            "doctor_name": "НОВОСЕЛОВА О О",
+            "med_org_code": "661768",
+            "med_spec_code": "26"
+          }
+        }
       }
-    }
-  ]
+    ]
 }
 ```
