@@ -32,8 +32,8 @@
   
 
 - [directories-ext.proto](#directories-ext.proto)
-    - [MO](#com.siams.med.api.MO)
     - [MedDepart](#com.siams.med.api.MedDepart)
+    - [MedOrganization](#com.siams.med.api.MedOrganization)
     - [MedResource](#com.siams.med.api.MedResource)
   
   
@@ -432,33 +432,6 @@
 
 
 
-<a name="com.siams.med.api.MO"></a>
-
-### MO
-Запись справочника &#34;МО&#34;
-
-
-| Field | Type | Label | Description |
-| ----- | ---- | ----- | ----------- |
-| id | [string](#string) | optional |  |
-| code | [string](#string) | optional |  |
-| dateRange | [string](#string) | repeated |  |
-| name | [string](#string) | optional |  |
-| longName | [string](#string) | optional |  |
-| medCode | [string](#string) | optional |  |
-| terrCode | [string](#string) | optional |  |
-| address | [string](#string) | optional |  |
-| phone | [string](#string) | optional |  |
-| ogrn | [string](#string) | optional |  |
-| chiefLastName | [string](#string) | optional |  |
-| chiefFirstName | [string](#string) | optional |  |
-| chiefPatronymic | [string](#string) | optional |  |
-
-
-
-
-
-
 <a name="com.siams.med.api.MedDepart"></a>
 
 ### MedDepart
@@ -469,12 +442,41 @@
 | ----- | ---- | ----- | ----------- |
 | id | [string](#string) | optional |  |
 | code | [string](#string) | optional |  |
-| dateRange | [string](#string) | repeated |  |
-| departCode | [string](#string) | optional |  |
-| medOrgCode | [string](#string) | optional |  |
-| nameFull | [string](#string) | optional |  |
-| nameShort | [string](#string) | optional |  |
-| typeHelp | [string](#string) | optional |  |
+| date_range | [string](#string) | repeated |  |
+| name | [string](#string) | optional |  |
+| depart_code | [string](#string) | optional |  |
+| med_org_code | [string](#string) | optional |  |
+| name_full | [string](#string) | optional |  |
+| name_short | [string](#string) | optional |  |
+| type_help | [string](#string) | optional |  |
+
+
+
+
+
+
+<a name="com.siams.med.api.MedOrganization"></a>
+
+### MedOrganization
+Запись справочника &#34;MedOrganization&#34;
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| id | [string](#string) | optional |  |
+| code | [string](#string) | optional |  |
+| date_range | [string](#string) | repeated |  |
+| name | [string](#string) | optional |  |
+| mo_code | [string](#string) | optional |  |
+| long_name | [string](#string) | optional |  |
+| med_org_code | [string](#string) | optional |  |
+| terr_code | [string](#string) | optional |  |
+| address | [string](#string) | optional |  |
+| phone | [string](#string) | optional |  |
+| ogrn | [string](#string) | optional |  |
+| chief_last_name | [string](#string) | optional |  |
+| chief_first_name | [string](#string) | optional |  |
+| chief_patronymic | [string](#string) | optional |  |
 
 
 
@@ -491,11 +493,12 @@
 | ----- | ---- | ----- | ----------- |
 | id | [string](#string) | optional |  |
 | code | [string](#string) | optional |  |
-| dateRange | [string](#string) | repeated |  |
-| doctorCode | [string](#string) | optional |  |
-| doctorName | [string](#string) | optional |  |
-| medOrgCode | [string](#string) | optional |  |
-| medSpecCode | [string](#string) | optional |  |
+| date_range | [string](#string) | repeated |  |
+| name | [string](#string) | optional |  |
+| doctor_code | [string](#string) | optional |  |
+| doctor_name | [string](#string) | optional |  |
+| med_org_code | [string](#string) | optional |  |
+| med_spec_code | [string](#string) | optional |  |
 
 
 
@@ -2627,8 +2630,8 @@ GET /patient/search?name=Иванов%20Иван%20Иванович&amp;dob=3112
 | primary_diagnostics_doc | [Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc](#com.siams.med.api.Rc.RcTm66Order.Tm66PrimaryDiagnosticsDoc) | optional | Первичный протокол исследования |
 | docs | [Rc.RcTm66Order.Tm66Doc](#com.siams.med.api.Rc.RcTm66Order.Tm66Doc) | repeated | Медицинские документы |
 | client | [MedResource](#com.siams.med.api.MedResource) | optional | Заказчик |
-| client_mo | [MO](#com.siams.med.api.MO) | optional | МО заказчика |
-| expert_mo | [MO](#com.siams.med.api.MO) | optional | МО исполнителя |
+| client_mo | [MedOrganization](#com.siams.med.api.MedOrganization) | optional | МО заказчика |
+| expert_mo | [MedOrganization](#com.siams.med.api.MedOrganization) | optional | МО исполнителя |
 
 
 
