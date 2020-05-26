@@ -23,7 +23,15 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
         "gender":{
             "id":"1"
         },
-        "phones":"+7 911"
+        "phones":"+7 911",
+        "address": {
+          "address": "г. Верхняя Пышма, ул. Серова, д.34, кв. 56",
+          "med_terr": {
+            "id": "#35:4",
+            "name": "Гор. округ Верхняя Пышма"
+          }
+        }
+
     }
 }
 ```
@@ -48,7 +56,19 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
             "ehr_count":0,
             "company_name":"",
             "snils":"",
-            "phones":"+7 911"
+            "phones":"+7 911",
+            "address": {
+              "address": "г. Верхняя Пышма, ул. Серова, д.34, кв. 56",
+              "med_terr": {
+                  "id": "#35:4",
+                  "unq": "1.2.643.2.75.1.100.2.66.661102",
+                  "federal_code": "66",
+                  "code": "1102",
+                  "name": "Гор. округ Верхняя Пышма",
+                  "okato": "65420000000"
+              }
+            }
+
         }
     ]
 }

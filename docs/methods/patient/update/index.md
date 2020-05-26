@@ -13,13 +13,27 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/update HTTP/1.1`
 ```json
 {
     "patient_update":{
-        "id":"70:33669",
-        "code":"ИИИ010154",
-        "entry":[
-            {
-                "snils":"Пример снилса"
-            }
-        ]
+            "id": "#65:33650",
+            "code": "ИИИ010101М",
+            "entry":[
+             { 
+               "address": {
+                 "med_terr": {
+                    "id": "#33:1",
+                    "name": "Малышевский гор. округ"
+                 },
+                 "locality": {
+                    "id": "#1721:0",
+                    "name": "Екатеринбург",
+                    "type": "г."
+                 },
+                 "living_area_type": {
+                    "code": "1",
+                    "caption": "Город"
+                 }
+               }
+             }
+            ] 
     }
 }
 ```
@@ -37,7 +51,27 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/update HTTP/1.1`
             "code":"ИИИ010154",
             "ehr_count":1,
             "company_name":"",
-            "snils":"Пример снилса"
+            "snils":"Пример снилса",
+            "address": {
+                            "med_terr": {
+                                "id": "#33:1",
+                                "unq": "1.2.643.2.75.1.100.2.66.660708",
+                                "federal_code": "66",
+                                "code": "708",
+                                "name": "Малышевский гор. округ",
+                                "okato": "65409562000"
+                            },
+                            "locality": {
+                                "id": "#1721:0",
+                                "name": "Екатеринбург",
+                                "type": "г."
+                            },
+                            "living_area_type": {
+                                "orid": "#41:0",
+                                "code": "1",
+                                "caption": "Город"
+                            }
+            }
         }
     ]
 }
