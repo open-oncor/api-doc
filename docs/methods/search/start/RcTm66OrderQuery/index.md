@@ -30,7 +30,7 @@ message RcTm66OrderQuery {
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcDocQuery HTTP/1.1`
+POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderQuery HTTP/1.1`
 ```json
 {
     "query":{
