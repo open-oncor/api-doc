@@ -1,6 +1,6 @@
 ## Передача экспертизы качества первичного протокола исследования
 
-### ![POST](../../../../img/post.png) /rc/updateInstanceStatus
+### ![POST](../../../../img/post.png) /tm66/order/addRcTm66OrderExpertiseProtocol
 * **Request:** [RcTm66OrderExpertiseProtocol](../../../../types/types.md##com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol)  
 * **Response:** [RcTm66OrderExpertiseProtocol](../../../../types/types.md##com.siams.med.api.Rc.RcTm66OrderExpertiseProtocol)  
 
@@ -17,6 +17,49 @@
         optional MedResource expert = 10; // Исполнитель
         optional MedDepart expert_d = 11; // Отделение исполнителя
     }
+
+/**
+ * Запись справочника "Тип значимости экспертизы качества протокола"
+ * * НАРУШЕНИЙ_НЕТ("Нарушений нет"),
+ * * НЕЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ("Выявлены незначительные нарушения, не влияющие на сформированное заключение"),
+ * * ЗНАЧИТЕЛЬНЫЕ_НАРУШЕНИЯ("Выявленные значительные нарушения, кардинальным образом меняющие сформированное заключение"),
+*/
+message Tm66ExpertProtocolResult {
+    optional string code = 3;
+    optional string caption = 4;
+}
+
+/**
+ * Запись справочника "Врач"
+*/
+message MedResource {
+    optional string id = 2;
+    optional string code = 3;
+    repeated string date_range = 5;
+
+    optional string name = 7;
+    optional string doctor_code = 8;
+    optional string doctor_name = 9;
+    optional string med_org_code = 10;
+    optional string med_spec_code = 11;
+}
+
+/**
+ * Запись справочника "Отделение"
+*/
+message MedDepart {
+    optional string id = 2;
+    optional string code = 3;
+    repeated string date_range = 5;
+
+    optional string name = 7;
+    optional string depart_code = 8;
+    optional string med_org_code = 9;
+    optional string name_full = 10;
+    optional string name_short = 11;
+    optional string type_help = 12;
+}
+
 ```
 
 ### Пример http

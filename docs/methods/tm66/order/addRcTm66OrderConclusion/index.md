@@ -1,6 +1,6 @@
 ## Передача заключения ДЭЗО
 
-### ![POST](../../../../img/post.png) /rc/updateInstanceStatus
+### ![POST](../../../../img/post.png) /tm66/order/addRcTm66OrderConclusion
 * **Request:** [RcTm66OrderConclusion](../../../../types/types.md#com.siams.med.api.Rc.RcTm66OrderConclusion)
 * **Response:** [RcTm66OrderConclusion](../../../../types/types.md#com.siams.med.api.Rc.RcTm66OrderConclusion)
 
@@ -21,6 +21,55 @@
         optional MedResource expert = 10; // Исполнитель
         optional MedDepart expert_d = 11; // Отделение исполнителя
     }
+
+/**
+ * Запись справочника "Тип заключения ДЭЗО"
+ * * ЗАКЛЮЧЕНИЕ_СОВПАДАЕТ("Заключение эксперта совпадает с направленным заключением"),
+ * * ЗАКЛЮЧЕНИЕ_НЕ_СОВПАДАЕТ("Заключение эксперта не совпадает с направленным заключением"),
+ * * ЗАКЛЮЧЕНИЕ_НЕ_СОВПАДАЕТ_КАРДИНАЛЬНО("Заключение эксперта кардинально не совпадает с направленным заключением"),
+ * * ДИАГНОЗ_ПОДТВЕРЖДЕН("Диагноз подтвержден"),
+ * * ДИАГНОЗ_УТОЧНЕН("Уточнение диагноза"),
+ * * ДИАГНОЗ_НЕ_ПОДТВЕРЖДЕН("Диагноз не подтвержден"),
+ * * ИЗМЕНЕНИЕ_ТАКТИКИ_НЕ_ТРЕБУЕТСЯ("Изменение тактики лечения не требуется"),
+ * * ИЗМЕНЕНИЕ_ТАКТИКИ_ТРЕБУЕТСЯ("Требуется изменение тактики лечения"),
+ * * ВМЕШАТЕЛЬСТВО_ТРЕБУЕТСЯ("Требуется проведение оперативного вмешательства и/или процедуры"),
+ * * ДРУГОЕ("Другое")
+*/
+message Tm66ConclusionType {
+    optional string code = 3;
+    optional string caption = 4;
+}
+
+/**
+ * Запись справочника "Врач"
+*/
+message MedResource {
+    optional string id = 2;
+    optional string code = 3;
+    repeated string date_range = 5;
+
+    optional string name = 7;
+    optional string doctor_code = 8;
+    optional string doctor_name = 9;
+    optional string med_org_code = 10;
+    optional string med_spec_code = 11;
+}
+
+/**
+ * Запись справочника "Отделение"
+*/
+message MedDepart {
+    optional string id = 2;
+    optional string code = 3;
+    repeated string date_range = 5;
+
+    optional string name = 7;
+    optional string depart_code = 8;
+    optional string med_org_code = 9;
+    optional string name_full = 10;
+    optional string name_short = 11;
+    optional string type_help = 12;
+}
 ```
 
 ### Пример http
@@ -33,12 +82,12 @@ POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderConclusion HT
     "record":{
         "rc_tm66_order_conclusion":{
             "order_id":"{{rcId}}",
-            "conclusion_type":{
+            "conclusion":{
                 "code":"ЗАКЛЮЧЕНИЕ_СОВПАДАЕТ"
             },
-            "conclusion": "Заключение полностью совпадает",
-            "conclusion_pdf_id": "{{attachmentId}}",
-            "conclusion_pdf_ds_id": "{{attachmentId}}",
+            "description": "Заключение полностью совпадает",
+            "pdf_id": "{{attachmentId}}",
+            "pdf_ds_id": "{{attachmentId}}",
             "expert":{
                 "id": "39115-661768-26(20190905)"
             }
