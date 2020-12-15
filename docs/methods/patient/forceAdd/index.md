@@ -8,7 +8,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/patient/forceAdd HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/patient/forceAdd HTTP/1.1`
 ```json
 {
     "patient":{
@@ -36,22 +36,5 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/forceAdd HTTP/1.1`
             "snils":""
         }
     ]
-}
-```
-
-### Пример java
-
-```java
-class AddPatient {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        client.forceAddPatient(Patients.Patient.newBuilder()
-                .setFirstName("Сергеев")
-                .setMiddleName("Сергей")
-                .setLastName("Сергеевич")
-                .setBirthDay("1977-01-01")
-                .build());
-    }
 }
 ```

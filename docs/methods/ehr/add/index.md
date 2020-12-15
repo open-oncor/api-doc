@@ -11,7 +11,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/ehr/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/ehr/add HTTP/1.1`
 ```json
 {
     "ehr":{
@@ -47,21 +47,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/add HTTP/1.1`
 
 
 
-### Пример java 
-
-```java
-public class AddEhr {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        Patients.Patient patient = getPatient();
-
-        Patients.EHR ehr = client.addEHR(Patients.EHR.newBuilder()
-                .setPatientId(patient.getId())
-                .build());
-        
-        String id = ehr.getId();
-        Diagnosis.ShortDz dz = ehr.getDz();
-    }
-}
-```

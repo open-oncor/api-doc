@@ -11,96 +11,116 @@
 
 **Request:** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/ehr/getList?patient_id=65:33650 HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/ehr/getList?patient_id=71:40788 HTTP/1.1`
 
 **Response**
 
 ```json
 {
-    "result":[
-        {
-            "id":"#879:35649",
-            "patient_id":"#65:33650",
-            "summary":"",
-            "dz":{
-                "mkb_code":"C40.1",
-                "mkb_name":"Коротких костей верхней конечности",
-                "tnm":{
-                    "t":{
-                        "code":"NONE",
-                        "caption":""
-                    },
-                    "n":{
-                        "code":"NONE",
-                        "caption":""
-                    },
-                    "m":{
-                        "code":"NONE",
-                        "caption":""
-                    },
-                    "g":{
-                        "code":"NONE",
-                        "caption":""
-                    }
-                },
-                "dz_stage":{
-                    "code":"NONE",
-                    "caption":""
-                }
-            }
+  "result": [
+    {
+      "id": "#873:43666",
+      "patient_id": "#71:40788",
+      "summary": "",
+      "dz": {
+        "mkb_code": "C61",
+        "mkb_name": "Злокачественное новообразование предстательной железы",
+        "tnm": {
+          "t": {
+            "id": "11",
+            "code": "T_2",
+            "caption": "2"
+          },
+          "n": {
+            "id": "2",
+            "code": "N_0",
+            "caption": "0"
+          },
+          "m": {
+            "id": "2",
+            "code": "M_0",
+            "caption": "0"
+          },
+          "g": {
+            "code": "NONE",
+            "caption": ""
+          }
         },
-        {
-            "id":"#880:35540",
-            "patient_id":"#65:33650",
-            "summary":"",
-            "dz":{
-                "mkb_code":"C50.2",
-                "mkb_name":"Верхневнутреннего квадранта молочной железы",
-                "tnm":{
-                    "t":{
-                        "code":"NONE",
-                        "caption":""
-                    },
-                    "n":{
-                        "id":"2",
-                        "code":"N_0",
-                        "caption":"0"
-                    },
-                    "m":{
-                        "code":"NONE",
-                        "caption":""
-                    },
-                    "g":{
-                        "code":"NONE",
-                        "caption":""
-                    }
-                },
-                "dz_stage":{
-                    "code":"NONE",
-                    "caption":""
-                }
-            }
+        "dz_stage": {
+          "id": "8",
+          "code": "II",
+          "caption": "II"
+        },
+        "how_discover": {
+          "orid": "#291:0",
+          "id": "1",
+          "caption": "обратился сам"
+        },
+        "morph_class": {
+          "orid": "#853:10",
+          "code": "8140/3",
+          "caption": "8140/3. Аденокарцинома, БДУ"
+        },
+        "tumor_main": {
+          "orid": "#340:0",
+          "id": "1",
+          "caption": "основная"
+        },
+        "plural": {
+          "orid": "#307:0",
+          "id": "1",
+          "caption": "нет"
         }
-    ]
-}
-```
-
-
-### Пример java
-
-```java
-public class GetEhrList {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        Patients.Patient patient = getPatient;
-
-        List<Patients.EHR> ehrList = client.getEHRList(patient.getId());
-        Patients.EHR ehr = ehrList.get(0);
-
-        String id = ehr.getId();
-        Diagnosis.ShortDz dz = ehr.getDz();
+      }
+    },
+    {
+      "id": "#879:47719",
+      "patient_id": "#71:40788",
+      "summary": "",
+      "dz": {
+        "mkb_code": "C20",
+        "mkb_name": "Злокачественное новообразование прямой кишки",
+        "tnm": {
+          "t": {
+            "code": "NONE",
+            "caption": ""
+          },
+          "n": {
+            "code": "NONE",
+            "caption": ""
+          },
+          "m": {
+            "code": "NONE",
+            "caption": ""
+          },
+          "g": {
+            "code": "NONE",
+            "caption": ""
+          }
+        },
+        "dz_stage": {
+          "code": "NONE",
+          "caption": ""
+        },
+        "how_discover": {
+          "orid": "#291:0",
+          "id": "1",
+          "caption": "обратился сам"
+        },
+        "morph_class": {
+          "orid": "#849:11",
+          "code": "8144/3",
+          "caption": "8144/3. Аденокарцинома кишечного типа"
+        }
+      }
+    },
+    {
+      "id": "#874:50327",
+      "patient_id": "#71:40788",
+      "summary": ""
     }
+  ]
 }
 ```
+
 
