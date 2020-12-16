@@ -13,6 +13,7 @@ GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/DrDzHD HTTP/1.1`
 `Content-Type: application/json`
 
 **Response**
+
 ```json
 {
     "result": [
