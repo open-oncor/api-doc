@@ -10,7 +10,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 ```json
 {
     "record":{
@@ -55,65 +55,61 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 **Response**
 ```json
 {
-    "result":[
-        {
-            "id":"#1122:17250",
-            "class_name":"RcChem",
-            "patient_id":"#66:33485",
-            "ehr_id":"#873:36390",
-            "published":{
-                "user_id":"#961:160",
-                "time":"2018-10-04 23:52:34"
+  "result": [
+    {
+      "id": "#1121:30773",
+      "class_name": "RcChem",
+      "patient_id": "#65:3583",
+      "ehr_id": "#877:4012",
+      "published": {
+        "user_id": "#961:97",
+        "time": "2020-12-16 08:56:13"
+      },
+      "org_unit_id": "#999:28",
+      "time_rc": "2020-12-16 08:56:13",
+      "rc_chem": {
+        "time_rc_in": "2018-10-04",
+        "time_rc_out": "2018-10-04",
+        "aim": {
+          "code": "NONE",
+          "caption": "неизвестно"
+        },
+        "kind": {
+          "code": "NONE",
+          "caption": "неизвестно"
+        },
+        "condition": {
+          "code": "NONE",
+          "caption": ""
+        },
+        "compl": {
+          "orid": "#667:0",
+          "id": "1",
+          "caption": "01. ИНТРАОПЕРАЦИОННЫЕ ОСЛОЖНЕНИЯ"
+        },
+        "drugs": [
+          {
+            "drug": {
+              "orid": "#1546:57",
+              "name": "диферелин",
+              "type": {
+                "id": "1",
+                "code": "CTX",
+                "caption": "химиотерапия"
+              },
+              "code": "Э001"
             },
-            "org_unit_id":"#999:28",
-            "time_rc":"2018-10-04 23:52:33",
-            "rc_chem":{
-                "time_rc_in":"2018-10-04",
-                "time_rc_out":"2018-10-04"
+            "dose": 123.0,
+            "unit": {
+              "id": "3",
+              "code": "MKG",
+              "caption": "мкг"
             }
-        }
-    ]
-}
-```
-
-
-
-### Пример java
-
-```java
-public class AddRcChem {
-    public static void main(String[] args) throws IOException {
-        final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        ProtoBuffClient client = newProtoBuffClient();
-
-        final Records.Rc ehrDzRecord = getEhrDzRecord();
-
-        Records.Rc newEhrRecord = client.addEhrRecord(Records.Rc.newBuilder()
-                .setPatientId(ehrDzRecord.getPatientId())
-                .setEhrId(ehrDzRecord.getEhrId())
-                .setRcChem(Records.Rc.RcChem.newBuilder()
-                        .setTimeRcIn(dateFormat.format(new Date()))
-                        .setTimeRcOut(dateFormat.format(new Date()))
-                        .setAim(Directories.TherapyAim.newBuilder().setCode("NONE"))
-                        .setKind(Directories.ChemKind.newBuilder().setCode("NONE"))
-                        .setCondition(Directories.TherapyCond.newBuilder().setCode("NONE"))
-                        .setCompl(Directories.DrNK0439.newBuilder().setId("1"))
-                        .addDrugs(Directories.DrugRecord.newBuilder()
-                                .setDrug(Directories.Drug.newBuilder().setCode("Э001"))
-                                .setUnit(Directories.DoseUnit.newBuilder().setCode("MKG"))
-                                .setDose(123.0)
-                        )
-                        .addSrv(Directories.Srv59Chem.newBuilder().setCode("SRV_4_1_1"))
-                )
-                .build()
-        );
-
-        String id = newEhrRecord.getId();
-        Records.Rc.RcChem rcChem = newEhrRecord.getRcChem();
+          }
+        ]
+      }
     }
+  ]
 }
 
 ```
-
-<!--- todo добавить описание как выбрать препарат -->

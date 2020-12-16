@@ -10,7 +10,7 @@
  
  **Request**
  
- POST `http://dev.onco-reg.ru/api/1.0/json/patient/record/delete HTTP/1.1`
+ POST `https://demo.onco-reg.ru/api/1.0/json/patient/record/delete HTTP/1.1`
  
  ```json
  {
@@ -26,21 +26,5 @@
  {
    "result": [
    ]
- }
- ```
-
- 
- 
- 
-### Пример java
- 
- ```java
- class Demo {
-     public static void main(String... args) { 
-         client.deletePatientRecord(Records.Rc.newBuilder()
-                 .setId(ptnRc.getId())
-                 .setPatientId(ptnRc.getPatientId())
-                 .build());
-     }
  }
  ```
