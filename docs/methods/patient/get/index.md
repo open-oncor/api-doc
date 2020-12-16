@@ -12,9 +12,12 @@
 
 **Request:** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`
+GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`  
 
-**Response**
+**Response:**
+
 ```json
 {
     "result":[
@@ -36,24 +39,5 @@ GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`
             "phones":"+7 911"
         }
     ]
-}
-
-
-
-
-```
-
-
-### Пример java
-
-```java
-class GetPatient {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-        Patients.Patient patient = client.getPatient("70:33669");
-        
-        String id = patient.getId();
-        String code = patient.getCode();
-    }
 }
 ```

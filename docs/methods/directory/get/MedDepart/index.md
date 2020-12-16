@@ -10,9 +10,11 @@
 ### Пример http
 
 **Request**  
+
 GET `http://{{ONCOR_API_HOST}}/api/1.0/json/directory/get/MedDepart`
 
-**Response**
+**Response:**
+
 ```json
 {
   "result":[{"id":"90020000-660133(19930101)","code":"90020000-660133","date_range":["19930101","20141231"],"name":"Хирургическое","depart_code":"90020000","med_org_code":"660133","name_full":"Хирургическое отделение","name_short":"Хирургическое","type_help":"3"},

@@ -11,7 +11,10 @@
 
 **Request**
 
-POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`  
+
 ```json
 {
     "record":{

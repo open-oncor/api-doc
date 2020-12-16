@@ -10,7 +10,8 @@
 
 **Request:** 
 
-GET `https://demo.onco-reg.ru/api/1.0/json/patient/search?name=Иванов%20Иван%20Иванович&dob=031267&gender=M&limit=20 HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/patient/search?name=Иванов%20Иван%20Иванович&dob=031267&gender=M&limit=20 HTTP/1.1`  
+
 
 **Response `200`**
 
