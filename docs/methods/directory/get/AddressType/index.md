@@ -17,9 +17,6 @@ GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/AddressType HTTP/1.1`
 
 **Response**
 ```json
-
-
-
 {
     "result":[
         {
