@@ -10,9 +10,9 @@
 ### Пример http
 **Request** 
  
-GET `https://demo.onco-reg.ru/api/1.0/json/user/getList HTTP/1.1
-X-Oncor-API-Token: {{ONCOR_API_TOKEN}}
-Content-Type: application/json`
+GET `https://demo.onco-reg.ru/api/1.0/json/user/getList HTTP/1.1`  
+X-Oncor-API-Token: {{ONCOR_API_TOKEN}}  
+Content-Type: application/json
 
 **Response**
 
