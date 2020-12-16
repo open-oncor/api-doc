@@ -7,7 +7,7 @@
 Поле [Attachment.data](../../../types/types.md#com.siams.med.api.Attachment) представляет собой [ByteString](../../../types/types.md#scalar-value-types)
 
 ### Пример http
-**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/attachment/get?id=1586:412 HTTP/1.1`
+**Request:** GET `https://demo.onco-reg.ru/api/1.0/json/attachment/get?id=#1587:18428 HTTP/1.1`
 
 **Response**
 ```json
