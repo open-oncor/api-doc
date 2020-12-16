@@ -9,7 +9,9 @@
 ### Пример http
 **Request:** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrNK0439 HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/DrNK0439 HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
 
 **Response**
 
@@ -59,21 +61,4 @@ GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrNK0439 HTTP/1.1`
         ...
     ]
 }
-```
-
-### Пример java
-
-```java
-public class GetDrNK0465 {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.DrNK0439> drNK0439Directory = client.getDrNK0439Directory();
-        Directories.DrNK0439 drNK0439 = drNK0439Directory.get(0);
-
-        String id = drNK0439.getId();
-        String caption = drNK0439.getCaption();
-    }
-}
-
 ```

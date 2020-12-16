@@ -10,12 +10,12 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 ```json
 {
     "record":{
-        "patient_id":"#66:6375",
-        "ehr_id":"#879:6697",
+        "patient_id":"#65:3583",
+        "ehr_id":"#877:4012",
         "rc_referral":{
             "purpose":"Цель направления",
             "routing_list":{
@@ -49,40 +49,39 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 {
   "result": [
     {
-      "id": "#1506:0",
+      "id": "#1510:13819",
       "class_name": "RcReferralRL",
-      "patient_id": "#66:6375",
-      "ehr_id": "#879:6697",
+      "patient_id": "#65:3583",
+      "ehr_id": "#877:4012",
       "published": {
-        "user_id": "#962:0",
-        "time": "2018-12-18 10:47:45"
+        "user_id": "#961:97",
+        "time": "2020-12-15 17:04:56"
       },
-      "org_unit_id": "#993:0",
-      "time_rc": "2018-12-18 10:47:44",
+      "org_unit_id": "#999:28",
+      "time_rc": "2020-12-15 17:04:56",
       "rc_referral": {
         "referral_type": "RF_CONSULT",
         "purpose": "Цель направления",
         "routing_list": {
-          "apply_last_on_any_other_disease_date": "2018-02-01 00:00:00",
-          "apply_last_date": "2018-02-01 00:00:00",
-          "apply_first_date": "2018-02-01 00:00:00",
-          "request_date": "2018-02-01 00:00:00",
-          "admission_date": "2018-02-01 00:00:00",
-          "examination_lsat_date": "2018-02-01 00:00:00",
-          "treatment_first_date": "2018-02-01 00:00:00",
-          "health_record_code": "",
+          "apply_last_on_any_other_disease_date": "2018-02-01",
+          "apply_last_date": "2018-02-01",
+          "apply_first_date": "2018-02-01",
+          "request_date": "2018-02-01",
+          "admission_date": "2018-02-01",
+          "examination_lsat_date": "2018-02-01",
+          "treatment_first_date": "2018-02-01",
           "expert_opinion": "Экспертное заключение",
-          "expert_opinion_date": "2018-02-01 00:00:00",
+          "expert_opinion_date": "2018-02-01",
           "note": "Примечание к направлению",
-          "referral_code": "1000002",
+          "referral_code": "1100161",
           "diagnosis": {
-            "mkb_code": "C50.4",
-            "mkb_name": "Верхненаружного квадранта молочной железы",
+            "mkb_code": "C50.1",
+            "mkb_name": "Центральной части молочной железы",
             "tnm": {
               "t": {
-                "id": "6",
-                "code": "T_1A",
-                "caption": "1a"
+                "id": "5",
+                "code": "T_1",
+                "caption": "1"
               },
               "n": {
                 "id": "2",
@@ -110,9 +109,9 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
               "caption": "обратился сам"
             },
             "morph_class": {
-              "orid": "#855:30",
-              "code": "8500/3",
-              "caption": "8500/3. Инфильтрирующий протоковый рак"
+              "orid": "#851:32",
+              "code": "8510/3",
+              "caption": "8510/3. Медуллярный рак, БДУ"
             },
             "tumor_main": {
               "orid": "#340:0",
@@ -136,7 +135,7 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
                 "code": "OAM",
                 "caption": "ОАМ"
               },
-              "date": "2018-01-01 00:00:00",
+              "date": "2018-01-01",
               "note": "Примечание к обследованию"
             }
           ]
@@ -145,45 +144,4 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
     }
   ]
 }
-```
-
-### Пример java
-
-```java
-public class AddRcReferral {
-    public static void main(String[] args) throws IOException {
-        final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        ProtoBuffClient client = newProtoBuffClient();
-
-        final Records.Rc ehrDzRecord = getEhrDzRecord();
-
-        Records.Rc newEhrRecord = rcDzTest.client.addEhrRecord(Records.Rc.newBuilder()
-                .setPatientId(ehrRecord.getPatientId())
-                .setEhrId(ehrRecord.getEhrId())
-                .setRcReferral(Records.Rc.RcReferral.newBuilder()
-                        .setPurpose("Цель направления")
-                        .setRoutingList(Routing.RoutingList.newBuilder()
-                                .setAdmissionDate("2018-02-01")
-                                .setApplyFirstDate("2018-02-01")
-                                .setApplyLastDate("2018-02-01")
-                                .setApplyLastOnAnyOtherDiseaseDate("2018-02-01")
-                                .setRequestDate("2018-02-01")
-                                .setExaminationLsatDate("2018-02-01")
-                                .setTreatmentFirstDate("2018-02-01")
-                                .setExpertOpinionDate("2018-02-01")
-                                .setExpertOpinion("Экспертное заключение")
-                                .addDiagnostics(Routing.RoutingList.Diagnostics.newBuilder()
-                                        .setType(Directories.DiagnosticsType.newBuilder().setCode("OAM"))
-                                        .setDate("2018-01-01")
-                                        .setNote("Примечание к обследованию"))
-                                .setNote("Примечание к направлению")
-                        )
-                )
-                .build()
-        );
-
-    }
-}
-
 ```

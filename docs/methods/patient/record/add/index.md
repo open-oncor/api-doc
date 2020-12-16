@@ -8,7 +8,7 @@
  
  **Request**
  
- POST `http://dev.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1`
+ POST `https://demo.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1`
  ```json
  {
    "record": {
@@ -48,21 +48,3 @@
  }
  ```
  
- 
-### Пример java
- 
- ```java
- public class AddRcDoc {
-     private void addRcDoc() throws  IOException {
-         final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-         client.addPatientRecord(Records.Rc.newBuilder()
-                 .setPatientId(newPatient.getId())
-                 .setTimeRc(dateFormat.format(new Date()))
-                 .setRcDoc(Records.Rc.RcDoc.newBuilder()
-                         .setCategory("лечение")
-                         .setHtml("<body><h1>Протокол химиотерапии</h1>Данные протокола находятся здесь</body>")
-                 )
-                 .build());
-     }
- }
- ```

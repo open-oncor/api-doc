@@ -11,7 +11,9 @@
 ### Пример http
 **Request**  
 
-GET `http://dev.onco-reg.ru/api/1.0/json/medOrg/getList HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/medOrg/getList HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
 
 **Response**
 
@@ -63,21 +65,4 @@ GET `http://dev.onco-reg.ru/api/1.0/json/medOrg/getList HTTP/1.1`
         ...
     ]
 }
-```
-
-### Пример java
-
-```java
-public class GetMedOrgList {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.MedOrg> medOrgs = client.getMedOrgs();
-        Directories.MedOrg medOrg = medOrgs.get(0);
-
-        String id = medOrg.getId();
-        String unq = medOrg.getUnq();
-    }
-}
-
 ```

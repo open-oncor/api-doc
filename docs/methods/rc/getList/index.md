@@ -8,69 +8,156 @@
 
 ### Пример http
 
-**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/rc/getList?ehr_id=1054:29080 HTTP/1.1`
+**Request:** GET `https://demo.onco-reg.ru/api/1.0/json/rc/getList?ehr_id=873:43666 HTTP/1.1`
 
 **Response**
 ```json
 {
-    "result":[
-        {
-            "id":"#1062:39222",
-            "class_name":"RcRegIn",
-            "patient_id":"#70:29080",
-            "ehr_id":"#1054:29080",
-            "published":{
-                "user_id":"#962:7",
-                "time":"2017-08-03 20:34:03"
+  "result": [
+    {
+      "id": "#884:62309",
+      "class_name": "RcDz",
+      "patient_id": "#71:40788",
+      "ehr_id": "#873:43666",
+      "published": {
+        "user_id": "#961:335",
+        "time": "2019-12-18 10:25:19"
+      },
+      "org_unit_id": "#999:14",
+      "time_rc": "2019-12-02 10:23:07",
+      "rc_dz": {
+        "diagnosis": {
+          "icd10": {
+            "orid": "#847:156",
+            "code": "C61",
+            "caption": "Злокачественное новообразование предстательной железы"
+          },
+          "status": {
+            "orid": "#331:0",
+            "id": "9",
+            "caption": "окончательный"
+          },
+          "primacy": {
+            "orid": "#315:0",
+            "id": "1",
+            "caption": "впервые"
+          },
+          "morph_class": {
+            "orid": "#853:10",
+            "code": "8140/3",
+            "caption": "8140/3. Аденокарцинома, БДУ"
+          },
+          "tumor_main": {
+            "orid": "#340:0",
+            "id": "1",
+            "caption": "основная"
+          },
+          "how_discover": {
+            "orid": "#291:0",
+            "id": "1",
+            "caption": "обратился сам"
+          },
+          "method": {
+            "orid": "#299:0",
+            "id": "1",
+            "caption": "морфологический"
+          },
+          "plural": {
+            "orid": "#307:0",
+            "id": "1",
+            "caption": "нет"
+          },
+          "loc_met": {},
+          "tnm": {
+            "t": {
+              "id": "11",
+              "code": "T_2",
+              "caption": "2"
             },
-            "org_unit_id":"#993:41",
-            "time_rc":"2017-08-03 00:00:00",
-            "rc_reg_in":{
-                "clause":{
-                    "id":"2",
-                    "code":"RI_A2",
-                    "caption":"при жизни повторно"
-                }
+            "n": {
+              "id": "2",
+              "code": "N_0",
+              "caption": "0"
+            },
+            "m": {
+              "id": "2",
+              "code": "M_0",
+              "caption": "0"
+            },
+            "g": {
+              "code": "NONE",
+              "caption": ""
             }
-        },
-        {
-             "id":"#1081:12558",
-             "class_name":"RcClinicalGroup",
-             "patient_id":"#70:29080",
-             "ehr_id":"#1054:29080",
-             "published":{
-                 "user_id":"#961:159",
-                 "time":"2018-08-08 08:13:18"
-             },
-             "org_unit_id":"#999:28",
-             "time_rc":"2018-06-06 08:13:04",
-             "rc_clinical_group":{
-                 "group_type":{
-                     "id":"3",
-                     "code":"II",
-                     "caption":"II"
-                 }
-             }
+          },
+          "stage": {
+            "id": "8",
+            "code": "II",
+            "caption": "II"
+          }
         }
-    ]
-}
-```
-
-
-### Пример java
-
-```java
-public class GetList {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Records.Rc> rcList = client.getRcList("1054:29080");
-
-        Records.Rc rc = rcList.get(0);
-
-        String id = rc.getId();
-        String patientId = rc.getPatientId();
+      }
+    },
+    {
+      "id": "#893:15011",
+      "class_name": "RcSpecTreat",
+      "patient_id": "#71:40788",
+      "ehr_id": "#873:43666",
+      "published": {
+        "user_id": "#961:335",
+        "time": "2019-12-18 10:26:05"
+      },
+      "org_unit_id": "#999:14",
+      "time_rc": "2019-12-18 10:25:49"
+    },
+    {
+      "id": "#1185:3247",
+      "class_name": "RcHorm",
+      "patient_id": "#71:40788",
+      "ehr_id": "#873:43666",
+      "published": {
+        "user_id": "#961:335",
+        "time": "2019-12-18 10:27:21"
+      },
+      "org_unit_id": "#999:14",
+      "time_rc": "2019-12-17 10:26:08",
+      "rc_horm": {
+        "time_rc_in": "2019-12-17",
+        "org_unit_id": "#999:14",
+        "kind": {
+          "pharm": true
+        },
+        "aim": {
+          "id": "1",
+          "code": "PRIMARY",
+          "caption": "при лечении первичной опухоли"
+        },
+        "condition": {
+          "id": "1",
+          "code": "AMB",
+          "caption": "амбулаторно"
+        },
+        "drugs": [
+          {
+            "drug": {
+              "orid": "#1550:61",
+              "name": "бикалутамид",
+              "type": {
+                "id": "2",
+                "code": "HT",
+                "caption": "гормонотерапия"
+              },
+              "code": "Ю008"
+            },
+            "dose": 150.0,
+            "unit": {
+              "id": "2",
+              "code": "MG",
+              "caption": "мг"
+            }
+          }
+        ]
+      }
     }
+  ]
 }
 ```
-

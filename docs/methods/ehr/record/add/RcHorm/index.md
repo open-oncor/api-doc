@@ -10,12 +10,12 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 ```json
 {
     "record":{
-        "patient_id":"#67:33340",
-        "ehr_id":"#874:36231",
+        "patient_id":"#65:3583",
+        "ehr_id":"#877:4012",
         "rc_horm":{
             "time_rc_in":"2018-10-04 23:54:05",
             "time_rc_out":"2018-10-04 23:54:05",
@@ -51,64 +51,59 @@ POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/add HTTP/1.1`
 
 ```json
 {
-    "result":[
-        {
-            "id":"#1185:2310",
-            "class_name":"RcHorm",
-            "patient_id":"#67:33340",
-            "ehr_id":"#874:36231",
-            "published":{
-                "user_id":"#961:160",
-                "time":"2018-10-04 23:54:05"
+  "result": [
+    {
+      "id": "#1185:3797",
+      "class_name": "RcHorm",
+      "patient_id": "#65:3583",
+      "ehr_id": "#877:4012",
+      "published": {
+        "user_id": "#961:97",
+        "time": "2020-12-16 09:01:54"
+      },
+      "org_unit_id": "#999:28",
+      "time_rc": "2020-12-16 09:01:54",
+      "rc_horm": {
+        "time_rc_in": "2018-10-04",
+        "time_rc_out": "2018-10-04",
+        "kind": {
+          "xrt": true
+        },
+        "aim": {
+          "code": "NONE",
+          "caption": "неизвестно"
+        },
+        "condition": {
+          "code": "NONE",
+          "caption": ""
+        },
+        "compl": {
+          "orid": "#667:0",
+          "id": "1",
+          "caption": "01. ИНТРАОПЕРАЦИОННЫЕ ОСЛОЖНЕНИЯ"
+        },
+        "drugs": [
+          {
+            "drug": {
+              "orid": "#1545:57",
+              "name": "Преднизолон",
+              "type": {
+                "id": "2",
+                "code": "HT",
+                "caption": "гормонотерапия"
+              },
+              "code": "Ю001"
             },
-            "org_unit_id":"#999:28",
-            "time_rc":"2018-10-04 23:54:05",
-            "rc_horm":{
-                "time_rc_in":"2018-10-04",
-                "time_rc_out":"2018-10-04"
+            "dose": 123.0,
+            "unit": {
+              "id": "3",
+              "code": "MKG",
+              "caption": "мкг"
             }
-        }
-    ]
-}
-```
-
-
-
-### Пример java
-
-```java
-public class AddRcHorm {
-    public static void main(String[] args) throws IOException {
-        final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        ProtoBuffClient client = newProtoBuffClient();
-
-        final Records.Rc ehrDzRecord = getEhrDzRecord();
-
-        Records.Rc newRecord = client.addEhrRecord(Records.Rc.newBuilder()
-                .setPatientId(ehrDzRecord.getPatientId())
-                .setEhrId(ehrDzRecord.getEhrId())
-                .setRcHorm(Records.Rc.RcHorm.newBuilder()
-                        .setTimeRcIn(dateFormat.format(new Date()))
-                        .setTimeRcOut(dateFormat.format(new Date()))
-                        .setAim(Directories.TherapyAim.newBuilder().setCode("NONE"))
-                        .setKind(Records.Rc.RcHorm.Kind.newBuilder().setXrt(true))
-                        .setCondition(Directories.TherapyCond.newBuilder().setCode("NONE"))
-                        .setCompl(Directories.DrNK0439.newBuilder().setId("1"))
-                        .addDrugs(Directories.DrugRecord.newBuilder()
-                                .setDrug(Directories.Drug.newBuilder().setCode("Ю001"))
-                                .setUnit(Directories.DoseUnit.newBuilder().setCode("MKG"))
-                                .setDose(123.0)
-                        )
-                )
-                .build()
-        );
-
-        String id = newRecord.getId();
-        Records.Rc.RcHorm rcHorm = newRecord.getRcHorm();
+          }
+        ]
+      }
     }
+  ]
 }
-
 ```
-
-<!--- todo добавить описание как выбрать препарат -->

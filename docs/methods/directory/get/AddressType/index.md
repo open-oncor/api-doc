@@ -11,7 +11,9 @@
 
 **Request** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/AddressType HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/AddressType HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
 
 **Response**
 ```json
@@ -58,21 +60,4 @@ GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/AddressType HTTP/1.1`
         }
     ]
 }
-```
-
-### Пример java
-
-```java
-public class GetAddressTypes {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.AddressType> addressTypes = client.getAddressTypes();
-        Directories.AddressType addressType = addressTypes.get(0);
-
-        String id = addressType.getId();
-        String caption = addressType.getCaption();
-    }
-}
-
 ```

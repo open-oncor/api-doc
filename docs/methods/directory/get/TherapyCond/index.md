@@ -10,7 +10,9 @@
 
 **Request** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/TherapyCond HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/TherapyCond HTTP/1.1
+X-Oncor-API-Token: {{ONCOR_API_TOKEN}}
+Content-Type: application/json`
 
 **Response**
 
@@ -33,21 +35,4 @@ GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/TherapyCond HTTP/1.1`
         }
     ]
 }
-```
-
-### Пример java
-
-```java
-public class GetTherapyCondDr {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.TherapyCond> therapyCondDirectory = client.getTherapyCondDirectory();
-        Directories.TherapyCond therapyCond = therapyCondDirectory.get(0);
-
-        String id = therapyCond.getId();
-        String caption = therapyCond.getCaption();
-    }
-}
-
 ```

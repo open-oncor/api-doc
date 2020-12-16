@@ -10,7 +10,9 @@
 ### Пример http
 **Request** 
  
-GET `http://dev.onco-reg.ru/api/1.0/json/user/getList HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/user/getList HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
 
 **Response**
 
@@ -53,21 +55,4 @@ GET `http://dev.onco-reg.ru/api/1.0/json/user/getList HTTP/1.1`
         ...
     ]
 }
-```
-
-### Пример java
-
-```java
-public class GetUsers {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.User> users = client.getUsers();
-        Directories.User user = users.get(0);
-
-        String id = user.getId();
-        String login = user.getLogin();
-    }
-}
-
 ```

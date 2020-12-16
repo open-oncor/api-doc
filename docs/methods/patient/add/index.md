@@ -11,7 +11,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
 
 ```json
 {
@@ -78,33 +78,10 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/add HTTP/1.1`
 
 ```json
 {
-    "error":{
-        "name":"InvalidArgumentsException",
-        "message":"Invalid patient name",
-        "uuid":"16bfee9a-2616-4a58-85c2-9ba4ac782cf4"
-    }
-}
-```
-
-
-### Пример java
-
-```java
-class AddPatient {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        client.addPatient(Patients.Patient.newBuilder()
-                .setFirstName("Иван")
-                .setMiddleName("Иванович")
-                .setLastName("Иванов")
-                .setBirthDay("1901-01-01")
-                .setPhones("+7 911")
-                .setGender(Directories.DrPrsG.newBuilder()
-                        .setId("1")
-                        .build())
-                .build());
-
-    }
+  "error": {
+    "name": "com.siams.med.api.PatientAlreadyExistsException",
+    "message": "Пациент уже существует",
+    "uuid": "f948e19e-3803-4380-819d-61ec0deb0729"
+  }
 }
 ```

@@ -10,7 +10,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1`
 ```json
 {
     "record":{
@@ -60,25 +60,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/record/add HTTP/1.1`
     ]
 }
 ```
-
-
-### Пример java
-
-```java
-public class AddRcDeath {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        Patients.Patient patient = getPatient();
-
-        Records.Rc rc = client.addPatientRecord(Records.Rc.newBuilder()
-                .setPatientId(patient.getId())
-                .setRcDeath(Records.Rc.RcDeath.newBuilder()
-                        .setReason(Directories.RBiMKB308.newBuilder().setCode("C50")))
-                .build());
-
-        Records.Rc.RcDeath RcDeath = rc.getRcDeath();
-    }
-}
-```
-

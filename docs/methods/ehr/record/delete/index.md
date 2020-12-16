@@ -11,7 +11,7 @@
  
  **Request**
  
- POST `http://dev.onco-reg.ru/api/1.0/json/ehr/record/delete HTTP/1.1`
+ POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/delete HTTP/1.1`
  
  ```json
  {
@@ -31,16 +31,3 @@
  }
  ```
  
-### Пример java
- 
- ```java
- class Demo {
-     public static void main(String... args) { 
-         client.deleteEhrRecord(Records.Rc.newBuilder()
-                                .setId(edrRc.getId())
-                                .setPatientId(edrRc.getPatientId())
-                                .setEhrId(edrRc.getEhrId())
-                                .build());
-     }
- }
- ```

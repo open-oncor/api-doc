@@ -6,7 +6,7 @@
 
 ### Пример http
 
-**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/rc/get?id=1577:16819 HTTP/1.1`
+**Request:** GET `https://demo.onco-reg.ru/api/1.0/json/rc/get?id=1577:16819 HTTP/1.1`
 
 **Response**
 
@@ -31,20 +31,5 @@
             }
         }
     ]
-}
-```
-
-
-### Пример java
-
-```java
-public class GetRc {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        Records.Rc rc = client.getRc("1577:16819");
-        String id = rc.getId();
-        String patientId = rc.getPatientId();
-    }
 }
 ```

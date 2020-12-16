@@ -12,7 +12,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/patient/search HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/patient/search HTTP/1.1`
 ```json
 {
     "patient_query":{
@@ -72,49 +72,6 @@ POST `http://dev.onco-reg.ru/api/1.0/json/patient/search HTTP/1.1`
         "name":"InvalidArgumentsException",
         "message":"Invalid patient name",
         "uuid":"d2eaae0f-274b-4254-8b69-163c2c3a6143"
-    }
-}
-```
-
-### Пример java
-
-```java
-class SearchPatient {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        //Поиск по коду ИИИ
-        for (Patients.Patient patient : client.searchPatients(Patients.PatientQuery
-                .newBuilder()
-                .setCode("ИИИ")
-                .build())) {
-        }
-
-        //Поиск по коду ИИИ290878")
-        for (Patients.Patient patient : client.searchPatients(Patients.PatientQuery
-                .newBuilder()
-                .setCode("ИИИ290878")
-                .build())) {
-        }
-
-        //Поиск по коду ИИИ + Gender"
-        for (Patients.Patient patient : client.searchPatients(Patients.PatientQuery
-                .newBuilder()
-                .setCode("ИИИ")
-                .setGender(Directories.DrPrsG.newBuilder().setId("2"))
-                .build())) {
-        }
-
-        //"Поиск по имени")
-        for (Patients.Patient patient : client.searchPatients(Patients.PatientQuery
-                .newBuilder()
-                .setFirstName("Иван ")
-                .setMiddleName(" ИванОвич")
-                .setLastName("ИвАнов  ")
-                .setGender(Directories.DrPrsG.newBuilder().setId("1"))
-                .build())) {
-        }
-
     }
 }
 ```

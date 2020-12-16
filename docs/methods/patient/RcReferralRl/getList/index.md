@@ -11,7 +11,7 @@
 
 ### Пример http
 
-**Request:** GET `http://dev.onco-reg.ru/api/1.0/json/patient/RcReferralRL/getList?patient_id=70:33669 HTTP/1.1`
+**Request:** GET `https://demo.onco-reg.ru/api/1.0/json/patient/RcReferralRL/getList?patient_id=70:33669 HTTP/1.1`
 
 **Response**
 ```json
@@ -208,23 +208,5 @@
       }
     }
   ]
-}
-```
-
-
-### Пример java
-
-```java
-public class GetList {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        Patients.Patient patient = client.getPatient("70:33669");
-
-        List<Records.Rc> patientRcReferralRLList = client.getPatientRcReferralRLList(patient.getId());
-
-        Records.Rc rc = patientRcReferralRLList.get(0);
-        String id = rc.getId();
-    }
 }
 ```
