@@ -9,7 +9,9 @@
 ### Пример http
 **Request:** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/BloodType HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/BloodType HTTP/1.1
+X-Oncor-API-Token: {{ONCOR_API_TOKEN}}
+Content-Type: application/json`
 
 **Response**
 
@@ -49,21 +51,5 @@ GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/BloodType HTTP/1.1`
             "caption":"AB(IV)Rh+"
         }
     ]
-}
-```
-
-### Пример java
-
-```java
-public class GetBloodTypes {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.BloodType> bloodTypes = client.getBloodTypes();
-        Directories.BloodType bloodType = bloodTypes.get(0);
-
-        String id = bloodType.getId();
-        String caption = bloodType.getCaption();
-    }
 }
 ```

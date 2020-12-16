@@ -9,7 +9,7 @@
 ### Пример http
 **Request** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrPrsG HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/DrPrsG HTTP/1.1`
 
 **Response**
 
@@ -37,23 +37,5 @@ GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DrPrsG HTTP/1.1`
             "caption":"не определено"
         }
     ]
-}
-```
-
-
-
-### Пример java
-
-```java
-public class GetPrsG {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        List<Directories.DrPrsG> genders = client.getGenders();
-        Directories.DrPrsG drPrsG = genders.get(0);
-
-        String id = drPrsG.getId();
-        String caption = drPrsG.getCaption();
-    }
 }
 ```

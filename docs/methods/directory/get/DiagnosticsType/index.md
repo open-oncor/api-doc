@@ -9,7 +9,9 @@
 ### Пример http
 **Request:** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DiagnosticsType HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/DiagnosticsType HTTP/1.1
+X-Oncor-API-Token: {{ONCOR_API_TOKEN}}
+Content-Type: application/json`
 
 **Response**
 
@@ -127,7 +129,3 @@ GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/DiagnosticsType HTTP/1.1`
     ]
 }
 ```
-
-
-### Пример java
-Добавить
