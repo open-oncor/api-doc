@@ -8,7 +8,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcReferralQuery HTTP/1.1`
+POST `POST https://demo.onco-reg.ru/api/1.0/json/search/start/RcReferralQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -31,18 +31,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcReferralQuery HTTP/1.1`
 }
 ```
 
-### Пример java
-
-```java
-public class Temp {
-    public static void main(String[] args) throws IOException {
-        ProtoBuffClient client = newProtoBuffClient();
-
-        Search.SearchJob searchJob = client.startSearchRcReferral(Search.RcReferralQuery.newBuilder()
-                .setFromDate("2017-10-01")
-                .setToDate("2019-12-10")
-                .setHasAppointment(false)
-                .build());
-    }
-}
-```

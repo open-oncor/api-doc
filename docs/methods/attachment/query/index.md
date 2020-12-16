@@ -11,7 +11,7 @@
 ### Пример http
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/attachment/query HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/attachment/query HTTP/1.1`
 ```json
 {
     "query":{

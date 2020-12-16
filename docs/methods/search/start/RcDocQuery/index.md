@@ -8,7 +8,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcDocQuery HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcDocQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -29,19 +29,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcDocQuery HTTP/1.1`
 }
 ```
 
-### Пример java
-
-```java
-class SearchRcDoc {
-    public static void main(String[] args) throws IOException, InterruptedException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        final Search.SearchJob job = client.startSearchRcDoc(Search.RcDocQuery.newBuilder()
-                .setFromDate("2018-01-01")
-                .build());
-
-        SearchUtils.waitForJob(client, job);
-    }
-}
-
-```

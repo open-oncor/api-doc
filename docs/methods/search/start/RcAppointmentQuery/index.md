@@ -8,7 +8,7 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcAppointmentQuery HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcAppointmentQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -30,20 +30,3 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcAppointmentQuery HTTP/1
 }
 ```
 
-### Пример java
-
-```java
-class SearchRcAppointment {
-    public static void main(String[] args) throws IOException, InterruptedException {
-        final ProtoBuffClient client = newProtoBuffClient();
-
-        final Search.SearchJob job = client.startSearchRcAppointment(Search.RcAppointmentQuery.newBuilder()
-                .setFromDate("2017-10-01")
-                .setToDate("2017-12-10")
-                .build());
-
-        SearchUtils.waitForJob(client, job);
-    }
-}
-
-```
