@@ -1,4 +1,4 @@
-## Передача экспертизы качества DICOM
+## Добавить экспертизу качества DICOM
 
 ### ![POST](../../../../img/post.png) /tm66/order/addRcTm66OrderExpertiseDicom
 * **Request:** [RcTm66OrderExpertiseDicom](../../../../types/types.md#com.siams.med.api.Rc.RcTm66OrderExpertiseDicom)
@@ -66,7 +66,10 @@ message MedDepart {
 
 **Request**   
 
-POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderExpertiseDicom HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderExpertiseDicom HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
+
 ```json
 {
     "record":{
