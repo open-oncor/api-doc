@@ -25,3 +25,5 @@ X-Oncor-API-Token: ******************************************
 [Методы API для ДЭЗО](dezo.md)
 
 [Базовые сценарии](scripts/index.md)
+
+[API для oncor-docs](oncor_docs/index.md)
