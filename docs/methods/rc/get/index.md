@@ -6,7 +6,11 @@
 
 ### Пример http
 
-**Request:** GET `https://demo.onco-reg.ru/api/1.0/json/rc/get?id=1577:16819 HTTP/1.1`
+**Request:** 
+
+GET `https://demo.onco-reg.ru/api/1.0/json/rc/get?id=1577:16819 HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`  
 
 **Response**
 

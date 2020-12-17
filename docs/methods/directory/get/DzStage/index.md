@@ -6,6 +6,7 @@
 В ответе передаётся массив записей из справочника [DzStage](../../../../types/types.md#com.siams.med.api.DzStage).
 
 ### Пример http
+
 **Request:** 
 
 GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/DzStage HTTP/1.1`  
@@ -13,7 +14,6 @@ GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/DzStage HTTP/1.1`
 `Content-Type: application/json`
 
 **Response**
-
 
 ```json
 {
