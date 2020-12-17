@@ -13,7 +13,10 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/meta/query HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/meta/query HTTP/1.1`              
+      `X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`   
+      `Content-Type: application/json`
+      
 ```json
 {
     "query":{
@@ -86,23 +89,4 @@ POST `http://dev.onco-reg.ru/api/1.0/json/meta/query HTTP/1.1`
 }
 ```
 
-**Пример java**
-
-```java
-public class MetaQuery {
-    public static void main(String[] args) throws IOException {
-        final ProtoBuffClient client = newProtoBuffClient();
-        final Meta.Query.Builder queryBuilder = Meta.Query.newBuilder();
-
-        final List<Meta.Object> objects = client.queryMeta(queryBuilder
-                .addIds("65:902")
-                .addIds("66:18041")
-                .build());
-
-        Meta.Object object = objects.get(0);
-        String id = object.getId();
-        Meta.Object.Entry meta = object.getMeta(0);
-    }
-}
-```
 

@@ -15,7 +15,10 @@
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/attachment/create HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/attachment/create HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
+
 ```json
 {
     "attachment":{
