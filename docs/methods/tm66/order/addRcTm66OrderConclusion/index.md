@@ -1,4 +1,4 @@
-## Передача заключения ДЭЗО
+## Добавление записи (передача заключения ДЭЗО)
 
 ### ![POST](../../../../img/post.png) /tm66/order/addRcTm66OrderConclusion
 * **Request:** [RcTm66OrderConclusion](../../../../types/types.md#com.siams.med.api.Rc.RcTm66OrderConclusion)
@@ -76,7 +76,9 @@ message MedDepart {
 
 **Request** 
  
-POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderConclusion HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderConclusion HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`  
 ```json
 {
     "record":{

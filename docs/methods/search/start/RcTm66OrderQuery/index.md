@@ -1,4 +1,4 @@
-## Поиск поиск заявок на ДЭЗО
+## Поиск заявок на ДЭЗО без статуса
 
 ### ![POST](../../../../img/post.png) /search/start/RcTm66OrderQuery
 * **Request:** [RcTm66OrderQuery](../../../../types/types.md#com.siams.med.api.RcTm66OrderQuery) 
@@ -30,7 +30,7 @@ message RcTm66OrderQuery {
 
 **Request**
 
-POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderQuery HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderQuery HTTP/1.1`
 ```json
 {
     "query":{
@@ -38,6 +38,9 @@ POST `http://dev.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderQuery HTTP/1.1
         "status_is_null": true
     }
 }
+> {% // запоминаем id в searchJobId
+client.global.set("searchJobId", response.body.result[0].id);
+%}
 ```
 
 **Response**

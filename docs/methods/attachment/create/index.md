@@ -1,4 +1,4 @@
-## Добавление вложения
+## Добавление вложения для заключения
 
 
 
@@ -29,6 +29,9 @@ POST `https://demo.onco-reg.ru/api/1.0/json/attachment/create HTTP/1.1`
         "data":"0KLQtdC60YHRgtC+0LLRi9C5INGE0LDQudC7"
     }
 }
+> {% // запоминаем id в attachmentId
+client.global.set("attachmentId", response.body.result[0].id);
+%}
 ```
 
 **Response**
