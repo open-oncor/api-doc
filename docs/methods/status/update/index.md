@@ -19,7 +19,11 @@ message InstanceStatus {
 
 **Request**
 ###### Установка статуса "Обработка началась"
-POST `http://{{ONCOR_API_HOST}}/api/1.0/json/rc/updateInstanceStatus HTTP/1.1`
+POST `http://https://demo.onco-reg.ru//api/1.0/json/rc/updateInstanceStatus HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`   
+`Content-Type: application/json`
+
+
 ```json
 {
    "updateInstanceStatus":{
@@ -30,7 +34,11 @@ POST `http://{{ONCOR_API_HOST}}/api/1.0/json/rc/updateInstanceStatus HTTP/1.1`
 ```
 
 ###### Установка статуса "Ассоциация DICOM" c передачей ссылки на DICOM 
-POST `http://{{ONCOR_API_HOST}}/api/1.0/json/rc/updateInstanceStatus HTTP/1.1`
+POST `https://demo.onco-reg.ru//api/1.0/json/rc/updateInstanceStatus HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`   
+`Content-Type: application/json`
+
+
 ```json
 {
     "updateInstanceStatus":{
