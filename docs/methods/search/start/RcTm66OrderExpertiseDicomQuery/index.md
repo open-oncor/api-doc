@@ -35,7 +35,7 @@ POST `https://demo.onco-reg.ru/api/1.0/json/search/get/RecordsPage`
 {
   "page":{
     "job":{
-      "id":"{{searchJobId}}"
+      "id":"5c78a4f4-8c6e-42ba-a5dc-304149f646c5"
     },
     "offset":0,
     "size":3

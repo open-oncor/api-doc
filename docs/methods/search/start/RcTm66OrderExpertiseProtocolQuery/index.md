@@ -31,7 +31,7 @@ POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderExpertisePro
 {
   "page":{
     "job":{
-      "id":"fac8d822-a14f-448b-90e7-07a5ec6495e0"
+      "id":"68f9bb9d-ae5f-457f-9299-5809757bccbc"
     },
     "offset":0,
     "size":3
