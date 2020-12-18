@@ -66,7 +66,7 @@ message MedDepart {
 
 **Request**   
 
-POST `http://dev.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderExpertiseProtocol HTTP/1.1`
+POST `https://demo.onco-reg.ru/api/1.0/json/tm66/order/addRcTm66OrderExpertiseProtocol HTTP/1.1`
 ```json
 {
     "record":{

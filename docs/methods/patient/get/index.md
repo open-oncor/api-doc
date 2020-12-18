@@ -12,7 +12,7 @@
 
 **Request:** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`  
+GET `https://demo.onco-reg.ru/api/1.0/json/patient/get?id=65:33650 HTTP/1.1`  
 `X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
 `Content-Type: application/json`  
 
