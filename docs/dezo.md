@@ -23,8 +23,8 @@
 4. [Установка статуса "Обработка началась"](methods/status/update/index.md)
 5. [Установка статуса "DICOM ассоциирован с заказом"](methods/status/update/index.md)
 6. Выполнение ДЭЗО
-   1. [Отказ в проведении ДЭЗО](methods/tm66/order/addRcTm66OrderReject/index.md)
-   2. Сформировано заключение - `Сначала передается сформированный файл заключения и, по мере необходимости, файл открепленной ЭЦП к первому файлу. Полученные {{attachmentId}} файлов, используются в запросе передачи заключения`
+   I. [Отказ в проведении ДЭЗО](methods/tm66/order/addRcTm66OrderReject/index.md)
+   II. Сформировано заключение - `Сначала передается сформированный файл заключения и, по мере необходимости, файл открепленной ЭЦП к первому файлу. Полученные {{attachmentId}} файлов, используются в запросе передачи заключения`
        1. [Передача файла(-ов) заключения (файл протокола заключения и открепленно ЭЦП)](methods/attachment/create/index.md)
        2. [Передача заключения со ссылкой на ранее переданные файлы заключения](methods/tm66/order/addRcTm66OrderConclusion/index.md)
 3. [Проведена экспертиза DICOM](methods/tm66/order/addRcTm66OrderExpertiseDicom/index.md) 
@@ -50,7 +50,7 @@
 ---
 ## Методы API
 
-### Получение документов ДЭЗО
+### Добавление документов ДЭЗО
 
 * [/tm66/order/addRcTm66OrderReject](methods/tm66/order/addRcTm66OrderReject/index.md) - `загрузка документа "Отказ в проведении ДЭЗО"` 
 * [/tm66/order/addRcTm66OrderConclusion](methods/tm66/order/addRcTm66OrderConclusion/index.md) - `загрузка документа "Заключение эксперта ДЭЗО"`
@@ -61,6 +61,9 @@
 
 * [/search/start/RcTm66OrderQuery](methods/search/start/RcTm66OrderQuery/index.md)  - `поиск заявок на ДЭЗО`
 * [/search/get/RecordsPage](methods/search/get/RecordsPage/index.md)  - `постраничное получение найденных ранее в поисковом запросе записей`
+* [/search/start/RcTm66OrderExpertiseDicomQuery](methods/search/start/RcTm66OrderExpertiseDicomQuery/index.md) - `поиск документов "Экспертиза качества DICOM"`
+* [/search/start/RcTm66OrderExpertiseProtocolQuery](methods/search/start/RcTm66OrderExpertiseProtocolQuery/index.md) - `поиск документов "Экспертиза качества первичного протокола исследования""`
+* [/search/start/RcTm66OrderConclusionQuery](methods/search/start/RcTm66OrderConclusionQuery/index.md) - `поиск докуметов "Заключение эксперта ДЭЗО"`
 
 ### Работа со статусами записей
 
