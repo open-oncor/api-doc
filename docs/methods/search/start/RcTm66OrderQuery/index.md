@@ -30,17 +30,17 @@ message RcTm66OrderQuery {
 
 **Request**
 
-POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderQuery HTTP/1.1`
-```
+POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderQuery HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`  
+
+```json
 {
     "query":{
         "from_date":"2018-01-01",
         "status_is_null": true
     }
 }
-> {% // запоминаем id в searchJobId
-client.global.set("searchJobId", response.body.result[0].id);
-%}
 ```
 
 **Response**

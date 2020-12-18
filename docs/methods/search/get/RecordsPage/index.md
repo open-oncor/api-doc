@@ -105,8 +105,11 @@ message Rc {
 
 **Request**
 
-POST `https://demo.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
-```
+POST `https://demo.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
+
+```json
 {
     "page":{
         "job":{
@@ -116,20 +119,6 @@ POST `https://demo.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
         "size":5
     }
 }
-> {%
-  // дожидаемся записей в результатах
-  var result = response.body.result[0] || {};
-  var page = result.page || {}
-  var job = page.job || {}
-  if (job.ready === true) {
-    var size = result.size || 0
-    if (size > 0) {
-      var rc = result.rc[0];
-      client.global.set("rcId", rc.id);
-      client.log("используйте http://localhost:8080/ui-orid/" + (rc.id.substring(1)) + " для просмотра записи")
-    }   
-  }
-%}
 ```
 
 **Response**
