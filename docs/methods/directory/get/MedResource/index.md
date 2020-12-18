@@ -10,7 +10,9 @@
 * [MedDepart](../../../../methods/directory/get/MedDepart/index.md) - `cправочник подразделений медицинских организаций ` 
 ### Пример http
 **Request**  
-GET `http://{{ONCOR_API_HOST}}/api/1.0/json/directory/get/MedResource`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/MedResource`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
 
 **Response**  
 ```json

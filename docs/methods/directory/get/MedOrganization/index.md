@@ -8,7 +8,10 @@
 ### Пример http
 
 **Request**  
-GET `http://{{ONCOR_API_HOST}}/api/1.0/json/directory/get/MedOrganization`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/MedOrganization`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
+
 
 **Response**  
 ```json

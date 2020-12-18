@@ -7,7 +7,10 @@
 
 **Request**
 
-   GET `http://{{ONCOR_API_HOST}}/api/1.0/json/directory/get/Tm66ExpertDicomResult`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/Tm66ExpertDicomResult`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
+
 
 **Response**
 ```json

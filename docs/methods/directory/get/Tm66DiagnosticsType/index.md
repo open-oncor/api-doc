@@ -8,7 +8,9 @@
 
 **Request** 
 
-GET `http://dev.onco-reg.ru/api/1.0/json/directory/get/Tm66DiagnosticsType HTTP/1.1`
+GET `https://demo.onco-reg.ru/api/1.0/json/directory/get/Tm66DiagnosticsType HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
 
 **Response**
 
