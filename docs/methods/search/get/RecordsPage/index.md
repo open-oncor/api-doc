@@ -106,7 +106,7 @@ message Rc {
 **Request**
 
 POST `https://demo.onco-reg.ru/api/1.0/json/search/get/RecordsPage HTTP/1.1`
-```json
+```
 {
     "page":{
         "job":{
