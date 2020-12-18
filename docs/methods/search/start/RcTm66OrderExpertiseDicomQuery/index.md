@@ -7,7 +7,7 @@ POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderExpertiseDic
 `X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
 `Content-Type: application/json`  
 
-```json
+```
 {
   "query": {
     "from_date": "2020-01-01"
@@ -16,6 +16,7 @@ POST `https://demo.onco-reg.ru/api/1.0/json/search/start/RcTm66OrderExpertiseDic
 > {% // запоминаем id в searchJobId
  client.global.set("searchJobId", response.body.result[0].id);
 %}
+
 ```
 **Response**
 ```json
