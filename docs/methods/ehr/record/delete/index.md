@@ -1,3 +1,5 @@
+# Удаление записей
+
 ## Удаление записи из указанного заболевания
 
 ### ![POST](../../../../img/post.png) /ehr/record/delete
@@ -28,8 +30,30 @@
  **Response**
  ```json
  {
-   "result": [
-   ]
+   "result": []
  }
  ```
- 
+
+## Удаление указанного заболевания
+
+### Пример http
+
+**Request**
+
+POST `https://demo.onco-reg.ru/api/1.0/json/ehr/delete HTTP/1.1`  
+`X-Oncor-API-Token: {{ONCOR_API_TOKEN}}`  
+`Content-Type: application/json`
+
+ ```json
+{
+     "ehr":{
+          "id":"#877:54362"
+     }
+}
+ ```
+**Response**
+ ```json
+ {
+   "result": []
+ }
+ ```
