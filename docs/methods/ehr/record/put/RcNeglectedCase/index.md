@@ -1,8 +1,8 @@
 ## Добавление черновика записи "Протокол запущенного случая" в указанное заболевание (RcNeglectedCase)
 
 ### ![POST](../../../../../img/post.png) /ehr/record/put
-* **Request:** [RcNeglectedCase](../../../../../types/types.md#com.siams.med.api.Rc.RcNeglectedCase) **record** <patient_id, ehr_id, RcChem>
-* **Response:** [[RcNeglectedCase](../../../../../types/types.md#com.siams.med.api.Rc.RcNeglectedCase)]
+* **Request:** `RcNeglectedCase` **record** <patient_id, ehr_id, RcNeglectedCase>
+* **Response:** [`RcNeglectedCase`]
 
 Черновик записи "Протокол запущенного случая" добавляется как запись [Rc](../../../../../types/types.md#com.siams.med.api.Rc) в указанное заболевание и становится доступной для дозаполнения и публикации врачом из интерфейса системы.
 
@@ -70,4 +70,22 @@ POST `https://demo.onco-reg.ru/api/1.0/json/ehr/record/put HTTP/1.1`
   ]
 }
 ```
+
+### Rc.RcNeglectedCase
+Запись "Протокол запущенного случая"
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| number | [string](#string) | optional |  |
+| date | [string](#string) | optional | дата установки запущенности |
+| first_sign_date | [string](#string) | optional | дата появления первых признаков |
+| first_request_date | [string](#string) | optional | первое обращение больного за медицинской помощью по поводу заболевания |
+| first_request_lpu_id | [string](#string) | optional | ЛПУ первого обращения больного за медицинской помощью по поводу заболевания |
+| first_dz_date | [string](#string) | optional | дата установления первичного диагноза злокачественного новообразования |
+| first_dz_lpu_id | [string](#string) | optional | ЛПУ установления первичного диагноза злокачественного новообразования |
+| history | [string](#string) | optional | этапы обращения больного к врачам и в лечебные учреждения по поводу данного заболевания |
+| review_data | [string](#string) | optional | данные клинического разбора |
+| conference_date | [string](#string) | optional | дата конференции |
+| conference_lpu_id | [string](#string) | optional | ЛПУ проведения конференции |
+| conclusion | [string](#string) | optional | организационные выводы, заключение |
 

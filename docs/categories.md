@@ -33,6 +33,7 @@
 * [/ehr/record/add(RcRay)](methods/ehr/record/add/RcRay/index.md)  - `добавление статистической записи 'Лучевая терапия' в указанное заболевание` 
 * [/ehr/record/add(RcChem)](methods/ehr/record/add/RcChem/index.md)  - `добавление статистической записи 'Химиотерапия' в указанное заболевание` 
 * [/ehr/record/add(RcHorm)](methods/ehr/record/add/RcHorm/index.md)  - `добавление статистической записи 'Гормонотерапия' в указанное заболевание` 
+* [/ehr/record/put(RcNeglectedCase)](methods/ehr/record/put/RcNeglectedCase/index.md)  - `добавление черновика записи 'Протокол запущенного случая' в указанное заболевание` 
 <!--- todo добавить описание как создать спецлечение? -->
 * [/ehr/record/delete](methods/ehr/record/delete/index.md) - `удаление записи из указанного заболевания`
 * [/patient/record/add(RcDoc)](methods/patient/record/add/index.md) - `добавление медицинской записи пациенту`
