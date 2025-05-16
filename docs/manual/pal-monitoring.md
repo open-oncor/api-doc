@@ -23,6 +23,7 @@ X-Oncor-API-Token: ваш_токен_доступа
 
 ### 1. Запуск генерации отчёта
 **Запрос:**
+
 ```http
 POST /api/1.0/json/pal-monitoring
 Content-Type: application/json
@@ -58,6 +59,7 @@ Content-Type: application/json
 
 ### 2. Проверка статуса отчёта
 **Запрос:**
+
 ```http
 GET /api/1.0/json/pal-monitoring/status?report_id={report_id}
 ```
@@ -89,6 +91,7 @@ GET /api/1.0/json/pal-monitoring/status?report_id={report_id}
 
 ### 3. Получение отчёта
 **Запрос:**
+
 ```http
 GET /api/1.0/json/pal-monitoring/download?report_id={report_id}
 ```
@@ -123,6 +126,7 @@ GET /api/1.0/json/pal-monitoring/download?report_id={report_id}
 
 ## Пример workflow
 1. Запуск генерации:
+
 ```http
 POST http://127.0.0.1:8080/api/1.0/json/pal-monitoring
 X-Oncor-API-Token: ваш_токен
@@ -135,13 +139,16 @@ Content-Type: application/json
   }
 }
 ```
+ 
 2. Проверка статуса (повторять до получения FINISHED/ERROR):
+
 ```http
 GET http://127.0.0.1:8080/api/1.0/json/pal-monitoring/status?report_id=550e8400-e29b-41d4-a716-446655440000
 X-Oncor-API-Token: ваш_токен
 ```
 
 3. Получение результатов:
+
 ```http
 GET http://127.0.0.1:8080/api/1.0/json/pal-monitoring/download?report_id=550e8400-e29b-41d4-a716-446655440000
 X-Oncor-API-Token: ваш_токен
