@@ -1,5 +1,7 @@
 # Документация API для генерации отчётов PAL Monitoring
 
+> PAL – акроним от Prolonged Active Life (перевод «Продолжительная и активная жизнь»)
+
 ## Введение
 API позволяет асинхронно генерировать отчёты PAL Monitoring. Процесс состоит из трёх этапов:
 1. Запуск генерации отчёта
@@ -49,7 +51,7 @@ Content-Type: application/json
     "result": [
         {
             "report_id": "550e8400-e29b-41d4-a716-446655440000",
-            "status": "IN_PROGRESS"
+            "status": "PROCESSING"
         }
     ]
 }
