@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Отслеживание обработки СЭМД в Онкор"
+description: "Как отслеживать обработку СЭМД через Онкор API, cda/search, cda/get и вспомогательно через catcher."
+permalink: /semd-oncor-api/
+---
+
 # Отслеживание обработки СЭМД в Онкор
 
 Основной рекомендуемый способ разбирать движение СЭМД — использовать Онкор API.
@@ -5,6 +12,16 @@
 Доступ к базе `catcher` лучше рассматривать как вспомогательный диагностический сценарий. Он полезен, когда на руках есть только технический идентификатор сообщения из `catcher`, например `internal_message_id` или `external_message_id`, и по нему нужно найти связанную задачу обработки СЭМД в Онкор.
 
 Если на стороне МИС известны глобальные идентификаторы самого СЭМД (`set_id`, `id`, `version_number`), предпочтительно сразу использовать метод `cda/search`, без обращения к базе `catcher`.
+
+## Содержание
+
+* [Что происходит при обработке нового СЭМД](#что-происходит-при-обработке-нового-сэмд)
+* [Как `set_id`, `id` и `version_number` представлены в CDA](#как-set_id-id-и-version_number-представлены-в-cda)
+* [Рекомендуемый подход: использование API без базы `catcher`](#рекомендуемый-подход-использование-api-без-базы-catcher)
+* [`cda/search` — поиск СЭМД по `id`, `set_id`, `version_number`](#cdasearch--поиск-сэмд-по-id-set_id-version_number)
+* [`cda/get` — запрос статуса задачи обработки СЭМД](#cdaget--запрос-статуса-задачи-обработки-сэмд)
+* [Вспомогательный сценарий: таблица `semd` базы `catcher`](#вспомогательный-сценарий-таблица-semd-базы-catcher)
+* [Рекомендуемый порядок разбора проблемы](#рекомендуемый-порядок-разбора-проблемы)
 
 ## Что происходит при обработке нового СЭМД
 
@@ -87,10 +104,12 @@
 
 Пример:
 
-```http request
+```http
+{% raw %}
 POST {{ONCOR_API_HOST}}/api/1.0/json/cda/search
 X-Oncor-API-Token: {{ONCOR_API_TOKEN}}
 Content-Type: application/json
+{% endraw %}
 
 {
     "cda": {
@@ -149,40 +168,42 @@ Content-Type: application/json
 
 ### Запрос
 
-```http request
+```http
+{% raw %}
 GET {{ONCOR_API_HOST}}/api/1.0/json/cda/get?id=3240:3369361
 X-Oncor-API-Token: {{ONCOR_API_TOKEN}}
+{% endraw %}
 ```
 
 ### Ответ
 
 ```json
 {
-    "result": [
-        {
-            "cda_task_id": "#3240:3369361",
-            "patient_id": "#71:16439",
-            "rc_cda_id": "#3029:3149721",
-            "rc_sms_id": "#2180:3275155",
-            "cda": {
-                "set_id": {
-                    "root": "1.2.643.5.1.13.13.12.2.25.2246.100.1.1.50",
-                    "extension": "510d77f8-bbe6-24b9-e063-04f21aaccca7"
-                },
-                "id": {
-                    "root": "1.2.643.5.1.13.13.12.2.25.2246.100.1.1.51",
-                    "extension": "510d77f8-bbe6-24b9-e063-04f21aaccca7"
-                },
-                "version_number": "1"
-            },
-            "cda_task_status": "PROCESSING",
-            "cda_task_step": "SENDING_TO_VIMIS",
-            "cda_task_log": [
-                "INFO: пациент найден по СНИЛС",
-                "INFO: Rc: #2180:3275155 was sent. Internal message id = '0618c85f-6a02-49a8-848f-3a1f8a713ce4'"
-            ]
-        }
-    ]
+  "result": [
+    {
+      "cda_task_id": "#3240:3369361",
+      "patient_id": "#71:16439",
+      "rc_cda_id": "#3029:3149721",
+      "rc_sms_id": "#2180:3275155",
+      "cda": {
+        "set_id": {
+          "root": "1.2.643.5.1.13.13.12.2.25.2246.100.1.1.50",
+          "extension": "510d77f8-bbe6-24b9-e063-04f21aaccca7"
+        },
+        "id": {
+          "root": "1.2.643.5.1.13.13.12.2.25.2246.100.1.1.51",
+          "extension": "510d77f8-bbe6-24b9-e063-04f21aaccca7"
+        },
+        "version_number": "1"
+      },
+      "cda_task_status": "PROCESSING",
+      "cda_task_step": "SENDING_TO_VIMIS",
+      "cda_task_log": [
+        "INFO: пациент найден по СНИЛС",
+        "INFO: Rc: #2180:3275155 was sent. Internal message id = '0618c85f-6a02-49a8-848f-3a1f8a713ce4'"
+      ]
+    }
+  ]
 }
 ```
 
@@ -199,15 +220,15 @@ _Массив вместо объекта в `result` является особ�
 * `rc_sms_id`: идентификатор исходящего СЭМД. Может использоваться как для API, так и для формирования ссылки в браузере.
 * `cda`: объект с глобальными идентификаторами СЭМД. Может использоваться для работы с ВИМИС.
 * `cda_task_status`: общий статус задачи обработки СЭМД:
-    * `PENDING`
-    * `PROCESSING`
-    * `DONE`
-    * `ERROR`
+  * `PENDING`
+  * `PROCESSING`
+  * `DONE`
+  * `ERROR`
 * `cda_task_step`: текущий шаг задачи обработки СЭМД:
-    * `VALIDATION_ON_ONCOR`
-    * `ONCOR_ACCEPTED`
-    * `SENDING_TO_VIMIS`
-    * `VIMIS_ACCEPTED`
+  * `VALIDATION_ON_ONCOR`
+  * `ONCOR_ACCEPTED`
+  * `SENDING_TO_VIMIS`
+  * `VIMIS_ACCEPTED`
 
 Для формирования ссылки в браузере нужно подставить значение поля без `#` после `/ui-orid/` в адрес сервера.
 Например, для `#71:16439` ссылка будет такой: https://oncor.pkmiac.ru/ui-orid/71:16439
